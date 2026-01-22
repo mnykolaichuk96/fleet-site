@@ -1,5 +1,12 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import type { Metadata } from "next";
+import { createMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = createMetadata(
+    "Praca kierowca Bolt i Uber Rzeszów – Wynajem samochodów taxi",
+    "Współpraca z kierowcami Bolt i Uber w Rzeszowie. Wynajem nowoczesnych samochodów taxi."
+);
 
 export default function HomePage() {
     const t = useTranslations('home');
@@ -19,14 +26,14 @@ export default function HomePage() {
 
                 <div className="flex justify-center gap-4">
                     <Link
-                        href="/drivers"
+                        href="drivers"
                         className="px-6 py-3 bg-black text-white rounded-xl"
                     >
                         {t('ctaDrivers')}
                     </Link>
 
                     <Link
-                        href="/cars"
+                        href="cars"
                         className="px-6 py-3 border rounded-xl"
                     >
                         {t('ctaCars')}
@@ -53,12 +60,12 @@ export default function HomePage() {
                     {t('ctaTitle')}
                 </h2>
 
-                <a
-                    href="/apply"
+                <Link
+                    href="apply"
                     className="inline-block px-6 py-3 bg-black text-white rounded-xl"
                 >
                     {t('ctaButton')}
-                </a>
+                </Link>
             </section>
 
         </main>

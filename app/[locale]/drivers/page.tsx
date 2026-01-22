@@ -1,4 +1,13 @@
 import { useTranslations } from 'next-intl';
+import type { Metadata } from "next";
+import { createMetadata } from "@/lib/seo";
+import Link from "next/link";
+
+export const metadata: Metadata = createMetadata(
+    "Praca kierowca Bolt i Uber Rzeszów",
+    "Legalna praca jako kierowca Bolt i Uber w Rzeszowie. Wynajem samochodów, wsparcie i rozliczenia."
+);
+
 
 export default function DriversPage() {
     const t = useTranslations('drivers');
@@ -64,12 +73,13 @@ export default function DriversPage() {
                     {t('cta.title')}
                 </h2>
 
-                <a
-                    href="/apply"
+                <Link
+                    href="apply"
                     className="inline-block px-6 py-3 bg-black text-white rounded-xl"
                 >
                     {t('cta.button')}
-                </a>
+                </Link>
+
             </section>
 
         </main>

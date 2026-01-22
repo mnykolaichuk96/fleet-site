@@ -1,0 +1,11 @@
+[
+  {
+    "slug": "toyota-corolla-hybrid",
+    "title": "Toyota Corolla Hybrid",
+    "year": 2021,
+    "price": "750 zł / tydzień",
+    "fuel": "Hybrid",
+    "platforms": ["Bolt", "Uber"],
+    "images": ["/cars/corolla/1.jpg"]
+  }
+]

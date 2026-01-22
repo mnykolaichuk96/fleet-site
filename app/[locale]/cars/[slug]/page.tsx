@@ -12,7 +12,9 @@ type PageProps = {
 
 // ← Next.js передає params зі slug з URL
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-    const car = cars.find(c => c.slug === params.slug);
+    const { slug } = await params;
+
+    const car = cars.find(c => c.slug === slug);
 
     if (!car) {
         return createMetadata(
@@ -28,8 +30,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 // ← Це сторінка ОДНОГО авто
-export default function CarPage({ params }:PageProps) {
-    const car = cars.find(c => c.slug === params.slug);
+export default async function CarPage({ params }: PageProps) {
+    const { slug } = await params;
+
+    const car = cars.find(c => c.slug === slug);
 
     if (!car) {
         notFound();

@@ -1,52 +1,35 @@
 {
   "home": {
-    "title": "Praca kierowca Bolt / Uber – Rzeszów",
-    "subtitle": "Wynajem samochodów do pracy w taxi oraz współpraca z kierowcami",
+    "title": "Praca kierowca Bolt i Uber – Rzeszów",
+    "subtitle": "Wynajem samochodów taxi oraz współpraca z kierowcami",
     "ctaDrivers": "Dla kierowców",
     "ctaCars": "Nasze samochody",
     "benefit1": "Legalna współpraca",
-    "benefit2": "Nowoczesne samochody",
+    "benefit2": "Nowoczesne auta",
     "benefit3": "Wsparcie 24/7",
     "ctaTitle": "Zostaw zgłoszenie i zacznij pracę",
     "ctaButton": "Zgłoś się"
   },
-
   "drivers": {
     "title": "Praca jako kierowca Bolt / Uber – Rzeszów",
-    "subtitle": "Dołącz do naszej floty i zarabiaj legalnie w taxi",
-
-    "benefit1": {
-      "title": "Legalna współpraca",
-      "text": "Umowa, rozliczenia, wsparcie księgowe"
-    },
-    "benefit2": {
-      "title": "Nowoczesne auta",
-      "text": "Samochody gotowe do pracy w Bolt i Uber"
-    },
-    "benefit3": {
-      "title": "Stałe wsparcie",
-      "text": "Pomoc 7 dni w tygodniu"
-    },
-
+    "subtitle": "Dołącz do naszej floty",
+    "benefit1": { "title": "Legalnie", "text": "Umowa i rozliczenia" },
+    "benefit2": { "title": "Auta", "text": "Nowoczesna flota" },
+    "benefit3": { "title": "Wsparcie", "text": "Pomoc 7 dni w tygodniu" },
     "requirements": {
       "title": "Wymagania",
-      "r1": "Prawo jazdy kat. B",
-      "r2": "Badania lekarskie",
-      "r3": "Zaświadczenie o niekaralności",
+      "r1": "Prawo jazdy",
+      "r2": "Badania",
+      "r3": "Niekaralność",
       "r4": "Dyspozycyjność"
     },
-
     "earnings": {
       "title": "Zarobki",
-      "text": "Średnie zarobki kierowców w Rzeszowie wynoszą od 6000 do 9000 zł netto miesięcznie."
+      "text": "Od 6000 do 9000 zł netto"
     },
-
     "cta": {
-      "title": "Zostaw zgłoszenie i zacznij pracę",
-      "button": "Zgłoś się"
+      "title": "Zgłoś się",
+      "button": "Wyślij zgłoszenie"
     }
   }
 }
-
-
-

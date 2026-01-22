@@ -1,0 +1,35 @@
+{
+  "home": {
+    "title": "Driver job Bolt and Uber – Rzeszów",
+    "subtitle": "Taxi car rental and driver cooperation",
+    "ctaDrivers": "For drivers",
+    "ctaCars": "Our cars",
+    "benefit1": "Legal cooperation",
+    "benefit2": "Modern cars",
+    "benefit3": "24/7 support",
+    "ctaTitle": "Send application",
+    "ctaButton": "Apply now"
+  },
+  "drivers": {
+    "title": "Driver job Bolt / Uber – Rzeszów",
+    "subtitle": "Join our fleet",
+    "benefit1": { "title": "Legal", "text": "Official cooperation" },
+    "benefit2": { "title": "Cars", "text": "Ready to work" },
+    "benefit3": { "title": "Support", "text": "7 days a week" },
+    "requirements": {
+      "title": "Requirements",
+      "r1": "Driving license",
+      "r2": "Medical checks",
+      "r3": "Criminal record",
+      "r4": "Availability"
+    },
+    "earnings": {
+      "title": "Earnings",
+      "text": "From 6000 to 9000 PLN net"
+    },
+    "cta": {
+      "title": "Apply",
+      "button": "Send"
+    }
+  }
+}

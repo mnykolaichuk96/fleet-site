@@ -1,10 +1,14 @@
+'use client';
+
 import Link from "next/link";
 import { CriminalRecordIcon } from "@/components/icons/CriminalRecordIcon";
 import { MedicalIcon } from "@/components/icons/MedicalIcon";
 import { PhotoIcon } from "@/components/icons/PhotoIcon";
+import { useForm } from '@formspree/react';
 
 
 export default function CTA() {
+    const [state, handleSubmit] = useForm("xdaeqbyg");
     return (
         <section className="py-28">
             <div className="mx-auto max-w-6xl px-6 text-center">
@@ -70,46 +74,74 @@ export default function CTA() {
                         i pomożemy Ci szybko zacząć pracę.
                     </p>
 
-                    {/* Inputs */}
-                    <form className="mt-8 grid gap-4 sm:grid-cols-3">
-
+                    <form
+                        onSubmit={handleSubmit}
+                        className="mt-8 grid gap-6 sm:grid-cols-2"
+                    >
+                        {/* Inputs */}
                         <input
+                            name="name"
                             type="text"
                             placeholder="Twoje imię"
-                            className="rounded-xl border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+                            required
+                            className="rounded-xl border px-4 py-3 text-sm"
                         />
 
                         <input
+                            name="phone"
                             type="tel"
                             placeholder="Numer telefonu"
-                            className="rounded-xl border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+                            required
+                            className="rounded-xl border px-4 py-3 text-sm"
                         />
 
                         <input
-                            type="text"
-                            placeholder="Miasto"
-                            className="rounded-xl border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+                            name="email"
+                            type="email"
+                            placeholder="Adres email"
+                            required
+                            className="rounded-xl border px-4 py-3 text-sm"
                         />
 
+                        <select
+                            name="city"
+                            disabled
+                            className="rounded-xl border px-4 py-3 text-sm bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+                        >
+                            <option value="Rzeszów">Rzeszów</option>
+                        </select>
+
+
+                        {/* Checkbox — на всю ширину */}
+                        <label className="sm:col-span-2 mx-auto flex max-w-xl items-center gap-3 rounded-xl border px-4 py-3 text-sm text-gray-600">
+                            <input
+                                type="checkbox"
+                                name="consent"
+                                required
+                                className="h-4 w-4"
+                            />
+                            Wyrażam zgodę na przetwarzanie moich danych osobowych.
+                        </label>
+
+                        {/* Button — на всю ширину, по центру */}
+                        <div className="sm:col-span-2 flex justify-center">
+                            <button
+                                type="submit"
+                                disabled={state.submitting}
+                                className="rounded-xl bg-red-600 px-12 py-4 text-white font-medium hover:bg-red-700 transition disabled:opacity-50"
+                            >
+                                {state.submitting ? "Wysyłanie..." : "Wyślij zgłoszenie"}
+                            </button>
+                        </div>
+
+                        {/* Success */}
+                        {state.succeeded && (
+                            <p className="sm:col-span-2 text-center text-green-600 font-medium">
+                                Zgłoszenie wysłane ✔ Skontaktujemy się z Tobą.
+                            </p>
+                        )}
                     </form>
 
-                    {/* Consent */}
-                    <div className="mt-4 flex items-center justify-center gap-2 text-sm text-gray-600">
-                        <input type="checkbox" />
-                        <span>
-              Wyrażam zgodę na przetwarzanie moich danych osobowych.
-            </span>
-                    </div>
-
-                    {/* CTA */}
-                    <div className="mt-8">
-                        <Link
-                            href="/apply"
-                            className="inline-block rounded-xl bg-red-600 px-10 py-4 text-white font-medium hover:bg-red-700 transition"
-                        >
-                            Wyślij zgłoszenie
-                        </Link>
-                    </div>
 
                     {/* Phone */}
                     <p className="mt-6 text-sm text-gray-600">

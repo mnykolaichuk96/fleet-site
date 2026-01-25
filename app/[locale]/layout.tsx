@@ -1,7 +1,10 @@
+import "./globals.css";
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { locales } from '@/lib/i18n';
 import { ReactNode } from 'react';
+import Header from '@/components/layout/Header';
+import Footer from "@/components/Footer";
 
 
 export type Locale = typeof locales[number];
@@ -23,11 +26,11 @@ export default async function LocaleLayout({ children, params }: Props) {
     const messages = (await import(`@/locales/${locale}.json`)).default;
 
     return (
-        <html lang={locale} suppressHydrationWarning>
-        <body suppressHydrationWarning>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-            {children}
-        </NextIntlClientProvider>
+        <html lang={locale}>
+        <body>
+        <Header />
+        {children}
+        <Footer />
         </body>
         </html>
     );

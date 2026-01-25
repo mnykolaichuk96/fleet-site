@@ -1,4 +1,10 @@
 {
+  "navigation": {
+    "cars": "Samochody",
+    "drivers": "Dla kierowców",
+    "contact": "Kontakt",
+    "apply": "Zgłoś się"
+  },
   "home": {
     "title": "Praca kierowca Bolt i Uber – Rzeszów",
     "subtitle": "Wynajem samochodów taxi oraz współpraca z kierowcami",

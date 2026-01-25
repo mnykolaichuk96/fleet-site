@@ -5,9 +5,9 @@ import { notFound } from "next/navigation";
 
 // Тип для params
 type PageProps = {
-    params: {
+    params: Promise<{
         slug: string;
-    };
+    }>;
 };
 
 // ← Next.js передає params зі slug з URL

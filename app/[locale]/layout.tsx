@@ -27,10 +27,13 @@ export default async function LocaleLayout({ children, params }: Props) {
 
     return (
         <html lang={locale}>
-        <body>
-        <Header />
-        {children}
-        <Footer />
+        <body className="min-h-screen flex flex-col">
+        <Header/>
+        {/* MAIN grows */}
+        <main className="flex-1">
+            {children}
+        </main>
+        <Footer/>
         </body>
         </html>
     );

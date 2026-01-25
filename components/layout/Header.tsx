@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import HeaderCTA from "@/components/HeaderCTA";
 
 /**
  * Header komponent
@@ -33,12 +34,9 @@ export default function Header() {
                 </nav>
 
                 {/* CTA */}
-                <Link
-                    href="/apply"
-                    className="rounded-lg bg-red-600 px-4 py-2 text-sm text-white font-medium hover:bg-red-700"
-                >
-                    {t('apply')}
-                </Link>
+                <HeaderCTA variant="primary">
+                    {t("apply")}
+                </HeaderCTA>
             </div>
         </header>
     );

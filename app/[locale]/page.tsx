@@ -6,6 +6,8 @@ import Hero from '@/components/home/Hero';
 import CooperationModes from '@/components/home/CooperationModes';
 import FleetPreview from "@/components/home/FleetPreview";
 import CTA from "@/components/home/CTA";
+import HomeScrollHandler from "@/components/home/HomeScrollHandler";
+
 
 export const metadata: Metadata = createMetadata(
     "Praca kierowca Bolt i Uber Rzeszów – Wynajem samochodów taxi",
@@ -21,6 +23,7 @@ export default function HomePage() {
             <CooperationModes />
             <FleetPreview />
             <CTA />
+            <HomeScrollHandler />
             {/* Далі додамо наступні секції */}
         </>
     );

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import HeaderCTA from "@/components/HeaderCTA";
 
 /**
  * HERO SECTION
@@ -46,12 +47,10 @@ export default function Hero() {
 
                 {/* CTA buttons */}
                 <div className="flex justify-center gap-4">
-                    <Link
-                        href="/apply"
-                        className="rounded-xl bg-red-600 px-6 py-3 text-white font-medium hover:bg-red-700"
-                    >
-                        Zgłoś się i zacznij pracę
-                    </Link>
+                    {/* CTA */}
+                    <HeaderCTA variant="primary">
+                        {t("apply")}
+                    </HeaderCTA>
 
                     <Link
                         href="/cars"

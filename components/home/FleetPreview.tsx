@@ -10,7 +10,7 @@ import Link from "next/link";
  */
 export default function FleetPreview() {
     return (
-        <section className="relative py-24">
+        <section id="cars-preview" className="relative py-24">
             {/* Контейнер для вирівнювання */}
             <div className="container mx-auto px-4">
 

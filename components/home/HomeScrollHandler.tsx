@@ -2,14 +2,15 @@
 
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import { scrollToContactForm } from "@/lib/scrollToContactForm";
+import { scrollToElement } from "@/lib/scrollToElement";
 
 export default function HomeScrollHandler() {
     const searchParams = useSearchParams();
 
     useEffect(() => {
-        if (searchParams.get("scroll") === "contact") {
-            scrollToContactForm();
+        const target = searchParams.get("scroll");
+        if (target) {
+            scrollToElement(target);
         }
     }, [searchParams]);
 

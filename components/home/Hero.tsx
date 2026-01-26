@@ -48,7 +48,7 @@ export default function Hero() {
                 {/* CTA buttons */}
                 <div className="flex justify-center gap-4">
                     {/* CTA */}
-                    <HeaderCTA variant="primary">
+                    <HeaderCTA targetId="contact-form" variant="primary">
                         {t("apply")}
                     </HeaderCTA>
 

@@ -7,6 +7,7 @@ import CooperationModes from '@/components/home/CooperationModes';
 import FleetPreview from "@/components/home/FleetPreview";
 import CTA from "@/components/home/CTA";
 import HomeScrollHandler from "@/components/home/HomeScrollHandler";
+import WhyUs from "@/components/home/WhyUs";
 
 
 export const metadata: Metadata = createMetadata(
@@ -21,6 +22,7 @@ export default function HomePage() {
         <>
             <Hero/>
             <CooperationModes />
+            <WhyUs />
             <FleetPreview />
             <CTA />
             <HomeScrollHandler />

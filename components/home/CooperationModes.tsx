@@ -12,7 +12,7 @@ import Link from 'next/link';
  */
 export default function CooperationModes() {
     return (
-        <section className="py-24 bg-gray-50">
+        <section id="cooperation-modes" className="py-24 bg-gray-50">
             <div className="container mx-auto px-4">
 
                 {/* Tytuł sekcji */}

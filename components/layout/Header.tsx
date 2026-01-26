@@ -22,19 +22,19 @@ export default function Header() {
 
                 {/* NAVIGATION */}
                 <nav className="hidden md:flex gap-8 text-sm text-gray-700">
-                    <Link href="/cars" className="hover:text-black">
-                        {t('cars')}
-                    </Link>
-                    <Link href="/drivers" className="hover:text-black">
-                        {t('drivers')}
-                    </Link>
+                    <HeaderCTA targetId="cars-preview">
+                        {t("cars")}
+                    </HeaderCTA>
+                    <HeaderCTA targetId="cooperation-modes">
+                        {t("drivers")}
+                    </HeaderCTA>
                     <Link href="/#kontakt" className="hover:text-black">
                         {t('contact')}
                     </Link>
                 </nav>
 
                 {/* CTA */}
-                <HeaderCTA variant="primary">
+                <HeaderCTA targetId="contact-form" variant="primary">
                     {t("apply")}
                 </HeaderCTA>
             </div>

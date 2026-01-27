@@ -168,5 +168,72 @@
     "phone": {
       "label": "Masz pytania? Zadzwoń:"
     }
+  },
+  "rentCar": {
+    "title": "Wynajmij auto — pracuj w Bolt / Uber bez własnego samochodu",
+    "text": "Zapewniamy gotowy do pracy samochód. Ty jeździsz i zarabiasz — resztą zajmujemy się my.",
+    "benefits": [
+      {
+        "title": "Bez własnych inwestycji",
+        "text": "Zaczynasz pracę bez wkładu własnego i dodatkowych opłat na start."
+      },
+      {
+        "title": "Auto gotowe do jazdy",
+        "text": "Hybrydy i automaty w pełni przygotowane do pracy jako taxi."
+      },
+      {
+        "title": "Szybki start",
+        "text": "Możliwość rozpoczęcia pracy nawet w kilka dni."
+      },
+      {
+        "title": "Szybki start",
+        "text": "Możliwość rozpoczęcia pracy nawet w kilka dni."
+      }
+    ],
+    "cta": {
+      "label": "Zobacz warunki wynajmu",
+      "hint": "Poznaj dostępne auta, koszty i zasady współpracy krok po kroku."
+    }
+  },
+  "fleetCar": {
+    "title": "Працюй на нашому авто — стань водієм Ginger Partner",
+    "text": "Отримай у користування брендований автомобіль і заробляй, спокійно виконуючи поїздки Bolt чи Uber.",
+    "benefits": [
+      { "title": "Надійний брендований автомобіль", "text": "Нічого свого вкладати не потрібно — отримуєш авто з нашою символікою." },
+      { "title": "Все включено", "text": "Обслуговування, страхування, документи та ліцензії — під нашою турботою." },
+      { "title": "Зручний графік", "text": "Працюй скільки хочеш, обирай зручні дні та години." },
+      { "title": "Підтримка 24/7", "text": "Ми завжди на звʼязку і допоможемо у будь-якій ситуації." }
+    ],
+    "cta": {
+      "label": "Дізнатися деталі",
+      "hint": "Перейди на наступний крок — переглянь умови та залиш заявку онлайн."
+    }
+  },
+  "driverCar": {
+    "title": "Працюй в Bolt / Uber — приєднуйся до Ginger Partner зі своїм авто",
+    "text": "Запрошуємо водіїв зі своїм автомобілем стати частиною нашої команди та отримати кращі умови для співпраці з Bolt та Uber.",
+    "benefits": [
+      {
+        "title": "Максимальний дохід",
+        "text": "Заробляй більше на власному авто — ми пропонуємо підвищений коефіцієнт."
+      },
+      {
+        "title": "Бонуси та підвищення тарифу",
+        "text": "Отримуй додаткові бонуси та вигідні ставки за виконані поїздки."
+      },
+      {
+        "title": "Регулярні виплати",
+        "text": "Отримуй стабільні виплати на картку раз на тиждень."
+      },
+      {
+        "title": "Допомога і підтримка",
+        "text": "Цілодобова підтримка та допомога від нашої команди."
+      }
+    ],
+    "cta": {
+      "label": "Отримати умови",
+      "hint": "Дізнайся більше про вигідну співпрацю та залиши заявку онлайн."
+    }
   }
+
 }

@@ -18,6 +18,9 @@ import WhyUs from "@/components/home/WhyUs";
 import FleetPreview from "@/components/home/FleetPreview";
 import CTA from "@/components/home/CTA";
 import HomeScrollHandler from "@/components/home/HomeScrollHandler";
+import RentCarSection from "@/components/home/RentCarSection";
+import FleetCarSection from "@/components/home/FleetCarSection";
+import DriverCar from "@/components/home/DriverCar";
 
 
 // ============================
@@ -57,9 +60,13 @@ export default async function HomePage() {
                головний меседж і перший контакт з користувачем */}
             <Hero />
 
+            <RentCarSection />
+            <FleetCarSection />
+            <DriverCar />
+
             {/* COOPERATION MODES
                Блок з варіантами співпраці */}
-            <CooperationModes />
+
 
             {/* WHY US
                Пояснення, чому варто обрати саме нас */}

@@ -1,0 +1,25 @@
+{
+  "brand": {
+    "description": "Partner Bolt i Uber w Rzeszowie. Stworzony przez kierowców — dla kierowców."
+  },
+
+  "navigation": {
+    "title": "Nawigacja",
+    "drivers": "Dla kierowców",
+    "cars": "Flota",
+    "reviews": "Opinie",
+    "apply": "Zgłoś się"
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "city": "Rzeszów",
+    "phone": "+48 723 000 500",
+    "email": "kontakt@gingerpartner.pl"
+  },
+
+  "legal": {
+    "privacy": "Polityka prywatności",
+    "cookies": "Cookies"
+  }
+}

@@ -2,98 +2,122 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+// ⬆️ Server-side i18n API
 
 /**
- * Секція з автомобілями для оренди.
- * ❗ Server Component (немає "use client")
- * ❗ Без стану, без JS-логіки
+ * Sekcja: Podgląd floty
+ *
+ * Prezentuje przykładowe samochody dostępne do wynajmu
+ * + CTA prowadzące do pełnej listy pojazdów.
+ *
+ * ❗ Server Component:
+ * - brak "use client"
+ * - brak stanu i logiki JS
  */
-export default function FleetPreview() {
+export default async function FleetPreview() {
+
+    // Підключаємо переклади з namespace "home"
+    const t = await getTranslations("home");
+
     return (
-        <section id="cars-preview" className="relative py-24">
-            {/* Контейнер для вирівнювання */}
+        <section
+            id="cars-preview"
+            className="relative py-24"
+        >
+            {/* Kontener dla wyrównania treści */}
             <div className="container mx-auto px-4">
 
-                {/* Заголовок */}
+                {/* Tytuł sekcji */}
                 <h2 className="text-center text-4xl font-semibold mb-6">
-                    Samochody dostępne do wynajmu
+                    {t("fleetPreview.title")}
                 </h2>
 
-                {/* Підзаголовок */}
+                {/* Podtytuł / opis */}
                 <p className="text-center text-gray-600 max-w-3xl mx-auto mb-16">
-                    Gotowe do pracy w profesjonalnym ruchu miejskim.
-                    Hybrydowe, oszczędne, automatyczne, bez wkładu własnego.
-                    Bezpieczne i gotowe do jazdy w taxi Bolt i Uber.
+                    {t("fleetPreview.subtitle")}
                 </p>
 
-                {/* Блок з авто */}
+                {/* Blok z przykładowymi samochodami */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
 
-                    {/* === Prius 30 === */}
+                    {/* === AUTO 1 === */}
                     <div className="text-center">
                         <Image
                             src="/cars/prius-30.png"
-                            alt="Toyota Prius 30"
+                            alt={t("fleetPreview.cars.prius.alt")}
                             width={520}
                             height={300}
                             className="mx-auto"
                         />
 
                         <h3 className="mt-6 text-xl font-medium">
-                            Toyota Prius 30
+                            {t("fleetPreview.cars.prius.title")}
                         </h3>
 
                         <ul className="mt-4 space-y-2 text-gray-700">
-                            <li>✔ Hybrid</li>
-                            <li>✔ Automat</li>
-                            <li>✔ Ekonomiczna</li>
+                            <li>✔ {t("fleetPreview.cars.prius.features.0")}</li>
+                            <li>✔ {t("fleetPreview.cars.prius.features.1")}</li>
+                            <li>✔ {t("fleetPreview.cars.prius.features.2")}</li>
                         </ul>
                     </div>
 
-                    {/* === Corolla Kombi === */}
+                    {/* === AUTO 2 === */}
                     <div className="text-center">
                         <Image
                             src="/cars/corolla-combi.png"
-                            alt="Toyota Corolla Hybrid Kombi"
+                            alt={t("fleetPreview.cars.corolla.alt")}
                             width={520}
                             height={300}
                             className="mx-auto"
                         />
 
                         <h3 className="mt-6 text-xl font-medium">
-                            Toyota Corolla Hybrid Kombi
+                            {t("fleetPreview.cars.corolla.title")}
                         </h3>
 
                         <ul className="mt-4 space-y-2 text-gray-700">
-                            <li>✔ Hybryda</li>
-                            <li>✔ Automat</li>
-                            <li>✔ Oszczędna</li>
+                            <li>✔ {t("fleetPreview.cars.corolla.features.0")}</li>
+                            <li>✔ {t("fleetPreview.cars.corolla.features.1")}</li>
+                            <li>✔ {t("fleetPreview.cars.corolla.features.2")}</li>
                         </ul>
                     </div>
+
                 </div>
 
-                {/* CTA */}
+                {/* CTA: przejście do pełnej floty */}
                 <div className="text-center mt-16">
                     <Link
                         href="/cars"
-                        className="inline-block rounded-xl bg-red-600 px-8 py-4 text-white font-medium hover:bg-red-700 transition"
+                        className="
+                            inline-block
+                            rounded-xl bg-red-600
+                            px-8 py-4
+                            text-white font-medium
+                            hover:bg-red-700 transition
+                        "
                     >
-                        Zobacz całą flotę
+                        {t("fleetPreview.cta")}
                     </Link>
                 </div>
 
-                {/* Іконки переваг */}
+                {/* Ikony zalet floty */}
                 <div className="mt-20 flex flex-wrap justify-center gap-12 text-gray-600">
+
                     <div className="flex items-center gap-2">
-                        🛠 Serwis 24/7
+                        🛠 {t("fleetPreview.benefits.service")}
                     </div>
+
                     <div className="flex items-center gap-2">
-                        🛡 Pełne ubezpieczenie
+                        🛡 {t("fleetPreview.benefits.insurance")}
                     </div>
+
                     <div className="flex items-center gap-2">
-                        🔑 Bez wkładu własnego
+                        🔑 {t("fleetPreview.benefits.deposit")}
                     </div>
+
                 </div>
+
             </div>
         </section>
     );

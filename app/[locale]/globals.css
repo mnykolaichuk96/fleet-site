@@ -1,10 +1,52 @@
+/* ============================
+   Tailwind базові шари
+   ============================ */
+
+/* base — CSS reset + базові стилі (normalize)
+   Аналог:
+   - у Java: базова конфігурація framework
+   - у CSS: reset.css / normalize.css */
 @tailwind base;
+
+/* components — готові UI-компоненти Tailwind
+   (кнопки, форми, typography presets) */
 @tailwind components;
+
+/* utilities — утилітарні класи (p-4, text-sm, flex, gap-6 і т.д.)
+   Це те, що ти найбільше використовуєш у JSX */
 @tailwind utilities;
 
+
+/* ============================
+   ВЛАСНІ КОМПОНЕНТИ
+   ============================ */
+
+/* @layer components
+   Каже Tailwind:
+   "ці стилі належать до шару components,
+    оброби їх правильно і не зламай порядок CSS" */
 @layer components {
+
+    /* .input — наш кастомний CSS-клас
+       Його можна використовувати як:
+       <input className="input" /> */
     .input {
-        @apply w-full rounded-xl border border-gray-200 px-4 py-3 text-sm
-        focus:outline-none focus:ring-2 focus:ring-red-500;
+
+        /* @apply дозволяє зібрати Tailwind utility-класи
+           в один семантичний клас */
+
+        @apply
+        w-full                 /* input займає всю ширину контейнера */
+        rounded-xl             /* заокруглені кути */
+        border                 /* стандартна рамка */
+        border-gray-200         /* світло-сіра рамка */
+        px-4                   /* горизонтальний padding */
+        py-3                   /* вертикальний padding */
+        text-sm                /* розмір шрифту */
+
+            /* focus:* — стилі, коли поле в фокусі */
+        focus:outline-none     /* прибираємо стандартний outline браузера */
+        focus:ring-2           /* додаємо ring (обводку) */
+        focus:ring-red-500;    /* червона обводка при фокусі */
     }
 }

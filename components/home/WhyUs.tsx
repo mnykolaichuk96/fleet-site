@@ -1,53 +1,82 @@
+"use client";
+// ⬆️ Client Component, bo:
+// - używa useTranslations
+// - zawiera CTA z akcją (scroll / klik)
+
+import { useTranslations } from "next-intl";
+import HeaderCTA from "@/components/HeaderCTA";
+
+/**
+ * WHY US SECTION
+ *
+ * Sekcja budująca zaufanie:
+ * - 3 kluczowe argumenty biznesowe
+ * - wyraźne ikony (szybka identyfikacja)
+ * - CTA prowadzące do kontaktu
+ */
 export default function WhyUs() {
+
+    // Tłumaczenia z namespace "home"
+    const t = useTranslations("home");
+
     return (
         <section className="container mx-auto px-4 py-20">
+
             {/* HEADER */}
             <h2 className="text-3xl font-bold text-center mb-12">
-                Dlaczego my?
+                {t("whyUs.title")}
             </h2>
 
             {/* CARDS */}
             <div className="grid gap-8 md:grid-cols-3">
-                {/* CARD 1 */}
-                <div className="rounded-2xl border bg-white p-8 transition hover:shadow-lg hover:border-gray-300">
+
+                {/* === CARD 1 === */}
+                <div className="
+                    rounded-2xl border bg-white p-8
+                    transition hover:shadow-lg hover:border-gray-300
+                ">
+                    {/* Ikona wizualna */}
                     <div className="text-5xl mb-6">🚗</div>
 
                     <h3 className="text-xl font-semibold mb-4">
-                        Rozliczenie elastyczne nawet do 0 zł
+                        {t("whyUs.items.flexible.title")}
                     </h3>
 
                     <p className="text-gray-600 leading-relaxed">
-                        Dopasowane do Ciebie formy rozliczeń. Możliwość rozliczenia
-                        abonamentowego, procentowego lub nawet 0 zł na start.
+                        {t("whyUs.items.flexible.text")}
                     </p>
                 </div>
 
-                {/* CARD 2 — HIGHLIGHT */}
-                <div className="rounded-2xl border-2 border-red-200 bg-red-50 p-8 shadow-md transition hover:shadow-xl">
+                {/* === CARD 2 (WYRÓŻNIONA) === */}
+                <div className="
+                    rounded-2xl border-2 border-red-200
+                    bg-red-50 p-8 shadow-md
+                    transition hover:shadow-xl
+                ">
                     <div className="text-5xl mb-6">🔑</div>
 
                     <h3 className="text-xl font-semibold mb-4">
-                        Zwracamy połowę VATu za paliwo
+                        {t("whyUs.items.vat.title")}
                     </h3>
 
                     <p className="text-gray-700 leading-relaxed">
-                        Zwracamy 50% VATu za paliwo. Nie pobieramy VATu z napiwków
-                        ani z bonusów — wszystko trafia do kierowcy.
+                        {t("whyUs.items.vat.text")}
                     </p>
                 </div>
 
-                {/* CARD 3 */}
-                <div className="rounded-2xl border bg-white p-8 transition hover:shadow-lg hover:border-gray-300">
+                {/* === CARD 3 === */}
+                <div className="
+                    rounded-2xl border bg-white p-8
+                    transition hover:shadow-lg hover:border-gray-300
+                ">
                     <div className="text-5xl mb-6">🚕</div>
 
                     <h3 className="text-xl font-semibold mb-4">
-                        Wszystkie koszty po naszej stronie
+                        {t("whyUs.items.costs.title")}
                     </h3>
 
                     <p className="text-gray-600 leading-relaxed">
-                        Zwracamy pieniądze za badania. Oferujemy do 60% od obrotu.
-                        100% napiwków i bonusów trafia do kierowców.
-                        Wszystkie koszty utrzymania samochodu są po naszej stronie.
+                        {t("whyUs.items.costs.text")}
                     </p>
                 </div>
             </div>
@@ -55,12 +84,13 @@ export default function WhyUs() {
             {/* CTA */}
             <div className="mt-14 text-center">
                 <p className="text-gray-600 mb-6">
-                    Masz pytania lub chcesz dobrać najlepszy model współpracy?
+                    {t("whyUs.cta.text")}
                 </p>
 
-                <button className="rounded-lg bg-red-600 px-6 py-3 text-white font-medium hover:bg-red-700 transition">
-                    Skontaktuj się z nami
-                </button>
+                {/* Scroll do formularza kontaktowego */}
+                <HeaderCTA target="contact" variant="primary">
+                    {t("whyUs.cta.button")}
+                </HeaderCTA>
             </div>
         </section>
     );

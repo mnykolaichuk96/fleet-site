@@ -1,40 +1,140 @@
 "use client";
+// ⬆️ Це Client Component, оскільки:
+// - використовується useRouter / usePathname
+// - є обробка кліку
+// - є взаємодія з DOM (scroll)
 
 import { usePathname, useRouter } from "next/navigation";
+// ⬆️ useRouter   — для клієнтської навігації (аналог redirect у SPA)
+// ⬆️ usePathname — дозволяє дізнатись, на якій сторінці ми зараз
+
 import { scrollToElement } from "@/lib/scrollToElement";
+// ⬆️ Утиліта для плавного скролу до DOM-елемента за id
+
+/**
+ * Логічні цілі навігації.
+ *
+ * Це НЕ DOM id.
+ * Це семантичні "наміри", які використовує Header.
+ *
+ * TypeScript гарантує, що:
+ * - не можна передати неіснуючий target
+ * - при додаванні нового target код не скомпілюється,
+ *   поки не буде оновлений mapping нижче
+ */
+type Target = "cars" | "contact" | "cooperation-modes";
 
 type Props = {
+    // Логічна ціль навігації (не id!)
+    target: Target;
+
+    // Текст або JSX всередині кнопки
     children: React.ReactNode;
-    targetId: string; // ⬅️ ОСНОВНЕ
+
+    // Візуальний варіант кнопки
+    // - "link"    → текстова кнопка
+    // - "primary" → головне CTA
     variant?: "primary" | "link";
 };
 
+/**
+ * HeaderCTA
+ *
+ * Універсальний навігаційний компонент.
+ *
+ * Поведінка:
+ * - якщо користувач на головній сторінці → плавний scroll
+ * - якщо на іншій сторінці → redirect на home + scroll
+ *
+ * Компонент НЕ знає структуру DOM напряму —
+ * він працює через логічні "targets".
+ */
 export default function HeaderCTA({
+                                      target,
                                       children,
-                                      targetId,
                                       variant = "link",
                                   }: Props) {
+    // Router Next.js для клієнтської навігації
     const router = useRouter();
+
+    // Поточний шлях, наприклад:
+    // /pl
+    // /pl/cars
+    // /ua/drivers
     const pathname = usePathname();
 
-    const base =
+    /**
+     * Явний mapping:
+     * логічний target → реальний DOM id
+     *
+     * Це КЛЮЧОВЕ місце:
+     * - тут зʼєднується логіка і DOM
+     * - Header не залежить від id елементів
+     */
+    const TARGET_ID_MAP: Record<Target, string> = {
+        cars: "cars-preview",
+        contact: "contact-form",
+        "cooperation-modes": "cooperation-modes",
+    };
+
+    // Отримуємо DOM id, до якого будемо скролити
+    const targetId = TARGET_ID_MAP[target];
+
+    /**
+     * Визначаємо, чи ми знаходимося на home page.
+     *
+     * Для локалізованого сайту:
+     * /pl
+     * /ua
+     * /en
+     *
+     * Після split("/") масив виглядає так:
+     * ["", "pl"]
+     */
+    const isHome = pathname.split("/").length === 2;
+
+    /**
+     * Базовий шлях з locale.
+     *
+     * Приклад:
+     * pathname = "/pl/cars"
+     * localeBase = "/pl"
+     *
+     * Це потрібно, щоб НЕ ламати локалізацію
+     * при router.push(...)
+     */
+    const localeBase = pathname.split("/").slice(0, 2).join("/");
+
+    // CSS-класи залежно від варіанту кнопки
+    const baseClass =
         variant === "primary"
             ? "rounded-lg bg-red-600 px-4 py-2 text-sm text-white font-medium hover:bg-red-700"
             : "text-sm text-gray-700 hover:text-black";
 
-    const isHome =
-        pathname === "/" || pathname.split("/").length === 2;
-
+    /**
+     * Обробник кліку.
+     *
+     * Алгоритм:
+     * 1. Перевіряємо, де ми зараз
+     * 2. Якщо home → просто скролимо
+     * 3. Якщо не home → робимо redirect на home
+     *    з параметром ?scroll=...
+     */
     const handleClick = () => {
         if (isHome) {
+            // 🟢 Головна сторінка вже відкрита
+            // → плавний scroll до потрібної секції
             scrollToElement(targetId);
         } else {
-            router.push(`/?scroll=${targetId}`);
+            // 🔵 Інша сторінка
+            // → редірект на home з параметром scroll
+            router.push(`${localeBase}?scroll=${targetId}`);
         }
     };
 
+    // Рендер кнопки
     return (
-        <button onClick={handleClick} className={base}>
+        <button onClick={handleClick} className={baseClass}>
             {children}
         </button>
     );

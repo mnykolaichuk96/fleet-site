@@ -1,0 +1,44 @@
+{
+  "seo": {
+    "title": "Praca jako kierowca Bolt i Uber w Rzeszowie",
+    "description": "Legalna i stabilna praca jako kierowca Bolt i Uber w Rzeszowie. Zapewniamy samochód, wsparcie i przejrzyste rozliczenia."
+  },
+
+  "title": "Praca dla kierowców Bolt i Uber",
+  "subtitle": "Zapewniamy samochód, pełne wsparcie i jasne warunki współpracy — Ty skupiasz się na jeździe.",
+
+  "benefits": {
+    "flexible": {
+      "title": "Elastyczne formy współpracy",
+      "text": "Wybierz model rozliczeń dopasowany do Twoich potrzeb — nawet bez opłat na start."
+    },
+    "legal": {
+      "title": "Legalna praca i rozliczenia",
+      "text": "Zajmujemy się formalnościami, podatkami i dokumentami — pracujesz spokojnie i legalnie."
+    },
+    "support": {
+      "title": "Wsparcie techniczne i operacyjne",
+      "text": "Pomagamy na każdym etapie współpracy — od startu po codzienną pracę."
+    }
+  },
+
+  "requirements": {
+    "title": "Wymagania",
+    "items": {
+      "license": "Prawo jazdy kat. B",
+      "age": "Ukończone 21 lat",
+      "documents": "Niekaralność i podstawowe dokumenty",
+      "availability": "Gotowość do pracy z aplikacjami Bolt i Uber"
+    }
+  },
+
+  "earnings": {
+    "title": "Zarobki",
+    "text": "Oferujemy konkurencyjne warunki finansowe, przejrzyste rozliczenia i terminowe wypłaty. Im więcej jeździsz, tym więcej zarabiasz."
+  },
+
+  "cta": {
+    "title": "Chcesz zacząć?",
+    "button": "Zgłoś się jako kierowca"
+  }
+}

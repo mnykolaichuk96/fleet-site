@@ -53,7 +53,7 @@ export async function generateMetadata(
     const { slug } = await params;
 
     // Підтягуємо переклади з namespace "cars"
-    const t = await getTranslations("cars");
+    const t = await getTranslations("carInstance");
 
     // Шукаємо авто в JSON
     const car = cars.find(c => c.slug === slug);
@@ -84,7 +84,7 @@ export default async function CarModelPage({ params }: PageProps) {
     const { slug } = await params;
 
     // Підключаємо переклади
-    const t = await getTranslations("cars");
+    const t = await getTranslations("carInstance");
 
     // Шукаємо офер (марка + модель)
     const offer = carOffers.find((o) => o.slug === slug);

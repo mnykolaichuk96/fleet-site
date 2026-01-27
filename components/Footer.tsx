@@ -1,56 +1,86 @@
 // src/components/Footer.tsx
 
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 
-export default function Footer() {
+/**
+ * FOOTER
+ *
+ * - wspólny dla całego serwisu
+ * - renderowany w layout.tsx
+ * - Server Component (brak interakcji)
+ * - pełna obsługa i18n
+ */
+export default async function Footer() {
+
+    // Server-side tłumaczenia
+    const t = await getTranslations("footer");
+
     return (
         <footer className="border-t bg-white">
             <div className="mx-auto max-w-6xl px-6 py-16">
 
-                {/* TOP PART */}
+                {/* ===== TOP PART ===== */}
                 <div className="grid gap-12 md:grid-cols-3">
 
-                    {/* BRAND */}
+                    {/* BRAND / OPIS */}
                     <div>
                         <div className="text-xl font-semibold">
                             <span className="text-red-600">Ginger</span> Partner
                         </div>
 
                         <p className="mt-4 text-sm text-gray-600">
-                            Partner Bolt i Uber w Rzeszowie.
-                            Stworzony przez kierowców — dla kierowców.
+                            {t("brand.description")}
                         </p>
                     </div>
 
                     {/* NAVIGATION */}
                     <div>
                         <h4 className="text-sm font-medium uppercase tracking-wide text-gray-900">
-                            Nawigacja
+                            {t("navigation.title")}
                         </h4>
 
                         <ul className="mt-4 space-y-2 text-sm text-gray-600">
-                            <li><Link href="/drivers">Dla kierowców</Link></li>
-                            <li><Link href="/cars">Flota</Link></li>
-                            <li><Link href="/opinie">Opinie</Link></li>
-                            <li><Link href="/apply">Zgłoś się</Link></li>
+                            <li>
+                                <Link href="/drivers">
+                                    {t("navigation.drivers")}
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/cars">
+                                    {t("navigation.cars")}
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/opinie">
+                                    {t("navigation.reviews")}
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/apply">
+                                    {t("navigation.apply")}
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
                     {/* CONTACT */}
                     <div>
                         <h4 className="text-sm font-medium uppercase tracking-wide text-gray-900">
-                            Kontakt
+                            {t("contact.title")}
                         </h4>
 
                         <ul className="mt-4 space-y-2 text-sm text-gray-600">
-                            <li>📍 Rzeszów</li>
+                            <li>
+                                📍 {t("contact.city")}
+                            </li>
                             <li>
                                 📞{" "}
                                 <a
                                     href="tel:+48723000500"
                                     className="hover:underline"
                                 >
-                                    +48 723 000 500
+                                    {t("contact.phone")}
                                 </a>
                             </li>
                             <li>
@@ -59,7 +89,7 @@ export default function Footer() {
                                     href="mailto:kontakt@gingerpartner.pl"
                                     className="hover:underline"
                                 >
-                                    kontakt@gingerpartner.pl
+                                    {t("contact.email")}
                                 </a>
                             </li>
                         </ul>
@@ -67,15 +97,25 @@ export default function Footer() {
 
                 </div>
 
-                {/* BOTTOM PART */}
-                <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t pt-6 text-xs text-gray-500 md:flex-row">
-          <span>
-            © {new Date().getFullYear()} Ginger Partner
-          </span>
+                {/* ===== BOTTOM PART ===== */}
+                <div className="
+                    mt-16 flex flex-col
+                    items-center justify-between
+                    gap-4 border-t pt-6
+                    text-xs text-gray-500
+                    md:flex-row
+                ">
+                    <span>
+                        © {new Date().getFullYear()} Ginger Partner
+                    </span>
 
                     <div className="flex gap-4">
-                        <Link href="/polityka-prywatnosci">Polityka prywatności</Link>
-                        <Link href="/cookies">Cookies</Link>
+                        <Link href="/polityka-prywatnosci">
+                            {t("legal.privacy")}
+                        </Link>
+                        <Link href="/cookies">
+                            {t("legal.cookies")}
+                        </Link>
                     </div>
                 </div>
 

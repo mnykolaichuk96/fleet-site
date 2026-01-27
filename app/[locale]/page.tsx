@@ -1,95 +1,82 @@
-import { useTranslations } from 'next-intl';
-import Link from 'next/link';
+// ============================
+// ІМПОРТИ
+// ============================
+
+// Тип для SEO metadata
 import type { Metadata } from "next";
+
+// Утиліта для створення стандартних SEO-метаданих
 import { createMetadata } from "@/lib/seo";
+
+// Server-side API next-intl для перекладів
+import { getTranslations } from "next-intl/server";
+
+// Компоненти головної сторінки
 import Hero from '@/components/home/Hero';
 import CooperationModes from '@/components/home/CooperationModes';
+import WhyUs from "@/components/home/WhyUs";
 import FleetPreview from "@/components/home/FleetPreview";
 import CTA from "@/components/home/CTA";
 import HomeScrollHandler from "@/components/home/HomeScrollHandler";
-import WhyUs from "@/components/home/WhyUs";
 
 
-export const metadata: Metadata = createMetadata(
-    "Praca kierowca Bolt i Uber Rzeszów – Wynajem samochodów taxi",
-    "Współpraca z kierowcami Bolt i Uber w Rzeszowie. Wynajem nowoczesnych samochodów taxi."
-);
+// ============================
+// SEO METADATA (SERVER SIDE)
+// ============================
 
-export default function HomePage() {
-    const t = useTranslations("home");
+// Metadata формується на сервері,
+// щоб пошукові боти одразу бачили правильні meta-теги
+export async function generateMetadata(): Promise<Metadata> {
 
-    return (
-        <>
-            <Hero/>
-            <CooperationModes />
-            <WhyUs />
-            <FleetPreview />
-            <CTA />
-            <HomeScrollHandler />
-            {/* Далі додамо наступні секції */}
-        </>
+    // Підключаємо переклади для home page
+    const t = await getTranslations("home");
+
+    return createMetadata(
+        t("seo.title"),
+        t("seo.description")
     );
 }
 
-    // return (
-    //     <main className="container mx-auto px-4 py-12">
-    //
-    //         {/* HERO */}
-    //         <section className="text-center mb-20">
-    //             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-    //                 {t("title")}
-    //             </h1>
-    //
-    //             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-    //                 {t("subtitle")}
-    //             </p>
-    //
-    //             <div className="flex justify-center gap-4 flex-wrap">
-    //                 <Link
-    //                     href="drivers"
-    //                     className="px-6 py-3 bg-black text-white rounded-xl hover:bg-gray-800 transition"
-    //                 >
-    //                     {t("ctaDrivers")}
-    //                 </Link>
-    //
-    //                 <Link
-    //                     href="cars"
-    //                     className="px-6 py-3 border rounded-xl hover:bg-gray-100 transition"
-    //                 >
-    //                     {t("ctaCars")}
-    //                 </Link>
-    //             </div>
-    //         </section>
-    //
-    //         {/* BENEFITS */}
-    //         <section className="grid md:grid-cols-3 gap-6 mb-20">
-    //             <div className="p-6 border rounded-xl text-center">
-    //                 {t("benefit1")}
-    //             </div>
-    //
-    //             <div className="p-6 border rounded-xl text-center">
-    //                 {t("benefit2")}
-    //             </div>
-    //
-    //             <div className="p-6 border rounded-xl text-center">
-    //                 {t("benefit3")}
-    //             </div>
-    //         </section>
-    //
-    //         {/* CTA */}
-    //         <section className="text-center bg-gray-100 p-10 rounded-xl">
-    //             <h2 className="text-2xl font-semibold mb-4">
-    //                 {t("ctaTitle")}
-    //             </h2>
-    //
-    //             <Link
-    //                 href="apply"
-    //                 className="inline-block px-6 py-3 bg-black text-white rounded-xl hover:bg-gray-800 transition"
-    //             >
-    //                 {t("ctaButton")}
-    //             </Link>
-    //         </section>
-    //
-    //     </main>
-    // );
-// }
+
+// ============================
+// HOME PAGE
+// ============================
+
+// Головна сторінка сайту
+// Server Component — рендериться на сервері
+export default async function HomePage() {
+
+    // Підключаємо переклади для контенту сторінки
+    // (Server Component → getTranslations)
+    const t = await getTranslations("home");
+
+    return (
+        <>
+            {/* HERO
+               Перша секція сторінки:
+               головний меседж і перший контакт з користувачем */}
+            <Hero />
+
+            {/* COOPERATION MODES
+               Блок з варіантами співпраці */}
+            <CooperationModes />
+
+            {/* WHY US
+               Пояснення, чому варто обрати саме нас */}
+            <WhyUs />
+
+            {/* FLEET PREVIEW
+               Превʼю автопарку з можливістю переходу */}
+            <FleetPreview />
+
+            {/* CTA
+               Заклик до дії (форма / кнопка) */}
+            <CTA />
+
+            {/* HOME SCROLL HANDLER
+               Обробляє scroll після редіректу з інших сторінок
+               (/?scroll=cars, /?scroll=contact і т.д.) */}
+            <HomeScrollHandler />
+        </>
+    );
+}

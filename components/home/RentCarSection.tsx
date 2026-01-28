@@ -8,8 +8,9 @@ export default function RentCarSection() {
     const t = useTranslations("home.rentCar");
 
     return (
-        <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white">
-            <div className="container mx-auto px-4 pt-28 lg:pt-36">
+        <section className="relative overflow-hidden ">
+
+        <div className="container mx-auto px-4 pt-28 lg:pt-36">
 
                 {/* ================= HERO ================= */}
                 <div className="max-w-xl mb-14 lg:mb-22">

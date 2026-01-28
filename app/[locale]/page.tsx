@@ -21,6 +21,8 @@ import HomeScrollHandler from "@/components/home/HomeScrollHandler";
 import RentCarSection from "@/components/home/RentCarSection";
 import FleetCarSection from "@/components/home/FleetCarSection";
 import DriverCar from "@/components/home/DriverCar";
+import FixedBackground from "@/components/home/FixedBackground";
+import OverlayFixed from "@/components/home/OverlayFixed";
 
 
 // ============================
@@ -55,10 +57,14 @@ export default async function HomePage() {
 
     return (
         <>
+            <FixedBackground/>
+            <main className="relative z-0">
+
             {/* HERO
                Перша секція сторінки:
                головний меседж і перший контакт з користувачем */}
             <Hero />
+            <OverlayFixed />   {/* ⬅️ тут */}
 
             <RentCarSection />
             <FleetCarSection />
@@ -84,6 +90,7 @@ export default async function HomePage() {
                Обробляє scroll після редіректу з інших сторінок
                (/?scroll=cars, /?scroll=contact і т.д.) */}
             <HomeScrollHandler />
+            </main>
         </>
     );
 }

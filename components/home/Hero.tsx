@@ -1,74 +1,88 @@
 "use client";
-// ⬆️ Client Component, bo:
-// - używa useTranslations
-// - zawiera interakcje (CTA, scroll)
 
-import Link from "next/link";
-import { useTranslations } from "next-intl";
-import HeaderCTA from "@/components/HeaderCTA";
-
-/**
- * HERO SECTION
- *
- * Zawiera:
- * - główny nagłówek (H1)
- * - podtytuł (SEO + kontekst)
- * - wizualne wyróżniki (ikony)
- * - dwa CTA (kontakt + flota)
- */
 export default function Hero() {
-
-    // Podłączamy tłumaczenia z namespace "home"
-    const t = useTranslations("home");
-
     return (
-        <section className="relative overflow-hidden bg-white py-24">
+        <section className="relative min-h-screen overflow-hidden">
 
-            {/* Tło symboliczne miasta (dekoracyjne, bez wpływu na SEO) */}
+            {/* BACKGROUND */}
+            {/*<div*/}
+            {/*    className="absolute inset-0 bg-cover bg-center scale-[1.03]"*/}
+            {/*    style={{ backgroundImage: "url('/bitone-rzeszow.png')" }}*/}
+            {/*/>*/}
+
+
+            {/* QUALITY MARK */}
             <div
-                className="absolute inset-0 bg-no-repeat bg-center opacity-10"
-                style={{ backgroundImage: "url('/rzeszow-symbol.svg')" }}
-            />
+                className="
+    pointer-events-none select-none
+    absolute top-1/2 right-[5%]
+    -translate-y-1/2
+    rotate-[10deg]
+    z-10
+  "
+            >
+                <div
+                    className="
+      relative
+      flex flex-col items-center justify-center
+      w-[240px] h-[240px]
+      rounded-full
+      border-2 border-[#0B1C2D]
+      bg-white/55
+      backdrop-blur-sm
+    "
+                >
+    <span className="text-[11px] tracking-[0.3em] uppercase text-[#0B1C2D]/80">
+      quality mark
+    </span>
 
-            <div className="relative container mx-auto px-4 text-center max-w-4xl">
+                    <span className="mt-3 text-[21px] font-semibold tracking-widest text-[#0B1C2D]">
+      PARTNER
+    </span>
 
-                {/* Badge / mała etykieta nad nagłówkiem */}
-                <div className="inline-block mb-6 rounded-full bg-gray-100 px-4 py-1 text-sm text-gray-600">
-                    {t("hero.badge")}
+                    <span className="mt-2 text-[10px] tracking-[0.35em] uppercase text-[#0B1C2D]/80">
+      z polecenia
+    </span>
                 </div>
+            </div>
 
-                {/* H1 — najważniejszy nagłówek strony */}
-                <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                    {t("hero.title")}
-                </h1>
 
-                {/* Podtytuł — doprecyzowanie kontekstu */}
-                <p className="text-lg text-gray-600 mb-10">
-                    {t("hero.subtitle")}
-                </p>
+            {/* CONTENT */}
+            <div className="relative z-20 flex min-h-[100svh] items-center justify-center px-6">
+                <div className="text-center max-w-[720px]">
 
-                {/* Ikony / krótkie USP */}
-                <div className="flex flex-col md:flex-row justify-center gap-8 mb-10 text-gray-700">
-                    <span>🚗 {t("hero.features.cars")}</span>
-                    <span>🎧 {t("hero.features.support")}</span>
-                    <span>🤝 {t("hero.features.rules")}</span>
-                </div>
-
-                {/* CTA BUTTONS */}
-                <div className="flex justify-center gap-4">
-
-                    {/* Główne CTA — scroll do formularza */}
-                    <HeaderCTA target="contact" variant="primary">
-                        {t("hero.primaryCta")}
-                    </HeaderCTA>
-
-                    {/* Drugorzędne CTA — przejście do floty */}
-                    <Link
-                        href="/cars"
-                        className="rounded-xl border px-6 py-3 font-medium hover:bg-gray-50"
+                    {/* TITLE */}
+                    <h1
+                        className="
+                            flex justify-center gap-3
+                            text-[clamp(4rem,9vw,7rem)]
+                            font-semibold
+                            tracking-tight
+                            leading-none
+                            mb-8
+                        "
                     >
-                        {t("hero.secondaryCta")}
-                    </Link>
+                        <span className="text-[#D97706] tracking-wide">
+                            GINGER
+                        </span>
+                        <span className="text-[#0A1A2F]/85 font-medium">
+                            PARTNER
+                        </span>
+                    </h1>
+
+                    {/* SUBTITLE */}
+                    <p className="mt-2 text-xl md:text-3xl font-normal leading-[1.6]">
+
+                       <span className="text-[#0A1A2F]/85">
+    Stworzony przez
+</span>
+                        <span className="text-[#D97706]"> kierowców</span>
+                        <br />
+                        <span className="text-[#0A1A2F]/85">
+    dla
+</span>
+                        <span className="text-[#D97706]"> kierowców</span>
+                    </p>
 
                 </div>
             </div>

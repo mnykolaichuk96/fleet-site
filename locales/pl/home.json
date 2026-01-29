@@ -5,170 +5,40 @@
   },
 
   "hero": {
-    "badge": "Partner z polecenia",
-
-    "title": "Stworzone przez kierowców.\nDla kierowców.",
-
-    "subtitle": "Partner Bolt i Uber w Rzeszowie — jasne warunki, nowoczesna flota i realne wsparcie.",
-
-    "features": {
-      "cars": "Nowoczesne samochody",
-      "support": "Wsparcie 24/7",
-      "rules": "Jasne zasady współpracy"
+    "title": {
+      "brand": "GINGER",
+      "partner": "PARTNER"
     },
-
-    "primaryCta": "Zgłoś się",
-    "secondaryCta": "Zobacz dostępne samochody"
-  },
-
-  "cooperationModes": {
-    "title": "Jak możesz z nami współpracować",
-
-    "more": "Dowiedz się więcej",
-
-    "items": {
-      "ownCar": {
-        "title": "Praca własnym samochodem",
-        "text": "Masz własny samochód? Pomożemy Ci rozpocząć legalną współpracę z Bolt i Uber.",
-        "benefits": [
-          "Rozliczenia i umowa",
-          "Wsparcie formalne",
-          "Pełna elastyczność"
-        ]
-      },
-
-      "rent": {
-        "title": "Wynajem samochodu",
-        "text": "Nie masz auta? Oferujemy nowoczesne samochody gotowe do pracy w taxi.",
-        "benefits": [
-          "Hybrydy i automaty",
-          "Bez wkładu własnego",
-          "Serwis i ubezpieczenie"
-        ],
-        "cta": "Zobacz dostępne samochody"
-      },
-
-      "partnerCar": {
-        "title": "Samochód Ginger Partner",
-        "text": "Pracuj na samochodzie flotowym Ginger Partner — my zajmiemy się całą resztą.",
-        "benefits": [
-          "Minimum formalności",
-          "Stałe warunki",
-          "Szybki start"
-        ],
-        "cta": "Zgłoś się"
-      }
+    "subtitle": {
+      "line1": "Stworzony przez",
+      "highlight1": "kierowców",
+      "line2": "dla",
+      "highlight2": "kierowców"
     },
-
-    "footer": "Nie wiesz, który model wybrać? Skontaktuj się z nami — doradzimy."
-  },
-
-  "whyUs": {
-    "title": "Dlaczego warto z nami współpracować",
-
-    "items": {
-      "flexible": {
-        "title": "Elastyczne rozliczenia — nawet od 0 zł",
-        "text": "Dopasowujemy model współpracy do Twoich potrzeb. Oferujemy rozliczenia abonamentowe, procentowe lub możliwość rozpoczęcia pracy bez opłat na start."
-      },
-
-      "vat": {
-        "title": "Zwrot VAT za paliwo i 100% napiwków",
-        "text": "Zwracamy 50% VAT za paliwo. Nie pobieramy VAT od napiwków ani bonusów — całość trafia bezpośrednio do kierowcy."
-      },
-
-      "costs": {
-        "title": "Wszystkie koszty po naszej stronie",
-        "text": "Zwracamy koszty badań, oferujemy do 60% od obrotu, a wszystkie koszty utrzymania samochodu — serwis, ubezpieczenie i naprawy — są po naszej stronie."
-      }
-    },
-
-    "cta": {
-      "text": "Masz pytania lub chcesz dobrać najlepszy model współpracy?",
-      "button": "Skontaktuj się z nami"
+    "qualityMark": {
+      "label": "quality mark",
+      "partner": "PARTNER",
+      "note": "z polecenia"
     }
   },
 
-  "fleetPreview": {
-    "title": "Samochody dostępne do wynajmu",
-
-    "subtitle": "Nowoczesne i ekonomiczne auta przygotowane do pracy w ruchu miejskim. Hybrydowe, automatyczne i gotowe do jazdy w aplikacjach Bolt i Uber — bez wkładu własnego.",
-
-    "cars": {
-      "prius": {
-        "title": "Toyota Prius 30",
-        "alt": "Toyota Prius 30 – samochód hybrydowy",
-        "features": [
-          "Hybryda",
-          "Automatyczna skrzynia biegów",
-          "Niskie spalanie"
-        ]
+  "whyUsInline": {
+    "items": [
+      {
+        "title": "Kompleksowe szkolenie",
+        "text": "Jasne warunki współpracy i minimum formalności."
       },
-
-      "corolla": {
-        "title": "Toyota Corolla Hybrid Kombi",
-        "alt": "Toyota Corolla Hybrid Kombi – samochód taxi",
-        "features": [
-          "Hybryda",
-          "Automatyczna skrzynia biegów",
-          "Ekonomiczna"
-        ]
+      {
+        "title": "0 VAT za napiwki i bonusy",
+        "text": "Całość napiwków i bonusów trafia bezpośrednio do Ciebie."
+      },
+      {
+        "title": "Zwrot kosztów badań",
+        "text": "Oddajemy koszt badań lekarskich po spełnieniu warunków."
       }
-    },
-
-    "cta": "Zobacz całą flotę",
-
-    "benefits": {
-      "service": "Serwis 24/7",
-      "insurance": "Pełne ubezpieczenie",
-      "deposit": "Bez wkładu własnego"
-    }
+    ]
   },
 
-  "cta": {
-    "badge": "Zanim rozpoczniesz",
-
-    "title": "Co musisz mieć, aby rozpocząć pracę jako kierowca?",
-
-    "requirements": {
-      "criminal": {
-        "title": "Zaświadczenie o niekaralności",
-        "text": "Do uzyskania w sądzie lub przez Krajowy Rejestr Karny. Dokument ważny 30 dni."
-      },
-      "medical": {
-        "title": "Badania lekarskie i psychologiczne",
-        "text": "Skierowanie otrzymasz od nas. Zwracamy część kosztów po 350 przejazdach."
-      },
-      "photo": {
-        "title": "Zdjęcie do identyfikatora",
-        "text": "Wykonamy je bezpłatnie w naszym biurze. Nie musisz nic przynosić."
-      }
-    },
-
-    "form": {
-      "title": "Zostaw kontakt — resztą zajmiemy się my",
-      "subtitle": "Podaj imię, numer telefonu i miasto. Oddzwonimy jeszcze dziś i pomożemy Ci szybko rozpocząć pracę.",
-
-      "fields": {
-        "name": "Twoje imię",
-        "phone": "Numer telefonu",
-        "email": "Adres e-mail",
-        "city": "Rzeszów"
-      },
-
-      "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych.",
-
-      "submit": "Wyślij zgłoszenie",
-      "submitting": "Wysyłanie…",
-      "success": "Zgłoszenie wysłane ✔ Skontaktujemy się z Tobą.",
-
-      "error": "Coś poszło nie tak. Spróbuj ponownie."
-    },
-
-    "phone": {
-      "label": "Masz pytania? Zadzwoń:"
-    }
-  },
   "rentCar": {
     "title": "Wynajmij auto — pracuj w Bolt / Uber bez własnego samochodu",
     "text": "Zapewniamy gotowy do pracy samochód. Ty jeździsz i zarabiasz — resztą zajmujemy się my.",
@@ -195,6 +65,7 @@
       "hint": "Poznaj dostępne auta, koszty i zasady współpracy krok po kroku."
     }
   },
+
   "fleetCar": {
     "title": "Працюй на нашому авто — стань водієм Ginger Partner",
     "text": "Отримай у користування брендований автомобіль і заробляй, спокійно виконуючи поїздки Bolt чи Uber.",
@@ -209,6 +80,7 @@
       "hint": "Перейди на наступний крок — переглянь умови та залиш заявку онлайн."
     }
   },
+
   "driverCar": {
     "title": "Працюй в Bolt / Uber — приєднуйся до Ginger Partner зі своїм авто",
     "text": "Запрошуємо водіїв зі своїм автомобілем стати частиною нашої команди та отримати кращі умови для співпраці з Bolt та Uber.",
@@ -234,6 +106,54 @@
       "label": "Отримати умови",
       "hint": "Дізнайся більше про вигідну співпрацю та залиши заявку онлайн."
     }
-  }
+  },
 
+  "cta": {
+    "badge": "Zanim rozpoczniesz",
+
+    "title": "Co musisz mieć, aby rozpocząć pracę jako kierowca?",
+
+    "requirements": {
+      "criminal": {
+        "title": "Zaświadczenie o niekaralności",
+        "text": "Do uzyskania w sądzie lub przez Krajowy Rejestr Karny. Dokument ważny 30 dni."
+      },
+      "medical": {
+        "title": "Badania lekarskie i psychologiczne",
+        "text": "Skierowanie otrzymasz od nas. Zwracamy część kosztów po 350 przejazdach."
+      },
+      "photo": {
+        "title": "Zdjęcie do identyfikatora",
+        "text": "Wykonamy je bezpłatnie w naszym biurze. Nie musisz nic przynosić."
+      }
+    }
+    },
+
+
+  "contactForm": {
+    "title": "Zostaw kontakt — resztą zajmiemy się my",
+    "subtitle": "Podaj imię, numer telefonu i miasto. Oddzwonimy jeszcze dziś i pomożemy Ci szybko rozpocząć pracę.",
+
+    "fields": {
+      "name": "Twoje imię",
+      "phone": "Numer telefonu",
+      "email": "Adres e-mail",
+      "city": "Rzeszów"
+    },
+
+    "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych.",
+
+    "submit": "Wyślij zgłoszenie",
+    "submitting": "Wysyłanie…",
+    "success": "Zgłoszenie wysłane ✔ Skontaktujemy się z Tobą.",
+
+    "error": "Coś poszło nie tak. Spróbuj ponownie."
+  },
+
+  "phone": {
+    "label": "Masz pytania? Zadzwoń:",
+    "numberPl": "+48 791 863 388",
+    "numberEu": "+48 791 863 388",
+    "numberUa": "+48 731 090 880"
+  }
 }

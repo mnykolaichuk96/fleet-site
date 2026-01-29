@@ -13,16 +13,17 @@ import { getTranslations } from "next-intl/server";
 
 // Компоненти головної сторінки
 import Hero from '@/components/home/Hero';
-import CooperationModes from '@/components/home/CooperationModes';
-import WhyUs from "@/components/home/WhyUs";
-import FleetPreview from "@/components/home/FleetPreview";
-import CTA from "@/components/home/CTA";
-import HomeScrollHandler from "@/components/home/HomeScrollHandler";
+import {WhyUsInline} from "@/components/home/WhyUsInline";
 import RentCarSection from "@/components/home/RentCarSection";
 import FleetCarSection from "@/components/home/FleetCarSection";
-import DriverCar from "@/components/home/DriverCar";
+import DriverCarSection from "@/components/home/DriverCarSection";
+import CTA from "@/components/home/CTA";
+
+import HomeScrollHandler from "@/components/home/HomeScrollHandler";
 import FixedBackground from "@/components/home/FixedBackground";
 import OverlayFixed from "@/components/home/OverlayFixed";
+import {RequestsInline} from "@/components/home/RequestsInline";
+import {ContactFormSection} from "@/components/home/ContactFormSection";
 
 
 // ============================
@@ -60,36 +61,25 @@ export default async function HomePage() {
             <FixedBackground/>
             <main className="relative z-0">
 
-            {/* HERO
-               Перша секція сторінки:
-               головний меседж і перший контакт з користувачем */}
             <Hero />
-            <OverlayFixed />   {/* ⬅️ тут */}
+                <WhyUsInline/>
+            <div className="relative">
+                <OverlayFixed />
 
             <RentCarSection />
             <FleetCarSection />
-            <DriverCar />
+            <DriverCarSection />
 
-            {/* COOPERATION MODES
-               Блок з варіантами співпраці */}
+            <RequestsInline/>
+            <ContactFormSection/>
 
-
-            {/* WHY US
-               Пояснення, чому варто обрати саме нас */}
-            <WhyUs />
-
-            {/* FLEET PREVIEW
-               Превʼю автопарку з можливістю переходу */}
-            <FleetPreview />
-
-            {/* CTA
-               Заклик до дії (форма / кнопка) */}
-            <CTA />
+            {/*<CTA />*/}
 
             {/* HOME SCROLL HANDLER
                Обробляє scroll після редіректу з інших сторінок
                (/?scroll=cars, /?scroll=contact і т.д.) */}
             <HomeScrollHandler />
+            </div>
             </main>
         </>
     );

@@ -1,12 +1,15 @@
 "use client";
 // ⬆️ Client Component, bo:
 // - używa useTranslations
-// - zawiera komponenty z obsługą kliknięć (HeaderCTA)
+// - zawiera komponenty z obsługą kliknięć (HeaderScrollLink)
 
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import HeaderCTA from "@/components/HeaderCTA";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
+import HeaderScrollLink from "@/components/layout/HeaderScrollLink";
+import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
+import Logo from "@/components/icons/Logo";
+import HeaderLogo from "@/components/layout/HeaderLogo";
+
 
 /**
  * Header
@@ -22,33 +25,30 @@ export default function Header() {
     const t = useTranslations("header");
 
     return (
-        <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
+        <header className="sticky top-0 z-50 bg-[#0B1C2D]/10 backdrop-blur border-b">
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
 
-                {/* LOGO
-                   Kliknięcie zawsze prowadzi do home */}
-                <Link href="/" className="font-bold text-lg">
-                    <span className="text-red-600">Ginger</span> Partner
-                </Link>
+                {/* LOGO */}
+                <HeaderLogo />
 
                 {/* NAVIGATION
                    Widoczna od md+ */}
-                <nav className="hidden md:flex gap-8 text-sm text-gray-700">
+                <nav className="hidden md:flex gap-8 text-sm ">
 
                     {/* Przejście / scroll do sekcji floty */}
-                    <HeaderCTA target="cars">
+                    <HeaderScrollLink target="cars">
                         {t("cars")}
-                    </HeaderCTA>
+                    </HeaderScrollLink>
 
                     {/* Przejście / scroll do form współpracy */}
-                    <HeaderCTA target="cooperation-modes">
+                    <HeaderScrollLink target="cooperation-modes">
                         {t("drivers")}
-                    </HeaderCTA>
+                    </HeaderScrollLink>
 
                     {/* Przejście / scroll do formularza kontaktowego */}
-                    <HeaderCTA target="contact">
+                    <HeaderScrollLink target="contact">
                         {t("contact")}
-                    </HeaderCTA>
+                    </HeaderScrollLink>
                 </nav>
 
                 {/* ===== RIGHT: LANG + CTA ===== */}
@@ -58,9 +58,9 @@ export default function Header() {
                     <LanguageSwitcher />
 
                     {/* Головне CTA — завжди веде до контакту */}
-                    <HeaderCTA target="contact" variant="primary">
+                    <HeaderScrollLink target="contact" variant="primary">
                         {t("apply")}
-                    </HeaderCTA>
+                    </HeaderScrollLink>
 
                 </div>
 

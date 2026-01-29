@@ -23,8 +23,10 @@ export default async function FleetPreview() {
     return (
         <section
             id="cars-preview"
-            className="relative py-24"
+            className="relative py-24 pb-12 lg:pb-16"
         >
+            <div className="absolute inset-0 bg-[#0B1C2D]/10 pointer-events-none" />
+            <div className="relative z-10">
             {/* Kontener dla wyrównania treści */}
             <div className="container mx-auto px-4">
 
@@ -118,6 +120,7 @@ export default async function FleetPreview() {
 
                 </div>
 
+            </div>
             </div>
         </section>
     );

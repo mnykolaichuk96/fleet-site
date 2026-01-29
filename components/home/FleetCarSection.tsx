@@ -8,10 +8,11 @@ export default function RentCarSection() {
   const t = useTranslations("home.fleetCar");
 
   return (
-      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white">
+      <section className="relative overflow-hidden pb-12 lg:pb-16">
+
         <div className="container mx-auto px-4 pt-28 lg:pt-36">
 
-          <div className="max-w-xl mb-14 lg:mb-22 ml-auto text-right">
+          <div className="max-w-xl mb-14 lg:mb-22 ml-auto mr-16 lg:mr-32 text-right">
             <h2 className="text-4xl lg:text-5xl font-semibold leading-tight mb-6">
               {t("title")}
             </h2>
@@ -73,6 +74,7 @@ export default function RentCarSection() {
 
           </div>
         </div>
+        {/*</div>*/}
       </section>
   );
 }

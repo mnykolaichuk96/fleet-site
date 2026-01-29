@@ -11,7 +11,7 @@ import { useForm } from "@formspree/react";
 // SVG / Icon компоненти
 import { CriminalRecordIcon } from "@/components/icons/CriminalRecordIcon";
 import { MedicalIcon } from "@/components/icons/MedicalIcon";
-import { PhotoIcon } from "@/components/icons/PhotoIcon";
+import { License } from "@/components/icons/LicenseIcon";
 
 
 export default function CTA() {
@@ -68,7 +68,7 @@ export default function CTA() {
 
                     {/* === WYMAGANIE 3 === */}
                     <div>
-                        <PhotoIcon className="mx-auto h-12 w-12 text-gray-600" />
+                        <License className="mx-auto h-12 w-12 text-gray-600" />
                         <h3 className="mt-6 text-lg font-medium">
                             {t("cta.requirements.photo.title")}
                         </h3>

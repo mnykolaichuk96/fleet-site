@@ -1,51 +1,45 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 export default function Hero() {
+    const t = useTranslations("home.hero");
+
     return (
-        <section className="relative min-h-screen overflow-hidden">
-
-            {/* BACKGROUND */}
-            {/*<div*/}
-            {/*    className="absolute inset-0 bg-cover bg-center scale-[1.03]"*/}
-            {/*    style={{ backgroundImage: "url('/bitone-rzeszow.png')" }}*/}
-            {/*/>*/}
-
-
-            {/* QUALITY MARK */}
+        <section id="hero" className="relative min-h-screen overflow-hidden">
             <div
                 className="
-    pointer-events-none select-none
-    absolute top-1/2 right-[5%]
-    -translate-y-1/2
-    rotate-[10deg]
-    z-10
-  "
+                    pointer-events-none select-none
+                    absolute top-1/2 right-[5%]
+                    -translate-y-1/2
+                    rotate-[10deg]
+                    z-10
+                  "
             >
                 <div
                     className="
-      relative
-      flex flex-col items-center justify-center
-      w-[240px] h-[240px]
-      rounded-full
-      border-2 border-[#0B1C2D]
-      bg-white/55
-      backdrop-blur-sm
-    "
+                      relative
+                      flex flex-col items-center justify-center
+                      w-[240px] h-[240px]
+                      rounded-full
+                      border-2 border-[#0B1C2D]
+                      bg-white/55
+                      backdrop-blur-sm
+                    "
                 >
-    <span className="text-[11px] tracking-[0.3em] uppercase text-[#0B1C2D]/80">
-      quality mark
-    </span>
+                    <span className="text-[11px] tracking-[0.3em] uppercase text-[#0B1C2D]/80">
+                      {t("qualityMark.label")}
+                    </span>
 
                     <span className="mt-3 text-[21px] font-semibold tracking-widest text-[#0B1C2D]">
-      PARTNER
-    </span>
+                      {t("qualityMark.partner")}
+                    </span>
 
                     <span className="mt-2 text-[10px] tracking-[0.35em] uppercase text-[#0B1C2D]/80">
-      z polecenia
-    </span>
+                      {t("qualityMark.note")}
+                    </span>
                 </div>
             </div>
-
 
             {/* CONTENT */}
             <div className="relative z-20 flex min-h-[100svh] items-center justify-center px-6">
@@ -63,27 +57,29 @@ export default function Hero() {
                         "
                     >
                         <span className="text-[#D97706] tracking-wide">
-                            GINGER
+                            {t("title.brand")}
                         </span>
                         <span className="text-[#0A1A2F]/85 font-medium">
-                            PARTNER
+                            {t("title.partner")}
                         </span>
                     </h1>
 
                     {/* SUBTITLE */}
                     <p className="mt-2 text-xl md:text-3xl font-normal leading-[1.6]">
-
-                       <span className="text-[#0A1A2F]/85">
-    Stworzony przez
-</span>
-                        <span className="text-[#D97706]"> kierowców</span>
+                        <span className="text-[#0A1A2F]/85">
+                            {t("subtitle.line1")}
+                        </span>
+                        <span className="text-[#D97706]">
+                            {" "}{t("subtitle.highlight1")}
+                        </span>
                         <br />
                         <span className="text-[#0A1A2F]/85">
-    dla
-</span>
-                        <span className="text-[#D97706]"> kierowców</span>
+                            {t("subtitle.line2")}
+                        </span>
+                        <span className="text-[#D97706]">
+                            {" "}{t("subtitle.highlight2")}
+                        </span>
                     </p>
-
                 </div>
             </div>
         </section>

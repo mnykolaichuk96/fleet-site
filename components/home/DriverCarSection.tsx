@@ -4,15 +4,17 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function DriverCar() {
+export default function DriverCarSection() {
     const t = useTranslations("home.driverCar");
 
     return (
-        <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white">
+        <section className="relative overflow-hidden pb-12 lg:pb-16">
+            <div className="absolute inset-0 bg-[#0B1C2D]/10 pointer-events-none" />
+            <div className="relative z-10">
             <div className="container mx-auto px-4 pt-28 lg:pt-36">
 
                 {/* ================= HERO ================= */}
-                <div className="max-w-xl mb-14 lg:mb-22">
+                <div className="max-w-xl mb-14 lg:mb-22 ml-16 lg:ml-32">
                     <h1 className="text-4xl lg:text-5xl font-semibold leading-tight mb-6">
                         {t("title")}
                     </h1>
@@ -32,6 +34,7 @@ export default function DriverCar() {
     absolute
     right-0
     bottom-full
+    -translate-x-14
     translate-y-1/4
     w-[68vw]
     max-w-3xl
@@ -72,6 +75,7 @@ export default function DriverCar() {
                     </div>
 
                 </div>
+            </div>
             </div>
         </section>
     );

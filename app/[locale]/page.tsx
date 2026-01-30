@@ -21,7 +21,7 @@ import CTA from "@/components/home/CTA";
 
 import HomeScrollHandler from "@/components/home/HomeScrollHandler";
 import FixedBackground from "@/components/home/FixedBackground";
-import OverlayFixed from "@/components/home/OverlayFixed";
+import FixedOverlay from "@/components/home/FixedOverlay";
 import {RequestsInline} from "@/components/home/RequestsInline";
 import {ContactFormSection} from "@/components/home/ContactFormSection";
 
@@ -64,7 +64,7 @@ export default async function HomePage() {
             <Hero />
                 <WhyUsInline/>
             <div className="relative">
-                <OverlayFixed />
+                <FixedOverlay />
 
             <RentCarSection />
             <FleetCarSection />

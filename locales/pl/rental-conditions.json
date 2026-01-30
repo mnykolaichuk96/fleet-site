@@ -1,0 +1,101 @@
+{
+  "intro": {
+    "title": "Warunki wynajmu samochodów",
+    "description": "Jasne zasady współpracy dla kierowców Bolt i Uber. Bez ukrytych kosztów i zbędnych formalności."
+  },
+
+  "quickConditions": {
+    "title": "Szybkie warunki",
+    "items": [
+      {
+        "icon": "settings",
+        "title": "Koszty",
+        "points": [
+          "Opłata tygodniowa",
+          "Brak ukrytych opłat"
+        ]
+      },
+      {
+        "icon": "file",
+        "title": "Umowa",
+        "points": [
+          "Jasne warunki",
+          "Minimum formalności"
+        ]
+      },
+      {
+        "icon": "car",
+        "title": "Samochód",
+        "points": [
+          "Serwis i ubezpieczenie",
+          "Auto zastępcze"
+        ]
+      },
+      {
+        "icon": "support",
+        "title": "Praca",
+        "points": [
+          "Bolt / Uber",
+          "Wsparcie floty"
+        ]
+      }
+    ]
+  },
+
+  "details": {
+    "title": "Szczegóły",
+    "items": [
+      {
+        "title": "Koszty i płatności",
+        "content": [
+          "Opłata rozliczana tygodniowo.",
+          "Brak ukrytych kosztów.",
+          "Kaucja ustalana indywidualnie."
+        ]
+      },
+      {
+        "title": "Umowa i okres wynajmu",
+        "content": [
+          "Elastyczny okres wynajmu.",
+          "Jasne zasady rozwiązania umowy."
+        ]
+      },
+      {
+        "title": "Samochód, serwis i ubezpieczenie",
+        "content": [
+          "Pełne ubezpieczenie w cenie.",
+          "Serwis techniczny po naszej stronie."
+        ]
+      },
+      {
+        "title": "Szkody i odpowiedzialność",
+        "content": [
+          "Jasne zasady odpowiedzialności.",
+          "Wsparcie w przypadku szkody."
+        ]
+      },
+      {
+        "title": "Praca w Bolt / Uber",
+        "content": [
+          "Pomoc w aktywacji konta.",
+          "Wsparcie operacyjne floty."
+        ]
+      },
+      {
+        "title": "Bonusy współpracy",
+        "content": [
+          "Program poleceń.",
+          "Dodatkowe premie za wyniki."
+        ]
+      }
+    ]
+  },
+
+  "cta": {
+    "title": "Gotowy, aby wybrać samochód?",
+    "primary": "Sprawdź samochody do wynajmu",
+    "secondary": "Złóż zgłoszenie"
+  }
+
+
+}

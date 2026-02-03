@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Car, FileText, Settings, LifeBuoy } from "lucide-react";
+import { useEffect, useState } from "react";
 
 import { NoVatRentalConditionsIcon } from "@/components/icons/NoVatRentalConditionsIcon";
 import { NoCommissionIcon } from "@/components/icons/NoCommissionIcon";
@@ -27,6 +28,22 @@ type QuickConditionItem = {
     title: QuickConditionTitle;
     points: string[];
 };
+type CommissionTier = {
+    range: string;
+    fee: {
+        amount: number;
+        percent: number;
+        highlight?: boolean;
+    };
+};
+
+type CommissionTable = {
+    title: string;
+    subtitle: string;
+    currency: string;
+    tiers: CommissionTier[];
+    note: string;
+};
 
 
 export default function QuickConditions() {
@@ -35,7 +52,15 @@ export default function QuickConditions() {
     const items = t.raw("quickConditions.items") as QuickConditionItem[];
     const leftItems = items.slice(0, 2);
     const rightItems = items.slice(2, 4);
+    const commission = t.raw("commissionTable") as CommissionTable;
 
+    const [tableEntered, setTableEntered] = useState(false);
+    const tableGrid = "grid grid-cols-[1fr_160px] items-center";
+
+    useEffect(() => {
+        const t = setTimeout(() => setTableEntered(true), 150);
+        return () => clearTimeout(t);
+    }, []);
 
     return (
         <section className="py-2 lg:py-6">
@@ -49,10 +74,6 @@ export default function QuickConditions() {
                   shadow-[0_30px_70px_-35px_rgba(0,0,0,0.18)]
                 "
             >
-                {/* Section title */}
-                <h2 className="text-2xl font-semibold mb-8">
-                    {title}
-                </h2>
 
                 {/* Inner cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -199,47 +220,61 @@ export default function QuickConditions() {
 
                     {/* RIGHT COLUMN – COMMISSION TABLE (LIGHT) */}
                     <div
-                        className="
-    h-full
-    rounded-2xl
-    bg-white/85
-    backdrop-blur
-    p-6 md:p-8
-    border-2 border-[#0B1C2D]/70
-    shadow-sm
-  "
+                        className={`
+                            h-full
+                            rounded-2xl
+                            p-7 md:p-9
+                            border border-gray-200/60
+                            backdrop-blur
+                            transition-all duration-700 ease-out
+                            ${tableEntered
+                            ? "bg-white shadow-[0_30px_70px_-35px_rgba(0,0,0,0.22)] opacity-100 translate-y-0"
+                            : "bg-white/70 shadow-[0_15px_40px_-40px_rgba(0,0,0,0.12)] opacity-0 translate-y-2"
+                            }
+                        `}
                     >
                         {/* HEADER */}
-                        <div className="grid grid-cols-2 px-4 pb-4 -mx-6 md:-mx-8 bg-[#0B1C2D]/10 text-[#D97706] font-medium">
-                            <span>Obrót tygodniowy</span>
-                            <span>Prowizja</span>
+
+
+                        <div className="grid grid-cols-2 items-center mb-4 text-sm font-semibold text-gray-500 transition-colors duration-200 hover:bg-gray-50">
+
+                            <h3 className="text-lg font-semibold">
+                                {commission.title}
+                            </h3>
+                            <p className="text-sm text-gray-500 text-right">
+                                {commission.subtitle}
+                            </p>
                         </div>
 
-                        {/* ROW 1 */}
-                        <div className="grid grid-cols-2 px-4 py-5 text-gray-800">
-                            <span>0–999 zł</span>
-                            <span>50 zł + 1%</span>
-                        </div>
+                        <div className="space-y-4">
 
-                        {/* ROW 2 – FULL WIDTH STRIPE */}
-                        <div className="-mx-6 md:-mx-8 bg-[#0B1C2D]/10">
-                            <div className="grid grid-cols-2 px-10 py-8 text-gray-800">
-                                <span>1000–1999 zł</span>
-                                <span>25 zł + 1%</span>
+                            <div
+                                className="flex justify-between items-center rounded-xl bg-gray-50 px-5 py-4 transition-colors duration-200 hover:bg-gray-100">
+                                <span className="text-gray-700">0-999 {commission.currency}</span>
+                                <span className="font-medium">
+                                  50 {commission.currency} <span className="text-gray-500 text-sm">+ 1%</span>
+                                </span>
                             </div>
-                        </div>
 
-                        {/* ROW 3 */}
-                        <div className="grid grid-cols-2 px-4 py-5">
-                            <span className="font-semibold text-gray-900">2000+ zł</span>
-                            <span className="font-semibold text-[#D97706]">0 zł + 0%</span>
+                            <div className="flex justify-between items-center rounded-xl bg-gray-50 px-5 py-4 transition-colors duration-200 hover:bg-gray-100">
+                                <span className="text-gray-700">1000–1999 {commission.currency}</span>
+                                <span className="font-medium">
+                                    25 {commission.currency} <span className="text-gray-500 text-sm">+ 1%</span>
+                                </span>
+                            </div>
+
+                            <div className="flex justify-between items-center rounded-xl bg-[#FFF7ED] px-5 py-4 transition-colors duration-200 hover:bg-[#FFF1DD]">
+                                <span className="font-semibold text-gray-900">2000+ {commission.currency}</span>
+                                <span className="font-semibold text-[#D97706]">
+                                  0 {commission.currency} <span className="text-[#D97706]/70 text-sm">+ 0%</span>
+                                </span>
+
+                            </div>
+                            <p className="mt-4 text-xs text-gray-400">
+                                {commission.note}
+                            </p>
                         </div>
                     </div>
-
-
-
-
-
 
                 </div>
 

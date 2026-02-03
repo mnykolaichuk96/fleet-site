@@ -44,6 +44,13 @@
     ]
   },
 
+  "commissionTable": {
+    "title": "Obrót tygodniowy",
+    "subtitle": "Prowizja",
+    "currency": "zł",
+    "note": "Prowizja naliczana automatycznie co tydzień"
+  },
+
   "details": {
     "title": "Szczegóły",
     "items": [

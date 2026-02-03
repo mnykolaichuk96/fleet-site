@@ -27,9 +27,6 @@ export default function DetailsAccordion() {
           shadow-[0_30px_70px_-35px_rgba(0,0,0,0.18)]
         "
             >
-                <h2 className="text-2xl font-semibold mb-8">
-                    {t("details.title")}
-                </h2>
 
                 <div className="divide-y divide-gray-100">
                     {items.map((item, index) => {

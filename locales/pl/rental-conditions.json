@@ -8,19 +8,21 @@
     "title": "Szybkie warunki",
     "items": [
       {
-        "icon": "settings",
-        "title": "Koszty",
-        "points": [
-          "Opłata tygodniowa",
-          "Brak ukrytych opłat"
-        ]
+        "icon": "noCommission",
+        "title": {
+          "main": "Możesz pracować nawet",
+          "highlight": "bez prowizji"
+        },
+        "points": []
       },
       {
-        "icon": "file",
-        "title": "Umowa",
+        "icon": "noVat",
+        "title": {
+          "main": "0% VATu"
+        },
         "points": [
-          "Jasne warunki",
-          "Minimum formalności"
+          "od bonusów",
+          "od napiwków"
         ]
       },
       {

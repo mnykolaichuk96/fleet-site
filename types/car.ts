@@ -13,12 +13,4 @@ export type CarOffer = {
     icon: string;              // /icons/toyota.svg
 };
 
-export type CarInstance = {
-    id: string;
-    offerSlug: string;         // link to CarOffer
-    year: number;
-    mileage: number;
-    equipment: string[];
-    images: string[];
-    available: boolean;
-};
+

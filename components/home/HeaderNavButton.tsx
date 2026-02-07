@@ -17,7 +17,7 @@ import { scrollToElement } from "@/lib/scrollToElement";
 // Тип пропсів для кнопки
 type Props = {
     // target визначає, КУДИ має скролити кнопка
-    // "cars" → секція вибору авто
+    // "car-instance" → секція вибору авто
     // "contact" → форма заявки
     // "cooperation-modes" → секція "Jak możesz z nami pracować?"
     target: "cars" | "contact" | "cooperation-modes";
@@ -30,7 +30,7 @@ export default function HeaderNavButton({ target, children }: Props) {
     // router — для редіректу між сторінками
     const router = useRouter();
 
-    // pathname — поточний URL (/pl, /pl/cars, /pl/cars/slug і т.д.)
+    // pathname — поточний URL (/pl, /pl/car-instance, /pl/car-instance/slug і т.д.)
     const pathname = usePathname();
 
     // locale — поточна мова, наприклад "pl"
@@ -50,7 +50,7 @@ export default function HeaderNavButton({ target, children }: Props) {
 
             scrollToElement(
                 target === "cars"
-                    ? "cars-preview"            // секція з превʼю авто
+                    ? "car-instance-preview"            // секція з превʼю авто
                     : target === "contact"
                         ? "contact-form"            // форма заявки
                         : "cooperation-modes"       // секція моделей співпраці

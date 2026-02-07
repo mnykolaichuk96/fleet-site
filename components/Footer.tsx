@@ -41,7 +41,7 @@ export default async function Footer() {
                             </li>
                             <li>
                                 <Link href="/cars" className="hover:text-white">
-                                    {t("navigation.cars")}
+                                    {t("navigation.car-instance")}
                                 </Link>
                             </li>
                             <li>

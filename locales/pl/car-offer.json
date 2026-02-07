@@ -1,0 +1,42 @@
+{
+  "seoTitle": "Wynajem samochodów taxi w Rzeszowie",
+  "seoDescription": "Nowoczesne samochody do pracy w Bolt i Uber w Rzeszowie.",
+
+  "rentalConditions": "Warunki wynajmu",
+  "fleetTitle": {
+    "part1": "Dostępna",
+    "part2": "flota",
+    "part3": "samochodów"
+  },
+
+  "offer": {
+    "imageAlt": "Samochód {brand} {model}",
+
+    "labels": {
+      "gearbox": {
+        "automatic": "Automatyczna skrzynia biegów",
+        "manual": "Manualna skrzynia biegów"
+      },
+
+      "fuel": {
+        "hybrid": "Hybryda",
+        "petrol": "Benzyna",
+        "diesel": "Diesel",
+        "electric": "Elektryczny"
+      }
+    },
+
+    "consumption": "Średnie spalanie: {consumption}",
+    "currency": "zł",
+    "perWeek": "/ tydzień",
+    "cta": "Zobacz dostępne samochody"
+  },
+
+  "cars": {
+    "toyota-prius-30": {
+      "title": "Toyota Prius",
+      "subtitle": "Hybryda idealna do miasta"
+    }
+  }
+}
+

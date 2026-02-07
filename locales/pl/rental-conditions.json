@@ -1,7 +1,11 @@
 {
   "intro": {
-    "title": "Warunki wynajmu samochodów",
-    "description": "Jasne zasady współpracy dla kierowców Bolt i Uber. Bez ukrytych kosztów i zbędnych formalności."
+    "title": {
+      "part1": "Warunki",
+      "part2": "wynajmu",
+      "part3": "samochodów"
+    },
+    "description": "Zasady współpracy dla kierowców Bolt i Uber — jasno, bezpiecznie i bez zbędnych formalności."
   },
 
   "quickConditions": {
@@ -52,49 +56,40 @@
   },
 
   "details": {
-    "title": "Szczegóły",
     "items": [
       {
         "title": "Koszty i płatności",
+        "intro": [],
         "content": [
-          "Opłata rozliczana tygodniowo.",
-          "Brak ukrytych kosztów.",
-          "Kaucja ustalana indywidualnie."
+          "Prowizja rozliczeniowa (nawet 0 zł, w zależności od obrotu).",
+          "+ 8% VAT.",
+          "Podatek od umowy zlecenia — 50 zł tygodniowo (dla studentów do 26. roku życia — 0 zł).",
+          "Kaucja nie jest wymagana."
         ]
       },
       {
-        "title": "Umowa i okres wynajmu",
+        "title": "Zwrot 50% VAT za paliwo",
+        "intro": [],
         "content": [
-          "Elastyczny okres wynajmu.",
-          "Jasne zasady rozwiązania umowy."
+          "Zwracamy 50% kwoty VAT zawartej w kosztach paliwa.",
+          "Rozliczenie odbywa się automatycznie. Brak dodatkowych formalności po Państwa stronie."
         ]
       },
       {
         "title": "Samochód, serwis i ubezpieczenie",
+        "intro": "Zapewniamy samochód w pełni przygotowany do pracy w TAXI.",
         "content": [
-          "Pełne ubezpieczenie w cenie.",
-          "Serwis techniczny po naszej stronie."
-        ]
-      },
-      {
-        "title": "Szkody i odpowiedzialność",
-        "content": [
-          "Jasne zasady odpowiedzialności.",
-          "Wsparcie w przypadku szkody."
+          "Ubezpieczenie TAXI po naszej stronie.",
+          "Pełen serwis techniczny po naszej stronie.",
+          "Samochód zastępczy na czas naprawy lub przeglądu."
         ]
       },
       {
         "title": "Praca w Bolt / Uber",
+        "intro": "Zapewniamy pełne wsparcie formalne przy rozpoczęciu współpracy.",
         "content": [
           "Pomoc w aktywacji konta.",
-          "Wsparcie operacyjne floty."
-        ]
-      },
-      {
-        "title": "Bonusy współpracy",
-        "content": [
-          "Program poleceń.",
-          "Dodatkowe premie za wyniki."
+          "Kompleksowe szkolenie z obsługi aplikacji mobilnych"
         ]
       }
     ]

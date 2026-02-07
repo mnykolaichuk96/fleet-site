@@ -24,7 +24,7 @@ export default function CtaSection() {
                 </h2>
 
                 <Link
-                    href="/samochody-do-wynajmu"
+                    href="/cars"
                     className="
                       inline-flex items-center justify-center
                       rounded-xl

@@ -11,7 +11,7 @@ export type HeaderTarget =
 
 const TARGET_ID_MAP: Record<HeaderTarget, string> = {
     hero: "hero",
-    cars: "cars-preview",
+    cars: "car-instance-preview",
     contact: "contact-form",
     "cooperation-modes": "cooperation-modes",
 };

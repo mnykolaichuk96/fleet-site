@@ -1,28 +1,25 @@
 {
-  "notFoundTitle": "Samochód nie znaleziony",
-  "notFoundDescription": "Nie znaleziono samochodu w naszej flocie.",
-
-  "seoTitle": "{title} – wynajem taxi w Rzeszowie",
-  "seoDescription": "Wynajem {title} do pracy w Bolt i Uber w Rzeszowie.",
-
-  "backToFleet": "← Wróć do floty",
-
-  "description": "Automatyczna skrzynia biegów, niskie spalanie ({consumption}), idealne do pracy w aplikacjach.",
-
-  "pricePerWeek": "{price} zł / tydzień",
-
-  "carousel": {
-    "imageAlt": "Zdjęcie samochodu ({index})",
-    "prev": "Poprzednie zdjęcie",
-    "next": "Następne zdjęcie"
+  "intro":{
+    "backToOffers": "Wróc do floty",
+    "rentalConditions": "Warunki wynajmu"
   },
 
-  "year": "Rok produkcji",
-  "mileage": "Przebieg",
 
-  "status": {
-    "label": "Status",
-    "available": "Dostępny",
-    "unavailable": "Zajęty"
+  "equipment": {
+    "rear_camera": "Kamera cofania",
+    "carPlay": "Apple CarPlay, Android Auto",
+    "dashcam": "Wideorejestrator",
+    "keyLess": "System bezkluczykowy"
+  },
+
+
+
+"carInstance": {
+    "status": {
+      "available": "Dostępny",
+      "rented": "Wynajęty"
+    },
+
+    "cta": "Wybierz ten samochód"
   }
 }

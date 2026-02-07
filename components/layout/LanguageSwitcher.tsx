@@ -16,7 +16,7 @@ import { locales } from "@/lib/i18n";
  * /[locale]/...
  *
  * Приклад:
- * /pl/cars  → /ua/cars
+ * /pl/car-instance  → /ua/car-instance
  * /en       → /pl
  */
 export default function LanguageSwitcher() {
@@ -25,7 +25,7 @@ export default function LanguageSwitcher() {
 
     // Поточний шлях, наприклад:
     // /pl
-    // /pl/cars
+    // /pl/car-instance
     // /ua/drivers
     const pathname = usePathname();
 
@@ -33,7 +33,7 @@ export default function LanguageSwitcher() {
      * Розбиваємо pathname на частини.
      *
      * Приклад:
-     * "/pl/cars" → ["", "pl", "cars"]
+     * "/pl/car-instance" → ["", "pl", "car-instance"]
      */
     const segments = pathname.split("/");
 

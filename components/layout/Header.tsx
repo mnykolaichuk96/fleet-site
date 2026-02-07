@@ -35,10 +35,17 @@ export default function Header() {
                    Widoczna od md+ */}
                 <nav className="hidden md:flex gap-8 text-sm ">
 
-                    {/* Przejście / scroll do sekcji floty */}
-                    <HeaderScrollLink target="cars">
+                    <Link
+                        href="/cars"
+                        className="
+                            text-sm font-medium text-[#0A1A2F]/80
+                            hover:text-[#0A1A2F]
+                            hover:text-[#0A1A2F]
+                            transition-colors
+                          "
+                    >
                         {t("cars")}
-                    </HeaderScrollLink>
+                    </Link>
 
                     {/* Przejście / scroll do form współpracy */}
                     <HeaderScrollLink target="cooperation-modes">

@@ -77,7 +77,7 @@ export default async function HomePage() {
 
             {/* HOME SCROLL HANDLER
                Обробляє scroll після редіректу з інших сторінок
-               (/?scroll=cars, /?scroll=contact і т.д.) */}
+               (/?scroll=car-instance, /?scroll=contact і т.д.) */}
             <HomeScrollHandler />
             </div>
             </main>

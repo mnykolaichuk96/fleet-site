@@ -28,7 +28,7 @@ import { scrollToElement } from "@/lib/scrollToElement";
  *
  * Приклад:
  *   /pl?scroll=contact
- *   /pl?scroll=cars
+ *   /pl?scroll=car-instance
  */
 export default function HomeScrollHandler() {
 

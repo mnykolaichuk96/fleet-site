@@ -47,20 +47,20 @@ export default async function FleetPreview() {
                     <div className="text-center">
                         <Image
                             src="/cars/prius-30.png"
-                            alt={t("fleetPreview.cars.prius.alt")}
+                            alt={t("fleetPreview.car-instance.prius.alt")}
                             width={520}
                             height={300}
                             className="mx-auto"
                         />
 
                         <h3 className="mt-6 text-xl font-medium">
-                            {t("fleetPreview.cars.prius.title")}
+                            {t("fleetPreview.car-instance.prius.title")}
                         </h3>
 
                         <ul className="mt-4 space-y-2 text-gray-700">
-                            <li>✔ {t("fleetPreview.cars.prius.features.0")}</li>
-                            <li>✔ {t("fleetPreview.cars.prius.features.1")}</li>
-                            <li>✔ {t("fleetPreview.cars.prius.features.2")}</li>
+                            <li>✔ {t("fleetPreview.car-instance.prius.features.0")}</li>
+                            <li>✔ {t("fleetPreview.car-instance.prius.features.1")}</li>
+                            <li>✔ {t("fleetPreview.car-instance.prius.features.2")}</li>
                         </ul>
                     </div>
 
@@ -68,20 +68,20 @@ export default async function FleetPreview() {
                     <div className="text-center">
                         <Image
                             src="/cars/corolla-combi.png"
-                            alt={t("fleetPreview.cars.corolla.alt")}
+                            alt={t("fleetPreview.car-instance.corolla.alt")}
                             width={520}
                             height={300}
                             className="mx-auto"
                         />
 
                         <h3 className="mt-6 text-xl font-medium">
-                            {t("fleetPreview.cars.corolla.title")}
+                            {t("fleetPreview.car-instance.corolla.title")}
                         </h3>
 
                         <ul className="mt-4 space-y-2 text-gray-700">
-                            <li>✔ {t("fleetPreview.cars.corolla.features.0")}</li>
-                            <li>✔ {t("fleetPreview.cars.corolla.features.1")}</li>
-                            <li>✔ {t("fleetPreview.cars.corolla.features.2")}</li>
+                            <li>✔ {t("fleetPreview.car-instance.corolla.features.0")}</li>
+                            <li>✔ {t("fleetPreview.car-instance.corolla.features.1")}</li>
+                            <li>✔ {t("fleetPreview.car-instance.corolla.features.2")}</li>
                         </ul>
                     </div>
 

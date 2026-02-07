@@ -19,7 +19,7 @@ export default getRequestConfig(async ({ locale }) => {
         // які будуть доступні через getTranslations / useTranslations
         //
         // Кожен ключ тут = окремий namespace
-        // (cars, home, header і т.д.)
+        // (car-instance, home, header і т.д.)
         messages: {
             // Загальні тексти (кнопки, короткі підписи)
             common: (await import(`@/locales/${resolvedLocale}/common.json`)).default,
@@ -31,7 +31,7 @@ export default getRequestConfig(async ({ locale }) => {
             home: (await import(`@/locales/${resolvedLocale}/home.json`)).default,
 
             // Тексти сторінок з авто та моделями
-            cars: (await import(`@/locales/${resolvedLocale}/cars.json`)).default,
+            carOffer: (await import(`@/locales/${resolvedLocale}/car-offer.json`)).default,
 
             // Тексти для картки конкретного авто
             carInstance: (await import(`@/locales/${resolvedLocale}/car-instance.json`)).default,

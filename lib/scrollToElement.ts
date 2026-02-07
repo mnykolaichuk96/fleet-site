@@ -4,7 +4,7 @@
 
 export const scrollToElement = (
     id: string,        // id HTML-елемента, до якого треба проскролити
-                       // (наприклад "contact-form" або "cars-preview")
+                       // (наприклад "contact-form" або "car-instance-preview")
 
     retries = 10,      // кількість спроб знайти елемент у DOM
                        // якщо DOM ще не готовий (default значення)

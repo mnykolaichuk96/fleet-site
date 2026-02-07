@@ -1,20 +1,10 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Car, FileText, Settings, LifeBuoy } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import { NoVatRentalConditionsIcon } from "@/components/icons/NoVatRentalConditionsIcon";
 import { NoCommissionIcon } from "@/components/icons/NoCommissionIcon";
-
-const iconMap: Record<string, React.ElementType> = {
-    car: Car,
-    file: FileText,
-    settings: Settings,
-    support: LifeBuoy,
-    noVat: NoVatRentalConditionsIcon,
-    noCommission: NoCommissionIcon,
-};
 
 type QuickConditionTitle =
     | string
@@ -48,14 +38,11 @@ type CommissionTable = {
 
 export default function QuickConditions() {
     const t = useTranslations("rental-conditions");
-    const title = t("quickConditions.title");
     const items = t.raw("quickConditions.items") as QuickConditionItem[];
     const leftItems = items.slice(0, 2);
-    const rightItems = items.slice(2, 4);
     const commission = t.raw("commissionTable") as CommissionTable;
 
     const [tableEntered, setTableEntered] = useState(false);
-    const tableGrid = "grid grid-cols-[1fr_160px] items-center";
 
     useEffect(() => {
         const t = setTimeout(() => setTableEntered(true), 150);

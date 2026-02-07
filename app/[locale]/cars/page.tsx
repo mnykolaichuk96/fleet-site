@@ -1,35 +1,26 @@
-// Дані авто (тимчасово як заміна БД)
-import cars from '@/data/cars.json';
-
-// Тип для SEO metadata
-import type { Metadata } from 'next';
-
-// Утиліта для створення SEO metadata
+import type { Metadata } from "next";
 import { createMetadata } from "@/lib/seo";
 
-// Link — клієнтська навігація без перезавантаження сторінки
-import Link from "next/link";
+import { carOffers } from "@/data/car-offer";
 
-// Дані оферів (марка + модель)
-import { carOffers } from "@/data/cars";
+// UI
+import CarOfferCard from "@/components/car-offer/CarOfferCard";
+import FixedBackground from "@/components/home/FixedBackground";
 
-// Компонент картки оферу авто
-import CarOfferCard from "@/components/cars/CarOfferCard";
-
-// Server-side API next-intl для перекладів
+// i18n
 import { getTranslations } from "next-intl/server";
+
+import CarOfferIntro from "@/components/car-offer/CarOfferIntro";
+import {buildCarOfferVM} from "@/lib/view-models/buildCarOfferVM";
 
 
 // ============================
 // SEO METADATA (SERVER)
 // ============================
 
-// Metadata формується на сервері з урахуванням мови
 export async function generateMetadata(): Promise<Metadata> {
-    // Підключаємо переклади з namespace "cars"
-    const t = await getTranslations("cars");
+    const t = await getTranslations("carOffer");
 
-    // Створюємо SEO metadata без хардкоду
     return createMetadata(
         t("seoTitle"),
         t("seoDescription")
@@ -38,46 +29,42 @@ export async function generateMetadata(): Promise<Metadata> {
 
 
 // ============================
-// СТОРІНКА СПИСКУ АВТО
+// PAGE
 // ============================
 
 export default async function CarsPage() {
+    const t = await getTranslations("carOffer");
 
-    // Підключаємо переклади для сторінки
-    const t = await getTranslations("cars");
+    const titleParts = [
+        { text: t("fleetTitle.part1") },
+        { text: t("fleetTitle.part2"), accent: true }, // ginger
+        { text: t("fleetTitle.part3") },
+    ];
 
     return (
-        <section className="container mx-auto px-4 py-12">
+        <>
+            <FixedBackground />
 
-            {/* Посилання назад на home */}
-            <Link
-                href="/"
-                className="inline-flex items-center text-sm text-gray-500 hover:text-black mb-6"
-            >
-                {t("backToHome")}
-            </Link>
+            <section className="bg-white/75">
+                {/* INTRO */}
+                <div className="container mx-auto px-4 pt-12">
+                    <CarOfferIntro titleParts={titleParts} rentalConditions={t("rentalConditions")}/>
+                </div>
 
-            {/* Заголовок сторінки */}
-            <h1 className="text-3xl font-bold mb-8">
-                {t("fleetTitle")}
-            </h1>
+                {/* CAR OFFERS */}
+                <div className="space-y-8 pb-16">
+                    {carOffers.map((carOffer) => {
+                        const vm = buildCarOfferVM(carOffer, t);
 
-            {/* Список оферів авто */}
-            <div className="flex flex-col gap-8 max-w-3xl mx-auto">
-                <section className="container mx-auto px-4 py-12 flex justify-center">
-                    <div className="flex flex-col gap-8 max-w-3xl w-full">
-
-                        {/* Рендеримо картку для кожного оферу */}
-                        {carOffers.map((offer) => (
+                        return (
                             <CarOfferCard
-                                key={offer.slug}
-                                offer={offer}
+                                key={vm.slug}
+                                vm={vm}
                             />
-                        ))}
-
-                    </div>
-                </section>
-            </div>
-        </section>
+                        );
+                    })}
+                </div>
+            </section>
+        </>
     );
 }

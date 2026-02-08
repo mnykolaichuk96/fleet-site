@@ -5,15 +5,17 @@ import { scrollToElement } from "@/lib/scrollToElement";
 
 export type HeaderTarget =
     | "hero"
-    | "cars"
-    | "contact"
-    | "cooperation-modes";
+    | "rent-car"
+    | "company-car"
+    | "own-car"
+    | "contact";
 
 const TARGET_ID_MAP: Record<HeaderTarget, string> = {
     hero: "hero",
-    cars: "car-instance-preview",
-    contact: "contact-form",
-    "cooperation-modes": "cooperation-modes",
+    "rent-car": "rent-car",
+    "company-car": "company-car",
+    "own-car": "own-car",
+    "contact": "contact-form",
 };
 
 export function useHeaderNavigation() {

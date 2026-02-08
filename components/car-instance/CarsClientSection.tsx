@@ -1,9 +1,9 @@
 "use client";
 
 import CarInstanceCard from "@/components/car-instance/CarInstanceCard";
-import { ContactFormSection } from "@/components/home/ContactFormSection";
 import { CarInstanceVM } from "@/lib/view-models/buildCarInstanceVM";
 import { useEffect, useState } from "react";
+import {ContactForm} from "@/components/cta/ContactForm";
 
 type Props = {
     instanceVMs: CarInstanceVM[];
@@ -53,7 +53,7 @@ export default function CarsClientSection({ instanceVMs }: Props) {
                         </strong>
                     </p>
 
-                    <ContactFormSection
+                    <ContactForm
                         carInstanceId={selectedCar.id}
                     />
                 </div>

@@ -8,7 +8,7 @@ export default function RentCarSection() {
   const t = useTranslations("home.fleetCar");
 
   return (
-      <section className="relative overflow-hidden pb-12 lg:pb-16">
+      <section id="company-car" className="relative overflow-hidden pb-12 lg:pb-16">
 
         <div className="container mx-auto px-4 pt-28 lg:pt-36">
 

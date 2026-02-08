@@ -8,7 +8,7 @@ export default function DriverCarSection() {
     const t = useTranslations("home.driverCar");
 
     return (
-        <section className="relative overflow-hidden pb-12 lg:pb-16">
+        <section id="own-car" className="relative overflow-hidden pb-12 lg:pb-16">
             <div className="absolute inset-0 bg-[#0B1C2D]/10 pointer-events-none" />
             <div className="relative z-10">
             <div className="container mx-auto px-4 pt-28 lg:pt-36">

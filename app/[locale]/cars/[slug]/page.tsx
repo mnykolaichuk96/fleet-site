@@ -8,6 +8,8 @@ import CarOfferIntro from "@/components/car-offer/CarOfferIntro";
 import { notFound } from "next/navigation";
 import CarInstanceIntro from "@/components/car-instance/CarInstanceIntro";
 import CarInstanceCard from "@/components/car-instance/CarInstanceCard";
+import CarsClientSection from "@/components/car-instance/CarsClientSection";
+
 
 export const dynamic = "force-dynamic";
 
@@ -48,6 +50,7 @@ export default async function CarOfferDetailPage({ params }: PageProps) {
         buildCarInstanceVM(instance, tInstance)
     );
 
+
     return (
         <>
             <FixedBackground />
@@ -59,20 +62,25 @@ export default async function CarOfferDetailPage({ params }: PageProps) {
                         brand={offerVM.brand}
                         model={offerVM.model}
                         subtitle={subtitle}
+                        price={`${offerVM.price.value} ${offerVM.price.currency}`}
                         backLabel={tInstance("intro.backToOffers")}
                         rentalConditionsLabel={tInstance("intro.rentalConditions")}
                     />
                 </div>
 
-                {/* INSTANCES */}
-                <div className="space-y-8 pb-16">
-                    {instanceVMs.map((vm) => (
-                        <CarInstanceCard
-                            key={vm.id}
-                            vm={vm}
-                        />
-                    ))}
-                </div>
+                {/*/!* INSTANCES *!/*/}
+                {/*<div className="space-y-8 pb-16">*/}
+                {/*    {instanceVMs.map((vm) => (*/}
+                {/*        <CarInstanceCard*/}
+                {/*            key={vm.id}*/}
+                {/*            vm={vm}*/}
+                {/*        />*/}
+                {/*    ))}*/}
+                {/*</div>*/}
+
+                <CarsClientSection
+                    instanceVMs={instanceVMs}
+                />
 
             </section>
         </>

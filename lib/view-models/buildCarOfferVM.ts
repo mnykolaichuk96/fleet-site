@@ -5,6 +5,7 @@ type TFunction = (key: string, values?: Record<string, any>) => string;
 export type CarOfferVM = {
     slug: string;
     brand: string;
+    generation: string;
     model: string;
     icon: string;
 
@@ -35,6 +36,7 @@ export function buildCarOfferVM(
         slug: offer.slug,
         brand: offer.brand,
         model: offer.model,
+        generation: offer.generation,
         icon: offer.icon,
 
         specs: {

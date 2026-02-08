@@ -17,7 +17,6 @@ import {WhyUsInline} from "@/components/home/WhyUsInline";
 import RentCarSection from "@/components/home/RentCarSection";
 import FleetCarSection from "@/components/home/FleetCarSection";
 import DriverCarSection from "@/components/home/DriverCarSection";
-import CTA from "@/components/home/CTA";
 
 import HomeScrollHandler from "@/components/home/HomeScrollHandler";
 import FixedBackground from "@/components/home/FixedBackground";

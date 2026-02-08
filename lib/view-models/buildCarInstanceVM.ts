@@ -32,7 +32,7 @@ export function buildCarInstanceVM(
             (slug) => t(`equipment.${slug}`)
         ),
 
-        title: `${instance.brand} ${instance.model}`,
+        title: `${instance.brand} ${instance.model} ${instance.generation}`,
 
         status: {
             label: t(`carInstance.status.${instance.status}`),

@@ -9,10 +9,10 @@
     "rear_camera": "Kamera cofania",
     "carPlay": "Apple CarPlay, Android Auto",
     "dashcam": "Wideorejestrator",
-    "keyLess": "System bezkluczykowy"
+    "keyLess": "System bezkluczykowy",
+    "pdc": "Czujniki parkowania",
+    "bluetooth": "Odtwarzacz samochodowy z Bluetooth"
   },
-
-
 
 "carInstance": {
     "status": {

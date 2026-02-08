@@ -3,7 +3,15 @@
 import { useTranslations } from "next-intl";
 import { useForm } from "@formspree/react";
 
-export function ContactFormSection() {
+type Props = {
+    carInstanceId?: string;
+    className?: string; // опційно, але дуже корисно
+};
+
+export function ContactFormSection({
+                                       carInstanceId,
+                                       className,
+                                   }: Props) {
     const t = useTranslations("home.contactForm");
     const phoneT = useTranslations("home.phone");
     const [state, handleSubmit] = useForm("xdaeqbyg");
@@ -30,6 +38,14 @@ export function ContactFormSection() {
                     onSubmit={handleSubmit}
                     className="mt-8 grid gap-6 sm:grid-cols-2"
                 >
+                    {carInstanceId && (
+                        <input
+                            type="hidden"
+                            name="carInstanceId"
+                            value={carInstanceId}
+                        />
+                    )}
+
                     <input
                         name="name"
                         placeholder={t("fields.name")}

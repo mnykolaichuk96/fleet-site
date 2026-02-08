@@ -6,10 +6,11 @@ import { useState } from "react";
 
 type Props = {
     vm: CarInstanceVM;
+    onSelect: () => void;
 };
 
 
-export default function CarInstanceCard({ vm }: Props) {
+export default function CarInstanceCard({ vm, onSelect }: Props) {
     const CARD_RADIUS = "32px";
 
     const [activeIndex, setActiveIndex] = useState(0);
@@ -27,6 +28,11 @@ export default function CarInstanceCard({ vm }: Props) {
             i === vm.images.length - 1 ? 0 : i + 1
         );
     };
+
+    const [selectedCar, setSelectedCar] = useState<{
+        id: string;
+        title: string;
+    } | null>(null);
 
     return (
         <section className="py-2 lg:py-6">
@@ -145,24 +151,25 @@ export default function CarInstanceCard({ vm }: Props) {
                     >
                         {/* TOP */}
                         <div>
-                            <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                                {vm.title}
-                            </h3>
+                            {/* TITLE + STATUS */}
+                            <div className="flex items-center gap-3 mb-6">
+                                <h3 className="text-xl font-semibold text-gray-900">
+                                    {vm.title}
+                                </h3>
 
-                            {/* STATUS */}
-                            <div className="mb-6">
                                 <span
                                     className={`
-                    inline-block rounded-full px-3 py-1 text-sm font-medium
-                    ${
+                inline-block rounded-full px-3 py-1
+                text-sm font-medium whitespace-nowrap
+                ${
                                         vm.status.tone === "success"
                                             ? "bg-green-100 text-green-800"
                                             : "bg-gray-200 text-gray-700"
                                     }
-                  `}
+            `}
                                 >
-                                    {vm.status.label}
-                                </span>
+            {vm.status.label}
+        </span>
                             </div>
 
                             {/* EQUIPMENT */}
@@ -176,6 +183,7 @@ export default function CarInstanceCard({ vm }: Props) {
                         {/* CTA */}
                         <div className="pt-6">
                             <button
+                                onClick={onSelect}
                                 className="
                   w-full
                   inline-flex items-center justify-center gap-2

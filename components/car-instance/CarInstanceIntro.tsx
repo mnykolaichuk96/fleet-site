@@ -4,6 +4,7 @@ type Props = {
     brand: string;
     model: string;
     subtitle: string;
+    price: string;
 
     backLabel: string;          // i18n
     rentalConditionsLabel: string; // i18n
@@ -13,6 +14,7 @@ export default function CarInstanceIntro({
                                              brand,
                                              model,
                                              subtitle,
+                                             price,
                                              backLabel,
                                              rentalConditionsLabel,
                                          }: Props) {
@@ -36,7 +38,10 @@ export default function CarInstanceIntro({
 
             {/* SUBTITLE */}
             <p className="mb-10 text-center text-base sm:text-xl text-[#0A1A2F]/70 font-medium">
-                {subtitle}
+                {subtitle}{" • "}
+                <span className="text-[#D97706] font-semibold">
+        {price}
+    </span>
             </p>
 
             {/* ACTIONS */}

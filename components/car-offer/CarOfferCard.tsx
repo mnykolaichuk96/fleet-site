@@ -70,7 +70,7 @@ export default function CarOfferCard({ vm }: Props) {
                     {/* CAR — CLICKABLE */}
                     <img
                         src={vm.icon}
-                        alt={`${vm.brand} ${vm.model}`}
+                        alt={`${vm.brand} ${vm.model} ${vm.generation}`}
                         onClick={goToOffer}
                         className="
               absolute bottom-[0%] left-[31%] -translate-x-1/2
@@ -98,7 +98,7 @@ export default function CarOfferCard({ vm }: Props) {
             "
                     >
                         <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                            {vm.brand} {vm.model}
+                            {vm.brand} {vm.model} {vm.generation}
                         </h3>
 
                         <ul className="space-y-3 text-sm text-gray-700">

@@ -7,7 +7,8 @@ export const carInstances: CarInstance[] = [
         id: "1",
         offerSlug: "toyota-prius-30",
         brand: "Toyota",
-        model: "Prius 30",
+        model: "Prius",
+        generation: "30",
         status: "available",
         equipment: [
             "rear_camera",
@@ -22,6 +23,25 @@ export const carInstances: CarInstance[] = [
             "/car-instance/toyota-prius-30/1/4.png",
             "/car-instance/toyota-prius-30/1/5.jpg",
             "/car-instance/toyota-prius-30/1/6.jpg"
+        ],
+    },
+
+    {
+        id: "2",
+        offerSlug: "toyota-auris-1",
+        brand: "Toyota",
+        model: "Auris",
+        generation: "I",
+        status: "available",
+        equipment: [
+            "rear_camera",
+            "pdc",
+            "bluetooth",
+            "dashcam",
+        ],
+        images: [
+            "/car-instance/toyota-auris-1/2/1.jpg",
+            "/car-instance/toyota-auris-1/2/2.jpg",
         ],
     },
 ];

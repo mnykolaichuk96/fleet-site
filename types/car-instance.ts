@@ -10,6 +10,7 @@ export type CarInstance = {
 
     brand: string;              // Toyota
     model: string;              // Prius
+    generation: string;
 
     status: CarInstanceStatus;
 

@@ -6,6 +6,7 @@ export type CarOffer = {
     slug: string;              // toyota-corolla-hybrid
     brand: string;             // Toyota
     model: string;             // Corolla
+    generation: string;
     fuel: FuelType;
     gearbox: GearboxType;
     consumption: string;       // "3.8 l / 100km"

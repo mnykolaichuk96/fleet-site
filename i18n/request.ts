@@ -43,6 +43,7 @@ export default getRequestConfig(async ({ locale }) => {
             footer: (await import(`@/locales/${resolvedLocale}/footer.json`)).default,
 
             'rental-conditions': (await import(`@/locales/${resolvedLocale}/rental-conditions.json`)).default,
+            'fleet-conditions': (await import(`@/locales/${resolvedLocale}/fleet-conditions.json`)).default,
         }
     };
 });

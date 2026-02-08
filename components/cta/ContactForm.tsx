@@ -46,6 +46,14 @@ export function ContactForm({
                         />
                     )}
 
+                    {className && (
+                        <input
+                            type="hidden"
+                            name="From: "
+                            value={className}
+                        />
+                    )}
+
                     <input
                         name="name"
                         placeholder={t("fields.name")}

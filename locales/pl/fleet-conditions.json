@@ -1,0 +1,114 @@
+{
+  "intro": {
+    "title": {
+      "part1": "Zostań kierowcą na ",
+      "part2": "samochodzie firmowym",
+      "part3": "bez własnego auta"
+    },
+    "description": "Zapewniamy samochód, serwis i pełne wsparcie. Ty skupiasz się na jeździe i zarabianiu — na jasnych, przejrzystych warunkach.",
+    "cta": "Zgłoś się jako kierowca"
+  },
+
+  "table": {
+    "items": [
+      {
+        "icon": "bonusPlusTips",
+        "badge": "100%",
+        "title": {
+          "main": "Bonusy i napiwki w 100%",
+          "highlight": "dla kierowcy"
+        },
+        "points": []
+      },
+      {
+        "icon": "medRefound",
+        "badge": "100%",
+        "title": {
+          "main": "Zwrot kosztów badań"
+        },
+        "points": [
+          "Po 2 miesiącach współpracy zwracamy koszty badań",
+          "Zwrot przysługuje niezależnie od terminu wykonania badań"
+        ]
+      },
+      {
+        "icon": "companyCar",
+        "badge": "ZAPEWNIAMY",
+        "title": {
+          "main": "Samochód firmowy"
+        },
+        "points": [
+          "auto gotowe do pracy",
+          "serwis i ubezpieczenie po naszej stronie"
+        ]
+      },
+      {
+        "icon": "portfel",
+        "badge": "60%",
+        "title": {
+          "main": "Nawet do",
+          "highlight": "60% obrotu"
+        },
+        "points": [
+          "Wszystkie koszty po naszej stronie",
+          "Przy dłuższej współpracy – nawet do 60% obrotu",
+          "Po dwóch miesiącach współpracy – 55% obrotu",
+          "Od pierwszego dnia zarabiasz już 50% obrotu"
+        ]
+      }
+    ]
+  },
+
+  "accordion": {
+    "items": [
+      {
+        "title": "Zarobki",
+        "intro": [],
+        "content": [
+          "Dochód jest liczony od obrotu w aplikacjach. Od pierwszego dnia współpracy zarabiasz 50% obrotu, a wszystkie koszty są po naszej stronie.",
+          "Po dwóch miesiącach współpracy zwracamy koszty badań medycznych, a Twój udział w obrocie wzrasta do 55%.",
+          "Przy dłuższej współpracy oferujemy nawet do 60% obrotu."
+        ]
+      },
+      {
+        "title": "Bonusy i napiwki",
+        "intro": [],
+        "content": [
+          "Aplikacje do przewozu osób, takie jak Bolt i Uber, regularnie organizują kampanie bonusowe dla kierowców. Polegają one na dodatkowych wypłatach za wykonanie określonej liczby kursów lub pozostawanie online przez wskazany czas. Cele te są zazwyczaj łatwe do osiągnięcia.",
+          "Całość otrzymanej kwoty stanowi zarobek kierowcy — nie pobieramy od niej ani prowizji, ani VAT.",
+          "Wszystkie napiwki, również te przekazywane za pośrednictwem aplikacji, w 100% trafiają do kierowcy."
+        ]
+      },
+      {
+        "title": "Samochód, serwis i ubezpieczenie",
+        "intro": "Zapewniamy samochód w pełni przygotowany do pracy jako TAXI. Każde auto jest wyposażone w:",
+        "content": [
+          "Uchwyt na telefon",
+          "Ładowarkę do telefonu",
+          "Wideorejestrator z funkcją nagrywania wnętrza pojazdu"
+        ]
+      },
+      {
+        "title": "Praca w Bolt / Uber",
+        "intro": "Zapewniamy pełne wsparcie formalne przy rozpoczęciu współpracy.",
+        "content": [
+          "Pomoc w aktywacji konta",
+          "Kompleksowe szkolenie z obsługi aplikacji mobilnych"
+        ]
+      },
+      {
+        "title": "Wydatki",
+        "intro": "Gdy mówimy, że wszystkie koszty są po naszej stronie, mamy na myśli naprawdę wszystkie.",
+        "content": [
+          "Paliwo",
+          "Myjnie oraz odkurzacze"
+        ]
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Aplikacja kierowcy – auto firmowe",
+    "description": "Zostaw swoje dane, a skontaktujemy się z Tobą i opowiemy o dalszych krokach współpracy."
+  }
+}

@@ -77,10 +77,12 @@ export default function QuickConditions() {
                                     <div
                                         key={index}
                                         className="
-                                            rounded-2xl bg-white p-6 md:p-7
-                                            border border-gray-100 shadow-sm
-                                            overflow-hidden group min-h-[180px]
-                                          "
+  rounded-2xl bg-white p-6 md:p-7
+  border border-gray-100 shadow-sm
+  overflow-hidden group min-h-[180px]
+  transition-all duration-300
+  hover:shadow-md
+"
                                     >
                                         <div className="flex items-center gap-6 h-full">
 
@@ -142,10 +144,12 @@ export default function QuickConditions() {
                                     <div
                                         key={index}
                                         className="
-                                            rounded-2xl bg-white p-6 md:p-7
-                                            border border-gray-100 shadow-sm
-                                            overflow-hidden group min-h-[180px]
-                                          "
+  rounded-2xl bg-white p-6 md:p-7
+  border border-gray-100 shadow-sm
+  overflow-hidden group min-h-[180px]
+  transition-all duration-300
+  hover:shadow-md
+"
                                     >
                                         <div className="flex items-start gap-6">
 
@@ -212,6 +216,8 @@ export default function QuickConditions() {
                             rounded-2xl
                             p-7 md:p-9
                             border border-gray-200/60
+                            transition-all duration-300 group 
+  shadow-sm hover:shadow-md
                             backdrop-blur
                             transition-all duration-700 ease-out
                             ${tableEntered

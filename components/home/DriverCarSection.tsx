@@ -62,7 +62,7 @@ export default function DriverCarSection() {
 
                         <div className="text-center">
                             <Link
-                                href="/cars"
+                                href="/own-conditions"
                                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#D97706] px-12 py-4 text-white font-medium hover:bg-[#B45309] transition"
                             >
                                 {t("cta.label")} →

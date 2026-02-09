@@ -1,0 +1,100 @@
+{
+  "intro": {
+    "title": {
+      "part1": "Współpraca na",
+      "part2": "własnym samochodzie",
+      "part3": ""
+    },
+    "description": "Rozliczaj się z nami jako partner i pracuj na własnym aucie w Bolt lub Uber.",
+    "cta": "Zgłoś się do współpracy"
+  },
+  "quickConditions": {
+    "items": [
+      {
+        "icon": "noCommission",
+        "title": {
+          "main": "Brak stałej opłaty",
+          "highlight": "miesięcznej"
+        },
+        "points": []
+      },
+      {
+        "icon": "noVat",
+        "title": {
+          "main": "Wsparcie formalne"
+        },
+        "points": [
+          "Pomoc przy rejestracji działalności",
+          "Rozliczenia podatkowe",
+          "Obsługa dokumentów"
+        ]
+      }
+    ]
+  },
+
+  "commissionTable": {
+    "title": "Tabela prowizji",
+    "subtitle": "Miesięczny obrót",
+    "currency": "zł",
+    "tiers": [
+      {
+        "range": "0–999",
+        "fee": {
+          "amount": 50,
+          "percent": 1
+        }
+      },
+      {
+        "range": "1000–1999",
+        "fee": {
+          "amount": 25,
+          "percent": 1
+        }
+      },
+      {
+        "range": "2000+",
+        "fee": {
+          "amount": 0,
+          "percent": 0,
+          "highlight": true
+        }
+      }
+    ],
+    "note": "Prowizja liczona od miesięcznego obrotu netto."
+  },
+
+  "details": {
+    "items": [
+      {
+        "title": "Jak wygląda rozliczenie?",
+        "intro": "Współpraca opiera się na modelu partnerskim.",
+        "content": [
+          "Podpisujemy umowę partnerską",
+          "Rozliczenie miesięczne",
+          "Przejrzysty system prowizyjny"
+        ]
+      },
+      {
+        "title": "Jakie dokumenty są wymagane?",
+        "content": [
+          "Prawo jazdy",
+          "Dowód rejestracyjny pojazdu",
+          "Badania lekarskie i psychotechniczne"
+        ]
+      },
+      {
+        "title": "Czy mogę pracować elastycznie?",
+        "content": [
+          "Sam decydujesz o godzinach pracy",
+          "Możesz łączyć z inną działalnością",
+          "Brak minimalnego progu godzin"
+        ]
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Zgłoś się do współpracy",
+    "description": "Wypełnij formularz, a skontaktujemy się z Tobą w sprawie rozpoczęcia współpracy na własnym samochodzie."
+  }
+}

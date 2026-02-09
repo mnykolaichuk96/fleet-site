@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import {ContactForm} from "@/components/cta/ContactForm";
 
 export default function FleetConditionsContactForm() {
-    const t = useTranslations("fleet-conditions");
+    const t = useTranslations("fleet-conditions.contact");
 
     return (
         <section id="fleet-contact" className="py-2 lg:py-6 pb-6 lg:pb-12">
@@ -20,7 +20,7 @@ export default function FleetConditionsContactForm() {
         "
             >
                 <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#0A1A2F]/85">
-                    {t("contact.title")}
+                    {t("title")}
                 </h2>
                 <div
                     className="
@@ -32,16 +32,11 @@ export default function FleetConditionsContactForm() {
   "
                 >
                     <h3 className="mb-2 text-lg font-semibold text-[#92400E]">
-                        Na ten moment posiadamy pełną obsadę kierowców.
+                        {t("fullCapacity.title")}
                     </h3>
 
                     <p className="text-sm text-[#92400E]/90 leading-relaxed">
-                        Na ten moment wszystkie nasze samochody są obsadzone i nie prowadzimy
-                        aktywnej rekrutacji kierowców.
-                        <br /><br />
-                        Dynamicznie się jednak rozwijamy — gdy tylko do floty dołączą nowe auta,
-                        skontaktujemy się z Tobą w pierwszej kolejności, wykorzystując dane
-                        kontaktowe pozostawione w formularzu.
+                        {t("fullCapacity.text")}
                     </p>
                 </div>
 

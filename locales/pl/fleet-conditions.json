@@ -109,6 +109,10 @@
 
   "contact": {
     "title": "Aplikacja kierowcy – auto firmowe",
-    "description": "Zostaw swoje dane, a skontaktujemy się z Tobą i opowiemy o dalszych krokach współpracy."
+    "description": "Zostaw swoje dane, a skontaktujemy się z Tobą i opowiemy o dalszych krokach współpracy.",
+    "fullCapacity": {
+      "title": "Na ten moment posiadamy pełną obsadę kierowców.",
+      "text": "Na ten moment wszystkie nasze samochody są obsadzone i nie prowadzimy aktywnej rekrutacji kierowców.\n\nDynamicznie się jednak rozwijamy — gdy tylko do floty dołączą nowe auta, skontaktujemy się z Tobą w pierwszej kolejności, wykorzystując dane kontaktowe pozostawione w formularzu."
+    }
   }
 }

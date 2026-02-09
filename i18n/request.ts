@@ -44,6 +44,7 @@ export default getRequestConfig(async ({ locale }) => {
 
             'rental-conditions': (await import(`@/locales/${resolvedLocale}/rental-conditions.json`)).default,
             'fleet-conditions': (await import(`@/locales/${resolvedLocale}/fleet-conditions.json`)).default,
+            'own-conditions': (await import(`@/locales/${resolvedLocale}/own-conditions.json`)).default,
         }
     };
 });

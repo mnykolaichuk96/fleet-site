@@ -1,4 +1,11 @@
 {
+  "seo": {
+    "title": "Współpraca z flotą – samochód firmowy",
+    "description": "Dołącz do naszej floty i pracuj na samochodzie firmowym. Sprawdź warunki współpracy, prowizje i wymagania dla kierowców w Rzeszowie.",
+    "breadcrumb": "Samochód firmowy",
+    "serviceName": "Współpraca – samochód firmowy"
+  },
+
   "intro": {
     "title": {
       "part1": "Zostań kierowcą na ",

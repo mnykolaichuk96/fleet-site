@@ -2,44 +2,50 @@
 // ІМПОРТИ
 // ============================
 
-// Тип для SEO metadata
 import type { Metadata } from "next";
-
-// Утиліта для створення стандартних SEO-метаданих
 import { createMetadata } from "@/lib/seo";
-
-// Server-side API next-intl для перекладів
 import { getTranslations } from "next-intl/server";
 
-// Компоненти головної сторінки
+// Компоненти
 import Hero from '@/components/home/Hero';
-import {WhyUsInline} from "@/components/home/WhyUsInline";
+import { WhyUsInline } from "@/components/home/WhyUsInline";
 import RentCarSection from "@/components/home/RentCarSection";
 import FleetCarSection from "@/components/home/FleetCarSection";
 import DriverCarSection from "@/components/home/DriverCarSection";
-
 import HomeScrollHandler from "@/components/home/HomeScrollHandler";
 import FixedBackground from "@/components/home/FixedBackground";
 import FixedOverlay from "@/components/home/FixedOverlay";
-import {RequestsInline} from "@/components/home/RequestsInline";
-import {ContactFormSection} from "@/components/home/ContactFormSection";
+import { RequestsInline } from "@/components/home/RequestsInline";
+import { ContactFormSection } from "@/components/home/ContactFormSection";
 
 
 // ============================
-// SEO METADATA (SERVER SIDE)
+// TYPES
 // ============================
 
-// Metadata формується на сервері,
-// щоб пошукові боти одразу бачили правильні meta-теги
-export async function generateMetadata(): Promise<Metadata> {
+type PageProps = {
+    params: {
+        locale: string;
+    };
+};
 
-    // Підключаємо переклади для home page
+
+// ============================
+// SEO METADATA
+// ============================
+
+export async function generateMetadata(
+    { params }: PageProps
+): Promise<Metadata> {
+
     const t = await getTranslations("home");
 
-    return createMetadata(
-        t("seo.title"),
-        t("seo.description")
-    );
+    return createMetadata({
+        title: t("seo.title"),
+        description: t("seo.description"),
+        pathname: "/",          // home page
+        locale: params.locale
+    });
 }
 
 
@@ -47,38 +53,30 @@ export async function generateMetadata(): Promise<Metadata> {
 // HOME PAGE
 // ============================
 
-// Головна сторінка сайту
-// Server Component — рендериться на сервері
 export default async function HomePage() {
-
-    // Підключаємо переклади для контенту сторінки
-    // (Server Component → getTranslations)
-    const t = await getTranslations("home");
 
     return (
         <>
-            <FixedBackground/>
+            <FixedBackground />
+
             <main className="relative z-0">
 
-            <Hero />
-                <WhyUsInline/>
-            <div className="relative">
-                <FixedOverlay />
+                <Hero />
+                <WhyUsInline />
 
-            <RentCarSection />
-            <FleetCarSection />
-            <DriverCarSection />
+                <div className="relative">
+                    <FixedOverlay />
 
-            <RequestsInline/>
-            <ContactFormSection/>
+                    <RentCarSection />
+                    <FleetCarSection />
+                    <DriverCarSection />
 
-            {/*<CTA />*/}
+                    <RequestsInline />
+                    <ContactFormSection />
 
-            {/* HOME SCROLL HANDLER
-               Обробляє scroll після редіректу з інших сторінок
-               (/?scroll=car-instance, /?scroll=contact і т.д.) */}
-            <HomeScrollHandler />
-            </div>
+                    <HomeScrollHandler />
+                </div>
+
             </main>
         </>
     );

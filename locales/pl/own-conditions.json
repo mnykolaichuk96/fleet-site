@@ -1,4 +1,11 @@
 {
+  "seo": {
+    "title": "Współpraca – własny samochód",
+    "description": "Rozliczaj się jako partner i pracuj na własnym aucie w Bolt i Uber. Sprawdź warunki współpracy.",
+    "breadcrumb": "Własny samochód",
+    "serviceName": "Współpraca – własny samochód"
+  },
+
   "intro": {
     "title": {
       "part1": "Współpraca na",

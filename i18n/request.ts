@@ -21,8 +21,6 @@ export default getRequestConfig(async ({ locale }) => {
         // Кожен ключ тут = окремий namespace
         // (car-instance, home, header і т.д.)
         messages: {
-            // Загальні тексти (кнопки, короткі підписи)
-            common: (await import(`@/locales/${resolvedLocale}/common.json`)).default,
 
             // Тексти для Header (навігація, CTA)
             header: (await import(`@/locales/${resolvedLocale}/header.json`)).default,
@@ -35,9 +33,6 @@ export default getRequestConfig(async ({ locale }) => {
 
             // Тексти для картки конкретного авто
             carInstance: (await import(`@/locales/${resolvedLocale}/car-instance.json`)).default,
-
-            // Тексти форми заявки / контакту
-            'contact-form': (await import(`@/locales/${resolvedLocale}/contact-form.json`)).default,
 
             // Тексти для footer
             footer: (await import(`@/locales/${resolvedLocale}/footer.json`)).default,

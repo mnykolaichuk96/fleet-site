@@ -5,6 +5,8 @@ import { NextIntlClientProvider } from 'next-intl';
 // ⬆️ Провайдер, який робить переклади доступними
 // у ВСІХ Client Components нижче по дереву
 
+import type { Metadata } from "next";
+
 import { notFound } from 'next/navigation';
 // ⬆️ Функція Next.js для рендеру 404 сторінки
 
@@ -24,6 +26,14 @@ import Footer from "@/components/Footer";
 // Тип Locale виводиться з масиву locales
 // Аналог enum у Java
 export type Locale = typeof locales[number];
+
+// Кожна сторінка автоматично отримає Metadata Własny samochód | GinGer Partner
+export const metadata: Metadata = {
+    title: {
+        template: "%s | GinGer Partner",
+        default: "GinGer Partner"
+    }
+};
 
 
 // Тип props, які Next.js передає layout
@@ -49,6 +59,26 @@ export default async function LocaleLayout({ children, params }: Props) {
     return (
         <html lang={locale}>
         <body className="min-h-screen flex flex-col">
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    name: "GinGer Partner",
+                    url: "https://gingerpartner.pl",
+                    logo: "https://gingerpartner.pl/logo.png",
+                    contactPoint: {
+                        "@type": "ContactPoint",
+                        telephone: "+48791863388",
+                        contactType: "customer service",
+                        areaServed: "PL",
+                        availableLanguage: ["Polish", "English", "Ukrainian"]
+                    }
+                })
+            }}
+        />
+
         {/*
                   NextIntlClientProvider:
                   - отримує messages АВТОМАТИЧНО з getRequestConfig

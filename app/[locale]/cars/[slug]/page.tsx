@@ -15,12 +15,14 @@ export const dynamic = "force-dynamic";
 
 type PageProps = {
     params: Promise<{
+        locale: string;
         slug: string;
     }>;
 };
 
 export default async function CarOfferDetailPage({ params }: PageProps) {
     const { slug } = await params;
+    const { locale } = await params
 
     const tOffer = await getTranslations("carOffer");
     const tInstance = await getTranslations("carInstance");
@@ -50,9 +52,70 @@ export default async function CarOfferDetailPage({ params }: PageProps) {
         buildCarInstanceVM(instance, tInstance)
     );
 
+    const vehicleSchema = {
+        "@context": "https://schema.org",
+        "@type": "Vehicle",
+        name: `${offer.brand} ${offer.model}`,
+        image: offer.icon
+            ? `https://gingerpartner.pl${offer.icon}`
+            : undefined,
+        brand: {
+            "@type": "Brand",
+            name: offer.brand
+        },
+        model: offer.model,
+        fuelType: offer.fuel,
+        vehicleTransmission: offer.gearbox,
+        offers: {
+            "@type": "Offer",
+            priceCurrency: "PLN",
+            price: offer.pricePerWeek,
+            availability: "https://schema.org/InStock",
+            url: `https://gingerpartner.pl/${locale}/cars/${offer.slug}`
+        }
+    };
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+            {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: `https://gingerpartner.pl/${locale}`
+            },
+            {
+                "@type": "ListItem",
+                position: 2,
+                name: "Samochody",
+                item: `https://gingerpartner.pl/${locale}/cars`
+            },
+            {
+                "@type": "ListItem",
+                position: 3,
+                name: `${offer.brand} ${offer.model}`,
+                item: `https://gingerpartner.pl/${locale}/cars/${offer.slug}`
+            }
+        ]
+    };
+
 
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(vehicleSchema)
+                }}
+            />
+
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(breadcrumbSchema)
+                }}
+            />
             <FixedBackground />
 
             <section className="bg-white/75">

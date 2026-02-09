@@ -1,4 +1,11 @@
 {
+  "seo": {
+    "title": "Warunki wynajmu samochodów",
+    "description": "Sprawdź warunki wynajmu samochodów do pracy w Bolt i Uber w Rzeszowie. Jasne zasady, brak ukrytych opłat.",
+    "breadcrumb": "Wynajem samochodów",
+    "serviceName": "Wynajem samochodów do pracy w Bolt i Uber"
+  },
+
   "intro": {
     "title": {
       "part1": "Warunki",

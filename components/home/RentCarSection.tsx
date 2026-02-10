@@ -12,7 +12,7 @@ export default function RentCarSection() {
             <div className="absolute inset-0 bg-[#0B1C2D]/10 pointer-events-none" />
             <div className="relative z-10">
 
-        <div className="container mx-auto px-4 pt-12 lg:pt-36">
+        <div className="container mx-auto px-4 pt-12 lg:pt-24">
 
             {/* ================= HERO ================= */}
             <div
@@ -62,7 +62,7 @@ export default function RentCarSection() {
             </div>
 
                 {/* ================= BENEFITS SECTION ================= */}
-                <div className="relative">
+                <div className="relative -mt-[4rem] md:-mt-[8rem] lg:mt-0">
 
                     {/* ===== CAR OVERLAY (SOFT OVERLAP, CORRECT ANCHOR) ===== */}
                     <div
@@ -74,7 +74,9 @@ export default function RentCarSection() {
                         flex
                         justify-center
 
+                        translate-y-[3rem]
 
+                        md:translate-y-[5rem]
 
                         lg:block
 

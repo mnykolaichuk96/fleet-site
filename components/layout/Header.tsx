@@ -117,7 +117,7 @@ export default function Header() {
                                     navigate("contact");
                                     setOpen(false);
                                 }}
-                                className="px-6 py-4 text-center"
+                                className="self-center w-fit rounded-lg bg-[#D97706] px-4 py-2 my-3 text-sm font-medium text-white"
                             >
                                 {t("apply")}
                             </button>

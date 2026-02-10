@@ -123,14 +123,14 @@ export default async function OwnConditionsPage({ params }: Props) {
             <FixedBackground />
 
             <section className="bg-white/75">
-                <div className="container mx-auto px-4 pt-12">
+                <main className="relative z-0">
 
                     <OwnConditionsIntro />
                     <OwnConditionsTable />
                     <OwnConditionsAccordion />
                     <OwnConditionsContactForm />
 
-                </div>
+                </main>
             </section>
         </>
     );

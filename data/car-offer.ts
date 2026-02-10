@@ -10,7 +10,7 @@ export const carOffers: CarOffer[] = [
         gearbox: "automatic",
         consumption: "6 l / 100km",
         pricePerWeek: 600,
-        icon: "/cars/prius-30.png",
+        icon: "/cars/prius-30.jpg",
     },
     {
         slug: "toyota-auris-1",
@@ -21,6 +21,6 @@ export const carOffers: CarOffer[] = [
         gearbox: "automatic",
         consumption: "6 - 6,5 l / 100km",
         pricePerWeek: 500,
-        icon: "/cars/toyota-auris-1.png",
+        icon: "/cars/toyota-auris-1.jpg",
     },
 ];

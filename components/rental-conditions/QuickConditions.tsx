@@ -77,17 +77,17 @@ export default function QuickConditions() {
                                     <div
                                         key={index}
                                         className="
-  rounded-2xl bg-white p-6 md:p-7
-  border border-gray-100 shadow-sm
-  overflow-hidden group min-h-[180px]
-  transition-all duration-300
-  hover:shadow-md
-"
+                                          rounded-2xl bg-white p-6 md:p-7
+                                          border border-gray-100 shadow-sm
+                                          overflow-hidden group md:min-h-[180px]
+                                          transition-all duration-300
+                                          hover:shadow-md
+                                        "
                                     >
                                         <div className="flex items-center gap-6 h-full">
 
                                             {/* ICON BLOCK */}
-                                            <div className="relative shrink-0">
+                                            <div className="relative shrink-0 ">
 
                                                 <NoCommissionIcon
                                                     className="
@@ -144,12 +144,12 @@ export default function QuickConditions() {
                                     <div
                                         key={index}
                                         className="
-  rounded-2xl bg-white p-6 md:p-7
-  border border-gray-100 shadow-sm
-  overflow-hidden group min-h-[180px]
-  transition-all duration-300
-  hover:shadow-md
-"
+                                          rounded-2xl bg-white p-6 md:p-7
+                                          border border-gray-100 shadow-sm
+                                          overflow-hidden group md:min-h-[180px]
+                                          transition-all duration-300
+                                          hover:shadow-md
+                                        "
                                     >
                                         <div className="flex items-start gap-6">
 
@@ -217,7 +217,7 @@ export default function QuickConditions() {
                             p-7 md:p-9
                             border border-gray-200/60
                             transition-all duration-300 group 
-  shadow-sm hover:shadow-md
+                            shadow-sm hover:shadow-md
                             backdrop-blur
                             transition-all duration-700 ease-out
                             ${tableEntered

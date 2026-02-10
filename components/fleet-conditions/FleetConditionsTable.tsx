@@ -68,14 +68,14 @@ export default function FleetConditionsTable() {
                             className="
                               rounded-2xl bg-white p-6 md:p-7
                               border border-gray-100 shadow-sm
-                              overflow-hidden group min-h-[180px]
+                              overflow-hidden group md:min-h-[180px]
                               transition-all duration-300
                               hover:shadow-md
                             "
 
                         >
-                            <div className="flex items-start gap-6">
-                                <div className="relative shrink-0">
+                            <div className="flex items-center lg:items-start gap-6 h-full">
+                                <div className="relative items-start gap-6">
                                     <div className="transition-transform duration-300 group-hover:scale-105">
                                         {renderIcon(item.icon)}
                                     </div>

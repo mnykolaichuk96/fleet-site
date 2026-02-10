@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Współpraca z flotą – samochód firmowy",
-    "description": "Dołącz do naszej floty i pracuj na samochodzie firmowym. Sprawdź warunki współpracy, system rozliczeń i wymagania dla kierowców w Rzeszowie.",
+    "description": "Dołącz do naszej floty i pracuj na samochodzie firmowym. Sprawdź warunki współpracy, system rozliczeń i wymagania dla kierowców w Rzeszowie",
     "breadcrumb": "Samochód firmowy",
     "serviceName": "Współpraca – samochód firmowy"
   },
@@ -12,7 +12,7 @@
       "part2": "samochodzie firmowym",
       "part3": "bez własnego auta"
     },
-    "description": "Zapewniamy samochód, serwis oraz pełne wsparcie organizacyjne. Ty koncentrujesz się na jeździe i zarabianiu — na jasnych i przejrzystych zasadach.",
+    "description": "Zapewniamy samochód, serwis oraz pełne wsparcie organizacyjne. Ty koncentrujesz się na jeździe i zarabianiu — na jasnych i przejrzystych zasadach",
     "cta": "Zgłoś się jako kierowca"
   },
 
@@ -72,18 +72,18 @@
         "title": "Zarobki",
         "intro": [],
         "content": [
-          "Dochód jest liczony od obrotu w aplikacjach. Od pierwszego dnia współpracy otrzymujesz 50% obrotu, a wszystkie koszty pozostają po naszej stronie.",
-          "Po dwóch miesiącach współpracy zwracamy koszty badań medycznych, a Twój udział w obrocie wzrasta do 55%.",
-          "Przy dłuższej współpracy udział może wynieść nawet 60% obrotu."
+          "Dochód jest liczony od obrotu w aplikacjach. Od pierwszego dnia współpracy otrzymujesz 50% obrotu, a wszystkie koszty pozostają po naszej stronie",
+          "Po dwóch miesiącach współpracy zwracamy koszty badań medycznych, a Twój udział w obrocie wzrasta do 55%",
+          "Przy dłuższej współpracy udział może wynieść nawet 60% obrotu"
         ]
       },
       {
         "title": "Bonusy i napiwki",
         "intro": [],
         "content": [
-          "Aplikacje do przewozu osób, takie jak Bolt i Uber, regularnie organizują kampanie bonusowe dla kierowców. Obejmują one dodatkowe wynagrodzenie za wykonanie określonej liczby kursów lub pozostawanie online przez wskazany czas.",
-          "Całość otrzymanej kwoty stanowi dochód kierowcy — nie pobieramy od niej prowizji ani podatku VAT.",
-          "Wszystkie napiwki, również te przekazywane za pośrednictwem aplikacji, w 100% trafiają do kierowcy."
+          "Aplikacje do przewozu osób, takie jak Bolt i Uber, regularnie organizują kampanie bonusowe dla kierowców. Obejmują one dodatkowe wynagrodzenie za wykonanie określonej liczby kursów lub pozostawanie online przez wskazany czas",
+          "Całość otrzymanej kwoty stanowi dochód kierowcy — nie pobieramy od niej prowizji ani podatku VAT",
+          "Wszystkie napiwki, również te przekazywane za pośrednictwem aplikacji, w 100% trafiają do kierowcy"
         ]
       },
       {
@@ -97,7 +97,7 @@
       },
       {
         "title": "Praca w Bolt / Uber",
-        "intro": "Zapewniamy pełne wsparcie formalne przy rozpoczęciu współpracy.",
+        "intro": "Zapewniamy pełne wsparcie formalne przy rozpoczęciu współpracy",
         "content": [
           "Pomoc w aktywacji konta",
           "Szkolenie z obsługi aplikacji mobilnych"
@@ -105,7 +105,7 @@
       },
       {
         "title": "Wydatki",
-        "intro": "Gdy mówimy, że wszystkie koszty są po naszej stronie, mamy na myśli naprawdę wszystkie.",
+        "intro": "Gdy mówimy, że wszystkie koszty są po naszej stronie, mamy na myśli naprawdę wszystkie",
         "content": [
           "Paliwo",
           "Myjnie oraz odkurzacze"
@@ -116,10 +116,10 @@
 
   "contact": {
     "title": "Aplikacja kierowcy – samochód firmowy",
-    "description": "Pozostaw swoje dane kontaktowe, a skontaktujemy się z Tobą i przedstawimy dalsze etapy współpracy.",
+    "description": "Pozostaw swoje dane kontaktowe, a skontaktujemy się z Tobą i przedstawimy dalsze etapy współpracy",
     "fullCapacity": {
-      "title": "Obecnie posiadamy pełną obsadę kierowców.",
-      "text": "Wszystkie nasze samochody są aktualnie obsadzone i nie prowadzimy aktywnej rekrutacji.\n\nDynamicznie rozwijamy flotę — gdy pojawią się nowe pojazdy, skontaktujemy się z Tobą w pierwszej kolejności, wykorzystując dane pozostawione w formularzu."
+      "title": "Obecnie posiadamy pełną obsadę kierowców",
+      "text": "Wszystkie nasze samochody są aktualnie obsadzone i nie prowadzimy aktywnej rekrutacji.\n\nDynamicznie rozwijamy flotę — gdy pojawią się nowe pojazdy, skontaktujemy się z Tobą w pierwszej kolejności, wykorzystując dane pozostawione w formularzu"
     }
   }
 }

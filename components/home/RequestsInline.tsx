@@ -1,34 +1,47 @@
 import { useTranslations } from "next-intl";
 import { CriminalRecordIcon } from "@/components/icons/CriminalRecordIcon";
 import { MedicalIcon } from "@/components/icons/MedicalIcon";
-import {LicenseIcon} from "@/components/icons/LicenseIcon";
+import { LicenseIcon } from "@/components/icons/LicenseIcon";
 
 export function RequestsInline() {
     const t = useTranslations("home");
 
     return (
-        <section className="relative z-10 py-12 md:py-12 lg:py-16">
+        <section className="relative z-10 py-12 lg:py-16">
             <div className="container mx-auto px-4">
                 <div className="mx-auto max-w-6xl text-center">
 
-                    {/* Badge */}
+                    {/* BADGE */}
                     <span className="inline-block rounded-full border px-4 py-1 text-sm text-gray-500">
             {t("cta.badge")}
           </span>
 
-                    {/* Title */}
-                    <h2 className="mt-6 text-4xl font-semibold text-gray-900">
+                    {/* TITLE */}
+                    <h2
+                        className="
+              mt-6
+              text-3xl
+              md:text-4xl
+              lg:text-5xl
+              font-semibold
+              text-gray-900
+            "
+                    >
                         {t("cta.title")}
                     </h2>
 
                     {/* ITEMS */}
                     <div
                         className="
-              mt-16
-              grid grid-cols-1 md:grid-cols-3
-              divide-y md:divide-y-0 md:divide-x
+
+              grid grid-cols-1
+              md:grid-cols-3
+
+              divide-y
+              md:divide-y-0 md:divide-x
+
               rounded-3xl
-              py-6 md:py-2
+              py-12
             "
                     >
                         <RequestItem
@@ -55,6 +68,8 @@ export function RequestsInline() {
     );
 }
 
+/* ================= ITEM ================= */
+
 function RequestItem({
                          icon,
                          title,
@@ -65,18 +80,31 @@ function RequestItem({
     text: string;
 }) {
     return (
-        <div className="relative flex flex-col items-center text-center px-6 -translate-y-[210px] -mb-[230px]">
-
-            {/* HALO / FOG */}
+        <div
+            className="
+        relative
+        flex flex-col
+        items-center
+        text-center
+        px-4
+        md:px-6
+      "
+        >
+            {/* HALO */}
             <div
                 className="
           pointer-events-none
           absolute
-          top-40
           left-1/2
           -translate-x-1/2
-          w-[100%]
-          h-[80%]
+
+          top-16
+          md:top-20
+          lg:top-24
+
+          w-full
+          h-full
+
           rounded-full
           bg-white/80
           blur-2xl
@@ -85,29 +113,68 @@ function RequestItem({
 
             {/* CONTENT */}
             <div className="relative z-10">
+
                 {/* ICON */}
                 <div
                     className="
-            mb-2
+            my-6
+            flex justify-center
+            items-center
             text-slate-700
-            [&>svg]:h-[clamp(20rem,23vw,22rem)]
-            [&>svg]:w-[clamp(20rem,23vw,22rem)]
+
+            [&>svg]:h-[6rem]
+            [&>svg]:w-[6rem]
+
+            md:[&>svg]:h-[7rem]
+            md:[&>svg]:w-[7rem]
+
+            lg:[&>svg]:h-[8rem]
+            lg:[&>svg]:w-[8rem]
+
+            xl:[&>svg]:h-[10rem]
+            xl:[&>svg]:w-[10rem]
           "
                 >
                     {icon}
                 </div>
 
                 {/* TITLE */}
-                <p className="mb-2 text-2xl font-semibold text-[#D97706]">
+                <p
+                    className="
+            mb-3
+            text-2xl
+            md:text-2xl
+            lg:text-3xl
+            font-semibold
+            text-[#D97706]
+
+            md:min-h-[6rem]
+            lg:min-h-[4.5rem]
+          "
+                >
                     {title}
                 </p>
 
                 {/* TEXT */}
-                <p className="max-w-md text-lg leading-loose text-gray-700">
+                <p
+                    className="
+            max-w-sm
+            md:max-w-md
+            lg:max-w-lg
+
+            text-base
+            md:text-lg
+            lg:text-xl
+
+            leading-relaxed
+            lg:leading-loose
+
+            text-gray-700
+          "
+                >
                     {text}
                 </p>
             </div>
         </div>
     );
 }
-

@@ -47,6 +47,17 @@ export default async function Footer() {
                                 <span>{t("contact.city")}</span>
                             </li>
 
+                            {/* EMAIL */}
+                            <li className="flex items-center gap-3">
+                                <Mail size={18} className="text-[#D97706]" />
+                                <a
+                                    href={`mailto:${t("contact.email")}`}
+                                    className="hover:text-white"
+                                >
+                                    {t("contact.email")}
+                                </a>
+                            </li>
+
                             {/* PHONES */}
                             {phones.map((phone) => (
                                 <li
@@ -71,17 +82,6 @@ export default async function Footer() {
                                     </a>
                                 </li>
                             ))}
-
-                            {/* EMAIL */}
-                            <li className="flex items-center gap-3">
-                                <Mail size={18} className="text-[#D97706]" />
-                                <a
-                                    href={`mailto:${t("contact.email")}`}
-                                    className="hover:text-white"
-                                >
-                                    {t("contact.email")}
-                                </a>
-                            </li>
 
                         </ul>
                     </div>

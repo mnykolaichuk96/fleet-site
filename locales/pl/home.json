@@ -113,12 +113,12 @@
       },
       {
         "title": "Wsparcie operacyjne",
-        "text": "Zapewniamy pomoc na każdym etapie współpracy."
+        "text": "Zapewniamy pomoc na każdym etapie współpracy"
       }
     ],
     "cta": {
       "label": "Sprawdź warunki współpracy",
-      "hint": "Poznaj szczegóły i złóż zgłoszenie online w kilka minut."
+      "hint": "Poznaj szczegóły i złóż zgłoszenie online w kilka minut"
     }
   },
 
@@ -138,14 +138,14 @@
       },
       "photo": {
         "title": "Polskie prawo jazdy",
-        "text": "Wymagane jest ważne polskie prawo jazdy kategorii B."
+        "text": "Wymagane jest ważne polskie prawo jazdy kategorii B"
       }
     }
   },
 
   "contactForm": {
     "title": "Zostaw kontakt — resztą zajmiemy się my",
-    "subtitle": "Podaj imię, numer telefonu i miasto. Oddzwonimy i pomożemy Ci szybko rozpocząć współpracę.",
+    "subtitle": "Podaj imię, numer telefonu i miasto. Oddzwonimy i pomożemy Ci szybko rozpocząć współpracę",
 
     "fields": {
       "name": "Imię",
@@ -154,12 +154,12 @@
       "city": "Rzeszów"
     },
 
-    "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych.",
+    "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych",
 
     "submit": "Wyślij zgłoszenie",
     "submitting": "Wysyłanie…",
-    "success": "Zgłoszenie zostało wysłane. Skontaktujemy się z Tobą.",
-    "error": "Wystąpił błąd. Spróbuj ponownie."
+    "success": "Zgłoszenie zostało wysłane. Skontaktujemy się z Tobą",
+    "error": "Wystąpił błąd. Spróbuj ponownie"
   },
 
   "phone": {

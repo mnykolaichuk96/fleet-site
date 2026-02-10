@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Współpraca – własny samochód",
-    "description": "Rozliczaj się jako partner i pracuj na własnym aucie w Bolt i Uber. Sprawdź warunki współpracy.",
+    "description": "Rozliczaj się jako partner i pracuj na własnym aucie w Bolt i Uber. Sprawdź warunki współpracy",
     "breadcrumb": "Własny samochód",
     "serviceName": "Współpraca – własny samochód"
   },
@@ -12,7 +12,7 @@
       "part2": "samochodzie własnym",
       "part3": ""
     },
-    "description": "Rozliczaj się z nami jako partner i pracuj na własnym aucie w Bolt lub Uber.",
+    "description": "Rozliczaj się z nami jako partner i pracuj na własnym aucie w Bolt lub Uber",
     "cta": "Zgłoś się do współpracy"
   },
   "quickConditions": {
@@ -66,14 +66,14 @@
         }
       }
     ],
-    "note": "Prowizja liczona od miesięcznego obrotu netto."
+    "note": "Prowizja liczona od miesięcznego obrotu netto"
   },
 
   "details": {
     "items": [
       {
         "title": "Jak wygląda rozliczenie?",
-        "intro": "Współpraca opiera się na modelu partnerskim.",
+        "intro": "Współpraca opiera się na modelu partnerskim",
         "content": [
           "Podpisujemy umowę partnerską",
           "Rozliczenie miesięczne",
@@ -101,6 +101,6 @@
 
   "contact": {
     "title": "Zgłoś się do współpracy",
-    "description": "Wypełnij formularz, a skontaktujemy się z Tobą w sprawie rozpoczęcia współpracy na własnym samochodzie."
+    "description": "Wypełnij formularz, a skontaktujemy się z Tobą w sprawie rozpoczęcia współpracy na własnym samochodzie"
   }
 }

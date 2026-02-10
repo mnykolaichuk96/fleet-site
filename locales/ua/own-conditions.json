@@ -9,7 +9,7 @@
   "intro": {
     "title": {
       "part1": "Współpraca na",
-      "part2": "samochodzie własnym",
+      "part2": "własnym samochodzie",
       "part3": ""
     },
     "description": "Rozliczaj się z nami jako partner i pracuj na własnym aucie w Bolt lub Uber.",
@@ -20,19 +20,20 @@
       {
         "icon": "noCommission",
         "title": {
-          "main": "Możesz pracować",
-          "highlight": "bez prowizji"
+          "main": "Brak stałej opłaty",
+          "highlight": "miesięcznej"
         },
         "points": []
       },
       {
         "icon": "noVat",
         "title": {
-          "main": "0% VAT"
+          "main": "Wsparcie formalne"
         },
         "points": [
-          "od bonusów",
-          "od napiwków"
+          "Pomoc przy rejestracji działalności",
+          "Rozliczenia podatkowe",
+          "Obsługa dokumentów"
         ]
       }
     ]

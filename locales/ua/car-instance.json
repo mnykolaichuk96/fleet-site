@@ -1,9 +1,8 @@
 {
-  "intro":{
+  "intro": {
     "backToOffers": "Powrót do floty",
-    "rentalConditions": "Warunki wynajmu"
+    "rentalConditions": "Warunki współpracy"
   },
-
 
   "equipment": {
     "rear_camera": "Kamera cofania",
@@ -14,13 +13,13 @@
     "bluetooth": "System audio z Bluetooth"
   },
 
-"carInstance": {
-    "status": {
-      "available": "Dostępny",
-      "rented": "Wynajęty"
-    },
+  "status": {
+    "available": "Dostępny",
+    "rented": "Aktualnie wynajęty"
+  },
 
-    "cta": "Wybierz samochód"
+  "cta": {
+    "select": "Wybierz samochód"
   },
 
   "form": {

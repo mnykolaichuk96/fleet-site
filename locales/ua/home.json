@@ -6,7 +6,7 @@
 
   "hero": {
     "title": {
-      "brand": "GINGER",
+      "brand": "перевірка",
       "partner": "PARTNER"
     },
     "subtitle": {
@@ -25,91 +25,89 @@
   "whyUsInline": {
     "items": [
       {
-        "title": "Kompleksowe szkolenie",
-        "text": "Zapewniamy pełne szkolenie z obsługi aplikacji Bolt i Uber"
+        "title": "Kompleksowe wsparcie",
+        "text": "Jasne warunki współpracy i minimum formalności."
       },
       {
         "title": "0% VAT od napiwków i bonusów",
-        "text": "Całość napiwków i bonusów trafia bezpośrednio do Ciebie"
+        "text": "Całość napiwków i bonusów trafia bezpośrednio do Ciebie."
       },
       {
         "title": "Zwrot kosztów badań",
-        "text": "Zwracamy koszt badań lekarskich po spełnieniu warunków"
+        "text": "Zwracamy koszt badań lekarskich po spełnieniu warunków."
       }
     ]
   },
 
   "rentCar": {
     "title": "Wynajmij samochód i pracuj w Bolt / Uber bez własnego auta",
-    "text": "Zapewniamy samochód w pełni przygotowany do pracy. Ty jeździsz i zarabiasz — my zajmujemy się resztą",
+    "text": "Zapewniamy samochód w pełni przygotowany do pracy. Ty jeździsz i zarabiasz — my zajmujemy się resztą.",
     "benefits": [
       {
         "title": "Bez wkładu własnego",
-        "text": "Rozpoczynasz pracę bez dodatkowych opłat na start, bez obowiązku wpłaty kaucji"
+        "text": "Rozpoczynasz pracę bez dodatkowych opłat na start."
       },
       {
         "title": "Auto gotowe do pracy",
-        "text": "Zagazowane hybrydy z automatyczną skrzynią biegów, przygotowane do pracy w taxi"
-
-      },
-      {
-        "title": "Możesz pracować nawet bez prowizji",
-        "text": "Konkurencyjne warunki stworzone z myślą o kierowcach"
+        "text": "Hybrydy i automaty w pełni przygotowane do pracy jako taxi."
       },
       {
         "title": "Szybki start",
-        "text": "Możesz rozpocząć pracę nawet w ciągu kilku dni"
+        "text": "Możesz rozpocząć pracę nawet w ciągu kilku dni."
+      },
+      {
+        "title": "Szybki start",
+        "text": "Możesz rozpocząć pracę nawet w ciągu kilku dni."
       }
     ],
     "cta": {
       "label": "Zobacz warunki wynajmu",
-      "hint": "Poznaj dostępne samochody, koszty i zasady krok po kroku"
+      "hint": "Poznaj dostępne samochody, koszty i zasady krok po kroku."
     }
   },
 
   "fleetCar": {
     "title": "Pracuj na naszym samochodzie — zostań kierowcą Ginger Partner",
-    "text": "Otrzymujesz do dyspozycji samochód firmowy i zarabiasz, realizując przejazdy w Bolt lub Uber",
+    "text": "Otrzymujesz do dyspozycji samochód firmowy i zarabiasz, realizując przejazdy w Bolt lub Uber.",
     "benefits": [
       {
         "title": "Samochód firmowy",
-        "text": "Nie inwestujesz własnych środków — otrzymujesz w pełni przygotowane auto"
+        "text": "Nie inwestujesz własnych środków — otrzymujesz w pełni przygotowane auto."
       },
       {
-        "title": "Wszystkie wydatki po naszej stronie",
-        "text": "Serwis, paliwo, myjnie oraz bieżące koszty eksploatacyjne"
+        "title": "Wszystko po naszej stronie",
+        "text": "Serwis, ubezpieczenie, dokumenty i licencje zapewniamy my."
       },
       {
         "title": "Elastyczny grafik",
-        "text": "Grafik dopasowany do Ciebie — bez obowiązkowych zmian i minimalnych limitów"
-
+        "text": "Pracujesz w wybrane przez siebie dni i godziny."
       },
       {
-        "title": "Wsparcie 24/7",
-        "text": "Zapewniamy stały kontakt i pomoc operacyjną 24/7"
+        "title": "Stałe wsparcie",
+        "text": "Jesteśmy dostępni i pomagamy w bieżących sprawach."
       }
     ],
     "cta": {
-      "label": "Zobacz warunki współpracy",
-      "hint": "Sprawdź szczegóły i złóż zgłoszenie w kilka minut"
+      "label": "Sprawdź szczegóły",
+      "hint": "Poznaj warunki współpracy i złóż zgłoszenie online."
     }
   },
 
   "driverCar": {
     "title": "Pracuj w Bolt / Uber ze swoim samochodem",
-    "text": "Dołącz do naszej floty jako kierowca z własnym autem i korzystaj z przejrzystych zasad rozliczeń",
+    "text": "Dołącz do naszej floty jako kierowca z własnym autem i korzystaj z przejrzystych zasad rozliczeń.",
     "benefits": [
       {
         "title": "Wyższy dochód",
-        "text": "Zarabiasz więcej na własnym samochodzie — możesz pracować nawet bez prowizji"
+        "text": "Zarabiasz więcej na własnym samochodzie — oferujemy korzystne warunki rozliczeń."
       },
       {
-        "title": "Oszczędzaj więcej",
-        "text": "Zwracamy 50% podatku VAT zawartego w kosztach paliwa"
+        "title": "Bonusy i wyższe stawki",
+        "text": "Korzystasz z dodatkowych bonusów i atrakcyjnych stawek za przejazdy."
       },
       {
         "title": "Regularne wypłaty",
-        "text": "Otrzymujesz wypłatę najpóźniej we wtorek każdego tygodnia"
+        "text": "Otrzymujesz wypłaty raz w tygodniu na swoje konto."
       },
       {
         "title": "Wsparcie operacyjne",
@@ -117,8 +115,8 @@
       }
     ],
     "cta": {
-      "label": "Sprawdź warunki współpracy",
-      "hint": "Poznaj szczegóły i złóż zgłoszenie online w kilka minut."
+      "label": "Sprawdź warunki",
+      "hint": "Poznaj szczegóły współpracy i złóż zgłoszenie online."
     }
   },
 
@@ -130,15 +128,15 @@
     "requirements": {
       "criminal": {
         "title": "Zaświadczenie o niekaralności",
-        "text": "Dokument uzyskasz w sądzie lub przez Krajowy Rejestr Karny. Ważny 30 dni"
+        "text": "Dokument uzyskasz w sądzie lub przez Krajowy Rejestr Karny. Ważny 30 dni."
       },
       "medical": {
         "title": "Badania lekarskie i psychologiczne",
-        "text": "Wskażemy sprawdzone placówki, w których wykonasz wymagane badania"
+        "text": "Skierowanie otrzymasz od nas. Zwracamy część kosztów po 350 przejazdach."
       },
       "photo": {
-        "title": "Polskie prawo jazdy",
-        "text": "Wymagane jest ważne polskie prawo jazdy kategorii B."
+        "title": "Zdjęcie do identyfikatora",
+        "text": "Wykonamy je bezpłatnie w naszym biurze."
       }
     }
   },

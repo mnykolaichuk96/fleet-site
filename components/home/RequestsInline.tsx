@@ -75,7 +75,7 @@ function RequestItem({
           top-40
           left-1/2
           -translate-x-1/2
-          w-[120%]
+          w-[100%]
           h-[80%]
           rounded-full
           bg-white/80

@@ -13,8 +13,8 @@ export const carInstances: CarInstance[] = [
         equipment: [
             "rear_camera",
             "carPlay",
+            "keyLess",
             "dashcam",
-            "keyLess"
         ],
         images: [
             "/car-instance/toyota-prius-30/1/1.png",

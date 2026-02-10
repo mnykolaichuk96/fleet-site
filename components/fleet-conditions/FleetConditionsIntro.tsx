@@ -31,9 +31,6 @@ export default function FleetConditionsIntro() {
                     <span className="text-[#D97706] font-semibold">
             {t("intro.title.part2")}
           </span>
-          {/*          <span className="text-[#0A1A2F]/85 font-medium">*/}
-          {/*  {t("intro.title.part3")}*/}
-          {/*</span>*/}
                 </h1>
 
                 {/* DESCRIPTION */}

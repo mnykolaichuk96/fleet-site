@@ -29,11 +29,6 @@ export default function CarInstanceCard({ vm, onSelect }: Props) {
         );
     };
 
-    const [selectedCar, setSelectedCar] = useState<{
-        id: string;
-        title: string;
-    } | null>(null);
-
     return (
         <section className="py-2 lg:py-6">
             <div className="mx-auto max-w-6xl">

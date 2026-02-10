@@ -22,6 +22,11 @@ import Header from '@/components/layout/Header';
 import Footer from "@/components/Footer";
 // ⬆️ Глобальний footer
 
+import { getMessages } from 'next-intl/server';
+
+import type { Viewport } from "next";
+import DevNoCache from "@/components/DevNoCache";
+
 
 // Тип Locale виводиться з масиву locales
 // Аналог enum у Java
@@ -35,6 +40,10 @@ export const metadata: Metadata = {
     }
 };
 
+export const viewport: Viewport = {
+    width: "device-width",
+    initialScale: 1,
+};
 
 // Тип props, які Next.js передає layout
 type Props = {
@@ -48,13 +57,13 @@ type Props = {
 
 export default async function LocaleLayout({ children, params }: Props) {
 
-    // Отримуємо locale з URL
     const { locale } = await params;
 
-    // Перевіряємо, чи locale дозволена
     if (!locales.includes(locale)) {
         notFound();
     }
+
+    const messages = await getMessages();
 
     return (
         <html lang={locale}>
@@ -84,11 +93,12 @@ export default async function LocaleLayout({ children, params }: Props) {
                   - отримує messages АВТОМАТИЧНО з getRequestConfig
                   - передає їх у всі Client Components
                 */}
-        <NextIntlClientProvider locale={locale}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
 
             <Header />
 
             <main className="flex-1">
+                <DevNoCache />
                 {children}
             </main>
 

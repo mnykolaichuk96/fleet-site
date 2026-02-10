@@ -1,5 +1,7 @@
 import { useHeaderNavigation } from "@/hooks/useHeaderNavigation";
+import {LogoV2} from "@/components/icons/LogoV2";
 import Logo from "@/components/icons/Logo";
+
 
 export default function HeaderLogo() {
   const { navigate } = useHeaderNavigation();
@@ -10,7 +12,7 @@ export default function HeaderLogo() {
       className="flex items-center h-full shrink-0"
       aria-label="Go to top"
     >
-      <Logo className="h-[100%] aspect-[4/1]"/>
+      <Logo className="lg:h-[95%] h-12 w-auto"/>
     </button>
   );
 }

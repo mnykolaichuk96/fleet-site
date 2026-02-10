@@ -140,16 +140,26 @@ export default function OwnConditionsTable() {
                                         "
                                     >
                                         <div className="flex items-start gap-6">
-
                                             <div className="relative shrink-0">
                                                 <NoVatRentalConditionsIcon
                                                     className="
-                                                        relative w-16 h-16 md:w-20 md:h-20
-                                                        text-[#404753] -rotate-3
-                                                        transition-transform duration-300
-                                                        group-hover:scale-105
-                                                    "
+        w-16 h-16 md:w-20 md:h-20
+        text-[#404753] -rotate-3
+        transition-transform duration-300
+        group-hover:scale-105
+      "
                                                 />
+
+                                                <span
+                                                    className="
+        absolute -bottom-2 -right-2
+        rounded-full border border-[#D97706]
+        px-2 py-0.5 text-xs font-semibold
+        text-[#D97706] bg-white
+      "
+                                                >
+      0%
+    </span>
                                             </div>
 
                                             <span className="h-20 w-px bg-[#D97706]/40 mt-1" />

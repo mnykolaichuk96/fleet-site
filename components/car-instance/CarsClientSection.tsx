@@ -4,12 +4,15 @@ import CarInstanceCard from "@/components/car-instance/CarInstanceCard";
 import { CarInstanceVM } from "@/lib/view-models/buildCarInstanceVM";
 import { useEffect, useState } from "react";
 import {ContactForm} from "@/components/cta/ContactForm";
+import {useTranslations} from "next-intl";
 
 type Props = {
     instanceVMs: CarInstanceVM[];
 };
 
 export default function CarsClientSection({ instanceVMs }: Props) {
+    const t = useTranslations("carInstance");
+
     const [selectedCar, setSelectedCar] = useState<{
         id: string;
         title: string;
@@ -47,7 +50,7 @@ export default function CarsClientSection({ instanceVMs }: Props) {
                     className="pb-24"
                 >
                     <p className="mb-4 text-center font-medium text-xl text-[#0A1A2F]/85">
-                        Wybrany samochód:{" "}
+                        {t("form.selectedCar")}{" "}
                         <strong className="text-[#D97706]">
                             {selectedCar.title}
                         </strong>

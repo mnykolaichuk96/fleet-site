@@ -1,7 +1,6 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { CarOffer } from "@/types/car";
 import {CarOfferVM} from "@/lib/view-models/buildCarOfferVM";
 
 type Props = {

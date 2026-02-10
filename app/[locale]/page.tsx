@@ -19,32 +19,30 @@ import { RequestsInline } from "@/components/home/RequestsInline";
 import { ContactFormSection } from "@/components/home/ContactFormSection";
 
 
-// ============================
-// TYPES
-// ============================
-
-type PageProps = {
-    params: {
-        locale: string;
-    };
-};
-
 
 // ============================
 // SEO METADATA
 // ============================
+type Props = {
+    params: Promise<{ locale: string }>
+};
 
 export async function generateMetadata(
-    { params }: PageProps
+    { params }: Props
 ): Promise<Metadata> {
 
-    const t = await getTranslations("home");
+    const { locale } = await params;
+
+    const t = await getTranslations({
+        locale,
+        namespace: "home"
+    });
 
     return createMetadata({
         title: t("seo.title"),
         description: t("seo.description"),
-        pathname: "/",          // home page
-        locale: params.locale
+        pathname: "/",
+        locale
     });
 }
 

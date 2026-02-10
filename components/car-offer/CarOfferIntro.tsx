@@ -51,7 +51,7 @@ export default function CarOfferIntro({ titleParts, rentalConditions }: Props) {
     "
                 >
                     {rentalConditions}
-                    <span className="transition-transform group-hover:translate-x-0.5">
+                    <span className="transition-transform group group-hover:translate-x-0.5">
       →
     </span>
                 </Link>

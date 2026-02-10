@@ -83,7 +83,7 @@
         "content": [
           "Aplikacje do przewozu osób, takie jak Bolt i Uber, regularnie organizują kampanie bonusowe dla kierowców. Obejmują one dodatkowe wynagrodzenie za wykonanie określonej liczby kursów lub pozostawanie online przez wskazany czas.",
           "Całość otrzymanej kwoty stanowi dochód kierowcy — nie pobieramy od niej prowizji ani podatku VAT.",
-          "Wszystkie napiwki, również te przekazywane za pośrednictwem aplikacji, w 100% trafiają do kierowcy."
+          "Wszystkie napiwki, również przekazywane za pośrednictwem aplikacji, w 100% trafiają do kierowcy."
         ]
       },
       {
@@ -105,10 +105,10 @@
       },
       {
         "title": "Wydatki",
-        "intro": "Gdy mówimy, że wszystkie koszty są po naszej stronie, mamy na myśli naprawdę wszystkie.",
+        "intro": "Gdy wskazujemy, że wszystkie koszty są po naszej stronie, oznacza to:",
         "content": [
           "Paliwo",
-          "Myjnie oraz odkurzacze"
+          "Myjnie i odkurzacze"
         ]
       }
     ]

@@ -59,7 +59,7 @@
     "title": "Obrót tygodniowy",
     "subtitle": "Prowizja",
     "currency": "zł",
-    "note": "Prowizja naliczana jest automatycznie co tydzień"
+    "note": "Prowizja naliczana jest automatycznie co tydzień."
   },
 
   "details": {
@@ -68,36 +68,36 @@
         "title": "Koszty i płatności",
         "intro": [],
         "content": [
-          "Prowizja rozliczeniowa – nawet 0 zł, w zależności od obrotu",
-          "+ 8% VAT",
-          "Podatek od umowy zlecenia – 50 zł tygodniowo (dla studentów do 26. roku życia – 0 zł)",
-          "Kaucja za samochód nie jest wymagana"
+          "Prowizja rozliczeniowa – nawet 0 zł, w zależności od obrotu.",
+          "+ 8% VAT.",
+          "Podatek od umowy zlecenia – 50 zł tygodniowo (dla studentów do 26. roku życia – 0 zł).",
+          "Kaucja nie jest wymagana."
         ]
       },
       {
         "title": "Zwrot 50% VAT za paliwo",
         "intro": [],
         "content": [
-          "Zwracamy 50% kwoty VAT zawartej w kosztach paliwa",
-          "Rozliczenie odbywa się automatycznie — bez dodatkowych formalności"
+          "Zwracamy 50% kwoty VAT zawartej w kosztach paliwa.",
+          "Rozliczenie odbywa się automatycznie — bez dodatkowych formalności."
         ]
       },
       {
         "title": "Samochód, serwis i ubezpieczenie",
-        "intro": "Zapewniamy samochód w pełni przygotowany do pracy jako TAXI",
+        "intro": "Zapewniamy samochód w pełni przygotowany do pracy jako taxi.",
         "content": [
-          "Ubezpieczenie taxi po naszej stronie",
-          "Pełen serwis techniczny po naszej stronie",
-          "Samochód zastępczy na czas naprawy lub przeglądu",
-          "Wszystkie samochody wyposażone w wideorejestratory z funkcją nagrywania wnętrza"
+          "Ubezpieczenie taxi po naszej stronie.",
+          "Pełen serwis techniczny po naszej stronie.",
+          "Samochód zastępczy na czas naprawy lub przeglądu.",
+          "Wszystkie samochody wyposażone w wideorejestratory z funkcją nagrywania wnętrza."
         ]
       },
       {
         "title": "Praca w Bolt / Uber",
-        "intro": "Zapewniamy wsparcie formalne przy rozpoczęciu współpracy",
+        "intro": "Zapewniamy wsparcie formalne przy rozpoczęciu współpracy.",
         "content": [
-          "Pomoc w aktywacji konta",
-          "Szkolenie z obsługi aplikacji mobilnych"
+          "Pomoc w aktywacji konta.",
+          "Szkolenie z obsługi aplikacji mobilnych."
         ]
       }
     ]
@@ -105,7 +105,7 @@
 
   "cta": {
     "title": "Gotowy, aby wybrać samochód?",
-    "primary": "Sprawdź dostępne samochody",
+    "primary": "Sprawdź samochody na wynajem",
     "secondary": "Złóż zgłoszenie"
   }
 }

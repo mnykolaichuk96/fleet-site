@@ -1,3 +1,5 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 
 import { OpenBookIcon } from "@/components/icons/OpenBookIcon";
@@ -13,14 +15,20 @@ export function WhyUsInline() {
                 <div className="mx-auto max-w-6xl">
                     <div
                         className="
-    grid grid-cols-1 md:grid-cols-3
-    divide-y md:divide-y-0 md:divide-x
-    rounded-3xl
-    {/*bg-[#0B1C2D]/10*/}
-    py-18 md:py-12
-  "
+              grid grid-cols-1
+
+              md:grid-cols-3
+
+              divide-y
+              md:divide-y-0 md:divide-x
+
+              rounded-3xl
+
+              py-12
+              md:py-12
+              lg:py-12
+            "
                     >
-                        {/* ===== ITEM 1 ===== */}
                         <WhyUsItem
                             icon={<OpenBookIcon />}
                             title={t("items.0.title")}
@@ -57,18 +65,32 @@ function WhyUsItem({
     text: string;
 }) {
     return (
-        <div className="relative flex flex-col items-center text-center px-6 -translate-y-[250px] -mb-[250px]">
+        <div
+            className="
+                relative
+                flex flex-col
 
-            {/* HALO / FOG — ПІД ВСІМ */}
+                items-center
+                text-center
+
+                px-4
+                md:px-6
+              "
+        >
+            {/* HALO */}
             <div
                 className="
           pointer-events-none
           absolute
-          top-20
           left-1/2
           -translate-x-1/2
-          w-[100%]
-          h-[100%]
+
+          top-10
+          md:top-16
+          lg:top-20
+
+          w-full
+          h-full
           rounded-full
           bg-white/80
           blur-2xl
@@ -80,28 +102,72 @@ function WhyUsItem({
                 {/* ICON */}
                 <div
                     className="
-            mb-2
-            text-slate-700
-            [&>svg]:h-[clamp(20rem,23vw,22rem)]
-            [&>svg]:w-[clamp(20rem,23vw,22rem)]
-          "
+                    mb-6
+                    pt-6
+                    md:pt-0
+                    w-full
+                    flex
+                    justify-center
+                    items-center
+
+                    text-slate-700
+
+                    [&>svg]:h-[6rem]
+                    [&>svg]:w-[6rem]
+
+                    md:[&>svg]:h-[7rem]
+                    md:[&>svg]:w-[7rem]
+
+                    lg:[&>svg]:h-[8rem]
+                    lg:[&>svg]:w-[8rem]
+
+                    xl:[&>svg]:h-[10rem]
+                    xl:[&>svg]:w-[10rem]
+                  "
                 >
                     {icon}
                 </div>
 
                 {/* TITLE */}
-                <p className="mb-2 text-2xl font-semibold text-[#D97706]">
+                <p
+                    className="
+            mb-3
+
+            text-2xl
+            md:text-2xl
+            lg:text-3xl
+
+            font-semibold
+            text-[#D97706]
+
+
+            md:min-h-[6rem]
+            lg:min-h-[4.5rem]
+          "
+                >
                     {title}
                 </p>
 
                 {/* TEXT */}
-                <p className="max-w-md text-lg leading-loose text-gray-700">
+                <p
+                    className="
+            max-w-sm
+            md:max-w-md
+            lg:max-w-lg
+
+            text-base
+            md:text-lg
+            lg:text-xl
+
+            leading-relaxed
+            lg:leading-loose
+
+            text-gray-700
+          "
+                >
                     {text}
                 </p>
             </div>
         </div>
     );
 }
-
-
-

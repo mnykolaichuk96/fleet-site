@@ -1,19 +1,19 @@
 {
   "seo": {
-    "title": "Współpraca z flotą – samochód firmowy",
-    "description": "Dołącz do naszej floty i pracuj na samochodzie firmowym. Sprawdź warunki współpracy, system rozliczeń i wymagania dla kierowców w Rzeszowie.",
-    "breadcrumb": "Samochód firmowy",
-    "serviceName": "Współpraca – samochód firmowy"
+    "title": "Fleet partnership – company car",
+    "description": "Join our fleet and work with a company car. Check the cooperation terms, settlement system, and driver requirements in Rzeszów.",
+    "breadcrumb": "Company car",
+    "serviceName": "Partnership – company car"
   },
 
   "intro": {
     "title": {
-      "part1": "Zostań kierowcą na ",
-      "part2": "samochodzie firmowym",
-      "part3": "bez własnego auta"
+      "part1": "Become a driver with a ",
+      "part2": "company car",
+      "part3": "without owning a vehicle"
     },
-    "description": "Zapewniamy samochód, serwis oraz pełne wsparcie organizacyjne. Ty koncentrujesz się na jeździe i zarabianiu — na jasnych i przejrzystych zasadach.",
-    "cta": "Zgłoś się jako kierowca"
+    "description": "We provide the car, maintenance, and full operational support. You focus on driving and earning — under clear and transparent terms.",
+    "cta": "Apply as a driver"
   },
 
   "table": {
@@ -22,8 +22,8 @@
         "icon": "bonusPlusTips",
         "badge": "100%",
         "title": {
-          "main": "Bonusy i napiwki w 100%",
-          "highlight": "dla kierowcy"
+          "main": "Bonuses and tips 100%",
+          "highlight": "for the driver"
         },
         "points": []
       },
@@ -31,36 +31,36 @@
         "icon": "medRefound",
         "badge": "100%",
         "title": {
-          "main": "Zwrot kosztów badań"
+          "main": "Medical exam reimbursement"
         },
         "points": [
-          "Po 2 miesiącach współpracy zwracamy koszty badań",
-          "Zwrot przysługuje niezależnie od terminu wykonania badań"
+          "After 2 months of cooperation, we reimburse the cost of medical exams",
+          "Reimbursement applies regardless of when the exams were completed"
         ]
       },
       {
         "icon": "companyCar",
-        "badge": "ZAPEWNIAMY",
+        "badge": "PROVIDED",
         "title": {
-          "main": "Samochód firmowy"
+          "main": "Company car"
         },
         "points": [
-          "Auto w pełni przygotowane do pracy",
-          "Serwis i ubezpieczenie po naszej stronie"
+          "Vehicle fully prepared for work",
+          "Maintenance and insurance covered by us"
         ]
       },
       {
         "icon": "portfel",
         "badge": "60%",
         "title": {
-          "main": "Nawet do",
-          "highlight": "60% obrotu"
+          "main": "Up to",
+          "highlight": "60% of revenue"
         },
         "points": [
-          "Wszystkie koszty po naszej stronie",
-          "Przy dłuższej współpracy – do 60% obrotu",
-          "Po dwóch miesiącach współpracy – 55% obrotu",
-          "Od pierwszego dnia – 50% obrotu"
+          "All costs covered by us",
+          "Up to 60% revenue share with long-term cooperation",
+          "55% revenue share after two months",
+          "50% revenue share from day one"
         ]
       }
     ]
@@ -69,57 +69,57 @@
   "accordion": {
     "items": [
       {
-        "title": "Zarobki",
+        "title": "Earnings",
         "intro": [],
         "content": [
-          "Dochód jest liczony od obrotu w aplikacjach. Od pierwszego dnia współpracy otrzymujesz 50% obrotu, a wszystkie koszty pozostają po naszej stronie.",
-          "Po dwóch miesiącach współpracy zwracamy koszty badań medycznych, a Twój udział w obrocie wzrasta do 55%.",
-          "Przy dłuższej współpracy udział może wynieść nawet 60% obrotu."
+          "Income is calculated based on turnover in the apps. From the first day of cooperation, you receive 50% of revenue, and all costs remain on our side.",
+          "After two months of cooperation, we reimburse medical exam costs, and your revenue share increases to 55%.",
+          "With long-term cooperation, your share can reach up to 60% of revenue."
         ]
       },
       {
-        "title": "Bonusy i napiwki",
+        "title": "Bonuses and tips",
         "intro": [],
         "content": [
-          "Aplikacje do przewozu osób, takie jak Bolt i Uber, regularnie organizują kampanie bonusowe dla kierowców. Obejmują one dodatkowe wynagrodzenie za wykonanie określonej liczby kursów lub pozostawanie online przez wskazany czas.",
-          "Całość otrzymanej kwoty stanowi dochód kierowcy — nie pobieramy od niej prowizji ani podatku VAT.",
-          "Wszystkie napiwki, również przekazywane za pośrednictwem aplikacji, w 100% trafiają do kierowcy."
+          "Ride-hailing platforms such as Bolt and Uber regularly organize bonus campaigns for drivers. These include additional payments for completing a specified number of trips or staying online for a certain period.",
+          "The full amount received is the driver's income — we do not deduct commission or VAT.",
+          "All tips, including those given through the app, go 100% to the driver."
         ]
       },
       {
-        "title": "Samochód, serwis i ubezpieczenie",
-        "intro": "Zapewniamy samochód w pełni przygotowany do pracy jako taxi. Każde auto jest wyposażone w:",
+        "title": "Car, maintenance and insurance",
+        "intro": "We provide a vehicle fully prepared for taxi work. Each car is equipped with:",
         "content": [
-          "Uchwyt na telefon",
-          "Ładowarkę do telefonu",
-          "Wideorejestrator z funkcją nagrywania wnętrza pojazdu"
+          "Phone holder",
+          "Phone charger",
+          "Dashcam with interior recording function"
         ]
       },
       {
-        "title": "Praca w Bolt / Uber",
-        "intro": "Zapewniamy pełne wsparcie formalne przy rozpoczęciu współpracy.",
+        "title": "Work with Bolt / Uber",
+        "intro": "We provide full formal support when starting cooperation.",
         "content": [
-          "Pomoc w aktywacji konta",
-          "Szkolenie z obsługi aplikacji mobilnych"
+          "Assistance with account activation",
+          "Training on how to use the mobile applications"
         ]
       },
       {
-        "title": "Wydatki",
-        "intro": "Gdy wskazujemy, że wszystkie koszty są po naszej stronie, oznacza to:",
+        "title": "Expenses",
+        "intro": "When we say all costs are on our side, we truly mean all of them.",
         "content": [
-          "Paliwo",
-          "Myjnie i odkurzacze"
+          "Fuel",
+          "Car wash and vacuum services"
         ]
       }
     ]
   },
 
   "contact": {
-    "title": "Aplikacja kierowcy – samochód firmowy",
-    "description": "Pozostaw swoje dane kontaktowe, a skontaktujemy się z Tobą i przedstawimy dalsze etapy współpracy.",
+    "title": "Driver application – company car",
+    "description": "Leave your contact details and we will get in touch to explain the next steps of cooperation.",
     "fullCapacity": {
-      "title": "Obecnie posiadamy pełną obsadę kierowców.",
-      "text": "Wszystkie nasze samochody są aktualnie obsadzone i nie prowadzimy aktywnej rekrutacji.\n\nDynamicznie rozwijamy flotę — gdy pojawią się nowe pojazdy, skontaktujemy się z Tobą w pierwszej kolejności, wykorzystując dane pozostawione w formularzu."
+      "title": "Currently, all driver positions are filled",
+      "text": "All our vehicles are currently assigned to drivers, and we are not actively recruiting at the moment.\n\nWe are continuously expanding our fleet — when new vehicles become available, we will contact you first using the details provided in the form."
     }
   }
 }

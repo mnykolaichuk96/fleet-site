@@ -25,7 +25,6 @@ import Footer from "@/components/Footer";
 import { getMessages } from 'next-intl/server';
 
 import type { Viewport } from "next";
-import DevNoCache from "@/components/DevNoCache";
 
 
 // Тип Locale виводиться з масиву locales
@@ -98,7 +97,6 @@ export default async function LocaleLayout({ children, params }: Props) {
             <Header />
 
             <main className="flex-1">
-                <DevNoCache />
                 {children}
             </main>
 

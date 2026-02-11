@@ -1,19 +1,19 @@
 {
   "seo": {
-    "title": "Współpraca z flotą – samochód firmowy",
-    "description": "Dołącz do naszej floty i pracuj na samochodzie firmowym. Sprawdź warunki współpracy, system rozliczeń i wymagania dla kierowców w Rzeszowie.",
-    "breadcrumb": "Samochód firmowy",
-    "serviceName": "Współpraca – samochód firmowy"
+    "title": "Співпраця з автопарком – службовий автомобіль",
+    "description": "Приєднуйтесь до нашого автопарку та працюйте на службовому автомобілі. Ознайомтесь з умовами співпраці, системою розрахунків та вимогами для водіїв у Жешуві.",
+    "breadcrumb": "Службовий автомобіль",
+    "serviceName": "Співпраця – службовий автомобіль"
   },
 
   "intro": {
     "title": {
-      "part1": "Zostań kierowcą na ",
-      "part2": "samochodzie firmowym",
-      "part3": "bez własnego auta"
+      "part1": "Працюйте водієм на",
+      "part2": "авто компанії",
+      "part3": "без власного авто"
     },
-    "description": "Zapewniamy samochód, serwis oraz pełne wsparcie organizacyjne. Ty koncentrujesz się na jeździe i zarabianiu — na jasnych i przejrzystych zasadach.",
-    "cta": "Zgłoś się jako kierowca"
+    "description": "Ми надаємо автомобіль, сервіс та повну організаційну підтримку. Ви зосереджуєтесь на водінні та заробітку — на прозорих і зрозумілих умовах.",
+    "cta": "Подати заявку як водій"
   },
 
   "table": {
@@ -22,8 +22,8 @@
         "icon": "bonusPlusTips",
         "badge": "100%",
         "title": {
-          "main": "Bonusy i napiwki w 100%",
-          "highlight": "dla kierowcy"
+          "main": "Бонуси та чайові 100%",
+          "highlight": "для водія"
         },
         "points": []
       },
@@ -31,36 +31,36 @@
         "icon": "medRefound",
         "badge": "100%",
         "title": {
-          "main": "Zwrot kosztów badań"
+          "main": "Повернення вартості медогляду"
         },
         "points": [
-          "Po 2 miesiącach współpracy zwracamy koszty badań",
-          "Zwrot przysługuje niezależnie od terminu wykonania badań"
+          "Після 2 місяців співпраці ми компенсуємо витрати на медогляд",
+          "Компенсація надається незалежно від дати проходження медогляду"
         ]
       },
       {
         "icon": "companyCar",
-        "badge": "ZAPEWNIAMY",
+        "badge": "ЗАБЕЗПЕЧУЄМО",
         "title": {
-          "main": "Samochód firmowy"
+          "main": "Службовий автомобіль"
         },
         "points": [
-          "Auto w pełni przygotowane do pracy",
-          "Serwis i ubezpieczenie po naszej stronie"
+          "Авто повністю підготовлене до роботи",
+          "Сервіс та страхування за наш рахунок"
         ]
       },
       {
         "icon": "portfel",
         "badge": "60%",
         "title": {
-          "main": "Nawet do",
-          "highlight": "60% obrotu"
+          "main": "До",
+          "highlight": "60% обороту"
         },
         "points": [
-          "Wszystkie koszty po naszej stronie",
-          "Przy dłuższej współpracy – do 60% obrotu",
-          "Po dwóch miesiącach współpracy – 55% obrotu",
-          "Od pierwszego dnia – 50% obrotu"
+          "Усі витрати за наш рахунок",
+          "При довгостроковій співпраці — до 60% обороту",
+          "Після двох місяців співпраці — 55% обороту",
+          "З першого дня — 50% обороту"
         ]
       }
     ]
@@ -69,57 +69,57 @@
   "accordion": {
     "items": [
       {
-        "title": "Zarobki",
+        "title": "Заробіток",
         "intro": [],
         "content": [
-          "Dochód jest liczony od obrotu w aplikacjach. Od pierwszego dnia współpracy otrzymujesz 50% obrotu, a wszystkie koszty pozostają po naszej stronie.",
-          "Po dwóch miesiącach współpracy zwracamy koszty badań medycznych, a Twój udział w obrocie wzrasta do 55%.",
-          "Przy dłuższej współpracy udział może wynieść nawet 60% obrotu."
+          "Дохід розраховується від обороту в додатках. З першого дня співпраці ви отримуєте 50% обороту, а всі витрати залишаються за нами.",
+          "Після двох місяців співпраці ми компенсуємо витрати на медичні обстеження, а ваша частка зростає до 55%.",
+          "За тривалої співпраці частка може становити до 60% обороту."
         ]
       },
       {
-        "title": "Bonusy i napiwki",
+        "title": "Бонуси та чайові",
         "intro": [],
         "content": [
-          "Aplikacje do przewozu osób, takie jak Bolt i Uber, regularnie organizują kampanie bonusowe dla kierowców. Obejmują one dodatkowe wynagrodzenie za wykonanie określonej liczby kursów lub pozostawanie online przez wskazany czas.",
-          "Całość otrzymanej kwoty stanowi dochód kierowcy — nie pobieramy od niej prowizji ani podatku VAT.",
-          "Wszystkie napiwki, również przekazywane za pośrednictwem aplikacji, w 100% trafiają do kierowcy."
+          "Додатки для перевезення пасажирів, такі як Bolt та Uber, регулярно проводять бонусні кампанії для водіїв. Вони передбачають додаткову винагороду за виконання певної кількості поїздок або перебування онлайн визначений час.",
+          "Уся отримана сума є доходом водія — ми не утримуємо з неї комісію чи ПДВ.",
+          "Усі чайові, зокрема ті, що передані через додаток, на 100% належать водієві."
         ]
       },
       {
-        "title": "Samochód, serwis i ubezpieczenie",
-        "intro": "Zapewniamy samochód w pełni przygotowany do pracy jako taxi. Każde auto jest wyposażone w:",
+        "title": "Автомобіль, сервіс і страхування",
+        "intro": "Ми надаємо автомобіль, повністю підготовлений до роботи в таксі. Кожне авто оснащене:",
         "content": [
-          "Uchwyt na telefon",
-          "Ładowarkę do telefonu",
-          "Wideorejestrator z funkcją nagrywania wnętrza pojazdu"
+          "Тримачем для телефону",
+          "Зарядним пристроєм",
+          "Відеореєстратором з функцією запису салону"
         ]
       },
       {
-        "title": "Praca w Bolt / Uber",
-        "intro": "Zapewniamy pełne wsparcie formalne przy rozpoczęciu współpracy.",
+        "title": "Робота в Bolt / Uber",
+        "intro": "Ми забезпечуємо повну формальну підтримку при початку співпраці.",
         "content": [
-          "Pomoc w aktywacji konta",
-          "Szkolenie z obsługi aplikacji mobilnych"
+          "Допомога в активації акаунта",
+          "Навчання користуванню мобільними додатками"
         ]
       },
       {
-        "title": "Wydatki",
-        "intro": "Gdy wskazujemy, że wszystkie koszty są po naszej stronie, oznacza to:",
+        "title": "Витрати",
+        "intro": "Коли ми говоримо, що всі витрати на нашій стороні — маємо на увазі дійсно всі.",
         "content": [
-          "Paliwo",
-          "Myjnie i odkurzacze"
+          "Пальне",
+          "Мийки та пилососи"
         ]
       }
     ]
   },
 
   "contact": {
-    "title": "Aplikacja kierowcy – samochód firmowy",
-    "description": "Pozostaw swoje dane kontaktowe, a skontaktujemy się z Tobą i przedstawimy dalsze etapy współpracy.",
+    "title": "Заявка водія – автомобіль компанії",
+    "description": "Залиште свої контактні дані, і ми зв’яжемося з вами та розповімо про подальші етапи співпраці.",
     "fullCapacity": {
-      "title": "Obecnie posiadamy pełną obsadę kierowców.",
-      "text": "Wszystkie nasze samochody są aktualnie obsadzone i nie prowadzimy aktywnej rekrutacji.\n\nDynamicznie rozwijamy flotę — gdy pojawią się nowe pojazdy, skontaktujemy się z Tobą w pierwszej kolejności, wykorzystując dane pozostawione w formularzu."
+      "title": "Наразі всі місця для водіїв зайняті",
+      "text": "Усі наші автомобілі наразі закріплені за водіями, і активний набір не проводиться.\n\nМи активно розширюємо автопарк — коли з’являться нові автомобілі, ми зв’яжемося з вами в першу чергу, використовуючи дані, залишені у формі."
     }
   }
 }

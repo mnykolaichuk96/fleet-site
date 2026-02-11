@@ -10,17 +10,19 @@ type Props = {
 
 export default function CarInstanceCard({ vm, onSelect }: Props) {
     const [activeIndex, setActiveIndex] = useState(0);
-    const hasMultipleImages = vm.images.length > 1;
+    const hasMultipleImages = vm.imagesV.length > 1;
+
+    const hasMultiple = vm.imagesV.length > 1;
 
     const prev = () => {
-        setActiveIndex((i) =>
-            i === 0 ? vm.images.length - 1 : i - 1
+        setActiveIndex(i =>
+            i === 0 ? vm.imagesV.length - 1 : i - 1
         );
     };
 
     const next = () => {
-        setActiveIndex((i) =>
-            i === vm.images.length - 1 ? 0 : i + 1
+        setActiveIndex(i =>
+            i === vm.imagesV.length - 1 ? 0 : i + 1
         );
     };
 
@@ -38,7 +40,7 @@ export default function CarInstanceCard({ vm, onSelect }: Props) {
                         <div className="absolute bottom-6 w-3/4 h-10 bg-black/30 blur-3xl rounded-full" />
 
                         <img
-                            src={vm.images[activeIndex]}
+                            src={vm.imagesV[activeIndex]}
                             alt={vm.title}
                             className="relative z-10 max-h-[60vh] object-contain select-none"
                             draggable={false}
@@ -115,12 +117,31 @@ export default function CarInstanceCard({ vm, onSelect }: Props) {
                         {/* CAR */}
                         <div className="absolute left-[4%] top-1/2 -translate-y-1/2 h-full w-[50%] flex items-center justify-center overflow-hidden rounded-[32px]">
                             <img
-                                src={vm.images[activeIndex]}
+                                src={vm.imagesH[activeIndex]}
                                 alt={vm.title}
                                 className="max-h-full max-w-full object-contain select-none"
                                 draggable={false}
                             />
                         </div>
+                        {hasMultiple && (
+                            <>
+                                <button
+                                    onClick={prev}
+                                    className="absolute left-6 top-1/2 -translate-y-1/2 z-20
+                 w-10 h-10 rounded-full bg-white/80 backdrop-blur shadow"
+                                >
+                                    ←
+                                </button>
+
+                                <button
+                                    onClick={next}
+                                    className="absolute right-[50%] top-1/2 -translate-y-1/2 z-20
+                 w-10 h-10 rounded-full bg-white/80 backdrop-blur shadow"
+                                >
+                                    →
+                                </button>
+                            </>
+                        )}
 
                         {/* INFO PANEL */}
                         <div className="absolute right-0 top-0 bottom-0 w-[420px] rounded-l-[28px] bg-white/90 backdrop-blur-[24px] shadow-[-20px_0_40px_rgba(0,0,0,0.06)] p-8 flex flex-col justify-between">

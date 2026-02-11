@@ -1,168 +1,168 @@
 {
   "seo": {
-    "title": "Wynajem samochodów taxi i praca dla kierowców Bolt i Uber w Rzeszowie",
-    "description": "Oferujemy nowoczesne samochody taxi oraz przejrzyste warunki współpracy dla kierowców Bolt i Uber w Rzeszowie."
+    "title": "Оренда автомобілів для таксі та робота для водіїв Bolt і Uber у Жешуві",
+    "description": "Пропонуємо сучасні автомобілі для таксі та прозорі умови співпраці для водіїв Bolt і Uber у Жешуві."
   },
 
   "hero": {
     "title": {
-      "brand": "перевірка",
+      "brand": "GINGER",
       "partner": "PARTNER"
     },
     "subtitle": {
-      "line1": "Stworzone przez",
-      "highlight1": "kierowców",
-      "line2": "dla",
-      "highlight2": "kierowców"
+      "line1": "Створено",
+      "highlight1": "водіями",
+      "line2": "для",
+      "highlight2": "водіїв"
     },
     "qualityMark": {
       "label": "Quality Mark",
       "partner": "PARTNER",
-      "note": "z polecenia"
+      "note": "за рекомендацією"
     }
   },
 
   "whyUsInline": {
     "items": [
       {
-        "title": "Kompleksowe wsparcie",
-        "text": "Jasne warunki współpracy i minimum formalności."
+        "title": "Комплексне навчання",
+        "text": "Ми забезпечуємо повне навчання з користування додатками Bolt і Uber."
       },
       {
-        "title": "0% VAT od napiwków i bonusów",
-        "text": "Całość napiwków i bonusów trafia bezpośrednio do Ciebie."
+        "title": "0% ПДВ з чайових та бонусів",
+        "text": "Усі чайові та бонуси надходять безпосередньо вам."
       },
       {
-        "title": "Zwrot kosztów badań",
-        "text": "Zwracamy koszt badań lekarskich po spełnieniu warunków."
+        "title": "Компенсація вартості медогляду",
+        "text": "Ми відшкодовуємо витрати на медичні обстеження за виконання умов."
       }
     ]
   },
 
   "rentCar": {
-    "title": "Wynajmij samochód i pracuj w Bolt / Uber bez własnego auta",
-    "text": "Zapewniamy samochód w pełni przygotowany do pracy. Ty jeździsz i zarabiasz — my zajmujemy się resztą.",
+    "title": "Орендуй автомобіль і працюй у Bolt / Uber без власного авто",
+    "text": "Ми надаємо автомобіль, повністю підготовлений до роботи. Ви керуєте та заробляєте — ми беремо на себе решту.",
     "benefits": [
       {
-        "title": "Bez wkładu własnego",
-        "text": "Rozpoczynasz pracę bez dodatkowych opłat na start."
+        "title": "Без початкових вкладень",
+        "text": "Розпочинаєте роботу без стартових внесків та без обов’язкової застави."
       },
       {
-        "title": "Auto gotowe do pracy",
-        "text": "Hybrydy i automaty w pełni przygotowane do pracy jako taxi."
+        "title": "Авто готове до роботи",
+        "text": "Гібриди з ГБО та автоматичною коробкою передач, підготовлені для роботи в таксі."
       },
       {
-        "title": "Szybki start",
-        "text": "Możesz rozpocząć pracę nawet w ciągu kilku dni."
+        "title": "Можлива робота без комісії",
+        "text": "Конкурентні умови, створені з урахуванням потреб водіїв."
       },
       {
-        "title": "Szybki start",
-        "text": "Możesz rozpocząć pracę nawet w ciągu kilku dni."
+        "title": "Швидкий старт",
+        "text": "Можна розпочати роботу навіть протягом кількох днів."
       }
     ],
     "cta": {
-      "label": "Zobacz warunki wynajmu",
-      "hint": "Poznaj dostępne samochody, koszty i zasady krok po kroku."
+      "label": "Переглянути умови оренди",
+      "hint": "Дізнайтеся про доступні автомобілі, витрати та правила крок за кроком."
     }
   },
 
   "fleetCar": {
-    "title": "Pracuj na naszym samochodzie — zostań kierowcą Ginger Partner",
-    "text": "Otrzymujesz do dyspozycji samochód firmowy i zarabiasz, realizując przejazdy w Bolt lub Uber.",
+    "title": "Працюй на нашому автомобілі — стань водієм Ginger Partner",
+    "text": "Отримуєш автомобіль компанії та заробляєш, виконуючи поїздки в Bolt або Uber.",
     "benefits": [
       {
-        "title": "Samochód firmowy",
-        "text": "Nie inwestujesz własnych środków — otrzymujesz w pełni przygotowane auto."
+        "title": "Службовий автомобіль",
+        "text": "Без власних інвестицій — отримуєш повністю підготовлене авто."
       },
       {
-        "title": "Wszystko po naszej stronie",
-        "text": "Serwis, ubezpieczenie, dokumenty i licencje zapewniamy my."
+        "title": "Усі витрати за наш рахунок",
+        "text": "Сервіс, пальне, мийки та поточні експлуатаційні витрати."
       },
       {
-        "title": "Elastyczny grafik",
-        "text": "Pracujesz w wybrane przez siebie dni i godziny."
+        "title": "Гнучкий графік",
+        "text": "Графік, зручний для вас — без обов’язкових змін і мінімальних лімітів."
       },
       {
-        "title": "Stałe wsparcie",
-        "text": "Jesteśmy dostępni i pomagamy w bieżących sprawach."
+        "title": "Підтримка 24/7",
+        "text": "Постійний контакт і операційна допомога цілодобово."
       }
     ],
     "cta": {
-      "label": "Sprawdź szczegóły",
-      "hint": "Poznaj warunki współpracy i złóż zgłoszenie online."
+      "label": "Переглянути умови співпраці",
+      "hint": "Ознайомтеся з деталями та подайте заявку за кілька хвилин."
     }
   },
 
   "driverCar": {
-    "title": "Pracuj w Bolt / Uber ze swoim samochodem",
-    "text": "Dołącz do naszej floty jako kierowca z własnym autem i korzystaj z przejrzystych zasad rozliczeń.",
+    "title": "Працюй у Bolt / Uber зі своїм автомобілем",
+    "text": "Приєднуйтесь до нашого автопарку як водій з власним авто та користуйтеся прозорими умовами розрахунків.",
     "benefits": [
       {
-        "title": "Wyższy dochód",
-        "text": "Zarabiasz więcej na własnym samochodzie — oferujemy korzystne warunki rozliczeń."
+        "title": "Вищий дохід",
+        "text": "Заробляйте більше на власному авто — можливість працювати без комісії."
       },
       {
-        "title": "Bonusy i wyższe stawki",
-        "text": "Korzystasz z dodatkowych bonusów i atrakcyjnych stawek za przejazdy."
+        "title": "Більше економії",
+        "text": "Ми повертаємо 50% ПДВ, включеного у витрати на пальне."
       },
       {
-        "title": "Regularne wypłaty",
-        "text": "Otrzymujesz wypłaty raz w tygodniu na swoje konto."
+        "title": "Регулярні виплати",
+        "text": "Виплати здійснюються не пізніше вівторка кожного тижня."
       },
       {
-        "title": "Wsparcie operacyjne",
-        "text": "Zapewniamy pomoc na każdym etapie współpracy."
+        "title": "Операційна підтримка",
+        "text": "Допомога на кожному етапі співпраці."
       }
     ],
     "cta": {
-      "label": "Sprawdź warunki",
-      "hint": "Poznaj szczegóły współpracy i złóż zgłoszenie online."
+      "label": "Переглянути умови співпраці",
+      "hint": "Дізнайтеся деталі та подайте заявку онлайн за кілька хвилин."
     }
   },
 
   "cta": {
-    "badge": "Zanim rozpoczniesz",
+    "badge": "Перед початком",
 
-    "title": "Co jest potrzebne, aby rozpocząć pracę jako kierowca?",
+    "title": "Що потрібно, щоб розпочати роботу водієм?",
 
     "requirements": {
       "criminal": {
-        "title": "Zaświadczenie o niekaralności",
-        "text": "Dokument uzyskasz w sądzie lub przez Krajowy Rejestr Karny. Ważny 30 dni."
+        "title": "Довідка про несудимість",
+        "text": "Документ можна отримати в суді або через Національний реєстр. Дійсний 30 днів."
       },
       "medical": {
-        "title": "Badania lekarskie i psychologiczne",
-        "text": "Skierowanie otrzymasz od nas. Zwracamy część kosztów po 350 przejazdach."
+        "title": "Медичні та психологічні обстеження",
+        "text": "Ми підкажемо перевірені заклади для проходження необхідних обстежень."
       },
       "photo": {
-        "title": "Zdjęcie do identyfikatora",
-        "text": "Wykonamy je bezpłatnie w naszym biurze."
+        "title": "Польське водійське посвідчення",
+        "text": "Необхідне дійсне польське посвідчення водія категорії B."
       }
     }
   },
 
   "contactForm": {
-    "title": "Zostaw kontakt — resztą zajmiemy się my",
-    "subtitle": "Podaj imię, numer telefonu i miasto. Oddzwonimy i pomożemy Ci szybko rozpocząć współpracę.",
+    "title": "Залиште контакти — решту ми зробимо за вас",
+    "subtitle": "Вкажіть ім’я, номер телефону та місто. Ми передзвонимо й допоможемо швидко розпочати співпрацю.",
 
     "fields": {
-      "name": "Imię",
-      "phone": "Numer telefonu",
-      "email": "Adres e-mail",
-      "city": "Rzeszów"
+      "name": "Ім’я",
+      "phone": "Номер телефону",
+      "email": "Електронна пошта",
+      "city": "Жешув"
     },
 
-    "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych.",
+    "consent": "Я погоджуюся на обробку моїх персональних даних",
 
-    "submit": "Wyślij zgłoszenie",
-    "submitting": "Wysyłanie…",
-    "success": "Zgłoszenie zostało wysłane. Skontaktujemy się z Tobą.",
-    "error": "Wystąpił błąd. Spróbuj ponownie."
+    "submit": "Надіслати заявку",
+    "submitting": "Надсилання…",
+    "success": "Заявку надіслано. Ми зв’яжемося з вами.",
+    "error": "Сталася помилка. Спробуйте ще раз."
   },
 
   "phone": {
-    "label": "Masz pytania? Zadzwoń:",
-    "numberPl": "+48 791 863 388",
+    "label": "Є запитання? Телефонуйте:",
+    "numberPl": "+48 731 090 880",
     "numberEu": "+48 791 863 388",
     "numberUa": "+48 731 090 880"
   }

@@ -1,12 +1,12 @@
 {
-  "cars": "Samochody na wynajem",
-  "drivers": "Współpraca",
-  "contact": "Kontakt",
-  "apply": "Zgłoś się",
+  "cars": "Available cars",
+  "drivers": "Join our fleet",
+  "contact": "Contact",
+  "apply": "Apply",
 
   "dropdown": {
-    "rentCar": "Wynajem samochodu",
-    "companyCar": "Samochód firmowy",
-    "ownCar": "Własny samochód"
+    "rentCar": "Car rental",
+    "companyCar": "Company car",
+    "ownCar": "Own car"
   }
 }

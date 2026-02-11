@@ -1,40 +1,40 @@
 {
-  "title": "Polityka cookies",
+  "title": "Cookie Policy",
 
   "sections": [
     {
-      "title": "1. Czym są pliki cookies?",
+      "title": "1. What are cookies?",
       "content": [
-        "Pliki cookies to niewielkie pliki tekstowe zapisywane na urządzeniu użytkownika podczas korzystania ze strony internetowej.",
-        "Pozwalają one na prawidłowe działanie strony oraz analizę ruchu."
+        "Cookies are small text files stored on a user's device when visiting a website.",
+        "They ensure the proper functioning of the website and allow traffic analysis."
       ]
     },
     {
-      "title": "2. Jakie cookies wykorzystujemy?",
+      "title": "2. What types of cookies do we use?",
       "content": [
-        "Cookies techniczne – niezbędne do prawidłowego funkcjonowania strony.",
-        "Cookies analityczne – pozwalające analizować sposób korzystania ze strony."
+        "Technical cookies – necessary for the proper operation of the website.",
+        "Analytical cookies – used to analyze how the website is used."
       ]
     },
     {
-      "title": "3. Cel wykorzystania cookies",
+      "title": "3. Purpose of using cookies",
       "content": [
-        "Zapewnienie prawidłowego działania strony.",
-        "Poprawa wydajności oraz analiza statystyk odwiedzin."
+        "To ensure the proper functioning of the website.",
+        "To improve performance and analyze visitor statistics."
       ]
     },
     {
-      "title": "4. Zarządzanie cookies",
+      "title": "4. Managing cookies",
       "content": [
-        "Użytkownik może w każdej chwili zmienić ustawienia dotyczące cookies w swojej przeglądarce.",
-        "Ograniczenie stosowania cookies może wpłynąć na niektóre funkcjonalności strony."
+        "Users can change their cookie settings at any time in their browser.",
+        "Restricting the use of cookies may affect certain website functionalities."
       ]
     },
     {
-      "title": "5. Zmiany w polityce cookies",
+      "title": "5. Changes to the Cookie Policy",
       "content": [
-        "Administrator zastrzega sobie prawo do wprowadzania zmian w niniejszej polityce.",
-        "Aktualna wersja dokumentu jest zawsze dostępna na stronie internetowej."
+        "The administrator reserves the right to make changes to this policy.",
+        "The current version of the document is always available on the website."
       ]
     }
   ]

@@ -1,42 +1,42 @@
 {
-  "seoTitle": "Wynajem samochodów taxi w Rzeszowie",
-  "seoDescription": "Nowoczesne samochody do pracy w Bolt i Uber w Rzeszowie. Jasne warunki wynajmu i przejrzyste rozliczenia.",
+  "seoTitle": "Оренда автомобілів для таксі у Жешуві",
+  "seoDescription": "Сучасні автомобілі для роботи в Bolt та Uber у Жешуві. Прозорі умови оренди та зрозумілі розрахунки.",
 
-  "rentalConditions": "Warunki wynajmu",
+  "rentalConditions": "Умови оренди",
 
   "fleetTitle": {
-    "part1": "Dostępna",
-    "part2": "flota",
-    "part3": "samochodów"
+    "part1": "Доступні",
+    "part2": "автомобілі",
+    "part3": ""
   },
 
   "offer": {
-    "imageAlt": "Samochód marki {brand} {model}",
+    "imageAlt": "Автомобіль {brand} {model}",
 
     "labels": {
       "gearbox": {
-        "automatic": "Automatyczna skrzynia biegów",
-        "manual": "Manualna skrzynia biegów"
+        "automatic": "Автоматична коробка передач",
+        "manual": "Механічна коробка передач"
       },
 
       "fuel": {
-        "hybrid": "Hybrydowy / Gaz",
-        "petrol": "Benzynowy",
-        "diesel": "Diesel",
-        "electric": "Elektryczny"
+        "hybrid": "Гібрид / Газ",
+        "petrol": "Бензиновий",
+        "diesel": "Дизельний",
+        "electric": "Електричний"
       }
     },
 
-    "consumption": "Średnie spalanie: {consumption}",
-    "currency": "zł",
-    "perWeek": " / tydzień",
-    "cta": "Sprawdź dostępność"
+    "consumption": "Середня витрата пального: {consumption}",
+    "currency": "PLN",
+    "perWeek": " / тиждень",
+    "cta": "Перевірити доступність"
   },
 
   "cars": {
     "toyota-prius-30": {
       "title": "Toyota Prius",
-      "subtitle": "Ekonomiczna hybryda do pracy w mieście"
+      "subtitle": "Економічний гібрид для роботи в місті"
     }
   }
 }

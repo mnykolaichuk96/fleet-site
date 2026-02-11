@@ -158,7 +158,7 @@ function RequestItem({
                 {/* TEXT */}
                 <p
                     className="
-            max-w-sm
+            max-w-md
             md:max-w-md
             lg:max-w-lg
 

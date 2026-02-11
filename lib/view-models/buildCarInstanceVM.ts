@@ -6,7 +6,8 @@ type TFunction = (key: string, values?: Record<string, any>) => string;
 
 export type CarInstanceVM = {
     id: string;
-    images: string[];
+    imagesV: string[];
+    imagesH: string[];
     equipment: string[];
 
     title: string;          // "Toyota Prius"
@@ -27,7 +28,8 @@ export function buildCarInstanceVM(
 ): CarInstanceVM {
     return {
         id: instance.id,
-        images: instance.images,
+        imagesV: instance.imagesV,
+        imagesH: instance.imagesH,
         equipment: instance.equipment.map(
             (slug) => t(`equipment.${slug}`)
         ),

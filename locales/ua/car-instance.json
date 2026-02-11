@@ -1,28 +1,27 @@
 {
   "intro": {
-    "backToOffers": "Powrót do floty",
-    "rentalConditions": "Warunki współpracy"
+    "backToOffers": "Повернутися до автопарку",
+    "rentalConditions": "Умови оренди"
   },
 
   "equipment": {
-    "rear_camera": "Kamera cofania",
+    "rear_camera": "Камера заднього виду",
     "carPlay": "Apple CarPlay / Android Auto",
-    "dashcam": "Wideorejestrator",
-    "keyLess": "System bezkluczykowy",
-    "pdc": "Czujniki parkowania",
-    "bluetooth": "System audio z Bluetooth"
+    "dashcam": "Відеореєстратор",
+    "keyLess": "Безключовий доступ",
+    "pdc": "Парктронік",
+    "bluetooth": "Аудіосистема з Bluetooth"
   },
 
-  "status": {
-    "available": "Dostępny",
-    "rented": "Aktualnie wynajęty"
-  },
-
-  "cta": {
-    "select": "Wybierz samochód"
+  "carInstance": {
+    "status": {
+      "available": "Доступний",
+      "rented": "Орендований"
+    },
+    "cta": "Вибрати автомобіль"
   },
 
   "form": {
-    "selectedCar": "Wybrany samochód"
+    "selectedCar": "Вибраний автомобіль"
   }
 }

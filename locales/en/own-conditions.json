@@ -1,48 +1,48 @@
 {
   "seo": {
-    "title": "Współpraca – własny samochód",
-    "description": "Rozliczaj się jako partner i pracuj na własnym aucie w Bolt i Uber. Sprawdź warunki współpracy.",
-    "breadcrumb": "Własny samochód",
-    "serviceName": "Współpraca – własny samochód"
+    "title": "Partnership – Your Own Car",
+    "description": "Work as a partner using your own car with Bolt and Uber. Check the cooperation terms.",
+    "breadcrumb": "Own Car",
+    "serviceName": "Partnership – Own Car"
   },
 
   "intro": {
     "title": {
-      "part1": "Współpraca na",
-      "part2": "własnym samochodzie",
+      "part1": "Work with",
+      "part2": "your own car",
       "part3": ""
     },
-    "description": "Rozliczaj się z nami jako partner i pracuj na własnym aucie w Bolt lub Uber.",
-    "cta": "Zgłoś się do współpracy"
+    "description": "Partner with us and work using your own vehicle with Bolt or Uber.",
+    "cta": "Apply for partnership"
   },
+
   "quickConditions": {
     "items": [
       {
         "icon": "noCommission",
         "title": {
-          "main": "Brak stałej opłaty",
-          "highlight": "miesięcznej"
+          "main": "Option to work",
+          "highlight": "without commission"
         },
         "points": []
       },
       {
         "icon": "noVat",
         "title": {
-          "main": "Wsparcie formalne"
+          "main": "0% VAT"
         },
         "points": [
-          "Pomoc przy rejestracji działalności",
-          "Rozliczenia podatkowe",
-          "Obsługa dokumentów"
+          "on bonuses",
+          "on tips"
         ]
       }
     ]
   },
 
   "commissionTable": {
-    "title": "Tabela prowizji",
-    "subtitle": "Miesięczny obrót",
-    "currency": "zł",
+    "title": "Commission Table",
+    "subtitle": "Monthly turnover",
+    "currency": "PLN",
     "tiers": [
       {
         "range": "0–999",
@@ -67,41 +67,54 @@
         }
       }
     ],
-    "note": "Prowizja liczona od miesięcznego obrotu netto."
+    "note": "Commission is calculated based on weekly revenue"
   },
 
   "details": {
     "items": [
       {
-        "title": "Jak wygląda rozliczenie?",
-        "intro": "Współpraca opiera się na modelu partnerskim.",
+        "title": "Costs and payments",
+        "intro": [],
         "content": [
-          "Podpisujemy umowę partnerską",
-          "Rozliczenie miesięczne",
-          "Przejrzysty system prowizyjny"
+          "Settlement commission – even 0 PLN (depending on revenue)",
+          "+ 8% VAT",
+          "Mandate contract tax – 50 PLN per week (for students under 26 – 0 PLN)",
+          "No vehicle deposit required",
+          "No additional fees for app settlements"
         ]
       },
       {
-        "title": "Jakie dokumenty są wymagane?",
+        "title": "50% VAT refund on fuel",
+        "intro": [],
         "content": [
-          "Prawo jazdy",
-          "Dowód rejestracyjny pojazdu",
-          "Badania lekarskie i psychotechniczne"
+          "We refund 50% of the VAT included in fuel expenses",
+          "Settlement is processed automatically – no additional formalities"
         ]
       },
       {
-        "title": "Czy mogę pracować elastycznie?",
+        "title": "Work with Bolt / Uber",
+        "intro": "We provide full formal support when starting cooperation.",
         "content": [
-          "Sam decydujesz o godzinach pracy",
-          "Możesz łączyć z inną działalnością",
-          "Brak minimalnego progu godzin"
+          "Account activation assistance",
+          "Training on mobile app usage"
+        ]
+      },
+      {
+        "title": "Required documents",
+        "intro": "",
+        "content": [
+          "Vehicle from 2006 or newer (minimum 4 doors)",
+          "TAXI annotation in the registration certificate – our team will guide you through the process",
+          "Taxi liability insurance (OC TAXI) – we cooperate with experienced agents to secure the best offer",
+          "Criminal record certificate (not older than 30 days)",
+          "Valid medical and psychological examinations"
         ]
       }
     ]
   },
 
   "contact": {
-    "title": "Zgłoś się do współpracy",
-    "description": "Wypełnij formularz, a skontaktujemy się z Tobą w sprawie rozpoczęcia współpracy na własnym samochodzie."
+    "title": "Apply for partnership",
+    "description": "Fill in the form and we will contact you about starting cooperation with your own car."
   }
 }

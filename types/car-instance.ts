@@ -16,5 +16,6 @@ export type CarInstance = {
 
     equipment: string[];    // All equipment
 
-    images: string[];           // REAL photos
+    imagesV: string[];           // REAL photos for phone
+    imagesH: string[];           // REAL photos for desctop
 };

@@ -1,40 +1,40 @@
 {
-  "title": "Polityka cookies",
+  "title": "Політика використання файлів cookie",
 
   "sections": [
     {
-      "title": "1. Czym są pliki cookies?",
+      "title": "1. Що таке файли cookie?",
       "content": [
-        "Pliki cookies to niewielkie pliki tekstowe zapisywane na urządzeniu użytkownika podczas korzystania ze strony internetowej.",
-        "Pozwalają one na prawidłowe działanie strony oraz analizę ruchu."
+        "Файли cookie — це невеликі текстові файли, які зберігаються на пристрої користувача під час відвідування вебсайту.",
+        "Вони забезпечують коректну роботу сайту та дозволяють аналізувати трафік."
       ]
     },
     {
-      "title": "2. Jakie cookies wykorzystujemy?",
+      "title": "2. Які файли cookie ми використовуємо?",
       "content": [
-        "Cookies techniczne – niezbędne do prawidłowego funkcjonowania strony.",
-        "Cookies analityczne – pozwalające analizować sposób korzystania ze strony."
+        "Технічні файли cookie — необхідні для належного функціонування сайту.",
+        "Аналітичні файли cookie — дозволяють аналізувати спосіб використання сайту."
       ]
     },
     {
-      "title": "3. Cel wykorzystania cookies",
+      "title": "3. Мета використання файлів cookie",
       "content": [
-        "Zapewnienie prawidłowego działania strony.",
-        "Poprawa wydajności oraz analiza statystyk odwiedzin."
+        "Забезпечення належної роботи сайту.",
+        "Покращення продуктивності та аналіз статистики відвідувань."
       ]
     },
     {
-      "title": "4. Zarządzanie cookies",
+      "title": "4. Керування файлами cookie",
       "content": [
-        "Użytkownik może w każdej chwili zmienić ustawienia dotyczące cookies w swojej przeglądarce.",
-        "Ograniczenie stosowania cookies może wpłynąć na niektóre funkcjonalności strony."
+        "Користувач може в будь-який момент змінити налаштування щодо файлів cookie у своєму браузері.",
+        "Обмеження використання файлів cookie може вплинути на окремі функції сайту."
       ]
     },
     {
-      "title": "5. Zmiany w polityce cookies",
+      "title": "5. Зміни до політики використання файлів cookie",
       "content": [
-        "Administrator zastrzega sobie prawo do wprowadzania zmian w niniejszej polityce.",
-        "Aktualna wersja dokumentu jest zawsze dostępna na stronie internetowej."
+        "Адміністрація залишає за собою право вносити зміни до цієї політики.",
+        "Актуальна версія документа завжди доступна на вебсайті."
       ]
     }
   ]

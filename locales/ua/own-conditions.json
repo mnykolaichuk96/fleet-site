@@ -1,48 +1,48 @@
 {
   "seo": {
-    "title": "Współpraca – własny samochód",
-    "description": "Rozliczaj się jako partner i pracuj na własnym aucie w Bolt i Uber. Sprawdź warunki współpracy.",
-    "breadcrumb": "Własny samochód",
-    "serviceName": "Współpraca – własny samochód"
+    "title": "Співпраця – власний автомобіль",
+    "description": "Працюйте як партнер на власному автомобілі в Bolt і Uber. Перегляньте умови співпраці.",
+    "breadcrumb": "Власний автомобіль",
+    "serviceName": "Співпраця – власний автомобіль"
   },
 
   "intro": {
     "title": {
-      "part1": "Współpraca na",
-      "part2": "własnym samochodzie",
+      "part1": "Співпраця з",
+      "part2": "власним автомобілем",
       "part3": ""
     },
-    "description": "Rozliczaj się z nami jako partner i pracuj na własnym aucie w Bolt lub Uber.",
-    "cta": "Zgłoś się do współpracy"
+    "description": "Співпрацюйте з нами як партнер і працюйте на власному авто в Bolt або Uber.",
+    "cta": "Подати заявку на співпрацю"
   },
+
   "quickConditions": {
     "items": [
       {
         "icon": "noCommission",
         "title": {
-          "main": "Brak stałej opłaty",
-          "highlight": "miesięcznej"
+          "main": "Можлива робота",
+          "highlight": "без комісії"
         },
         "points": []
       },
       {
         "icon": "noVat",
         "title": {
-          "main": "Wsparcie formalne"
+          "main": "0% ПДВ"
         },
         "points": [
-          "Pomoc przy rejestracji działalności",
-          "Rozliczenia podatkowe",
-          "Obsługa dokumentów"
+          "на бонуси",
+          "на чайові"
         ]
       }
     ]
   },
 
   "commissionTable": {
-    "title": "Tabela prowizji",
-    "subtitle": "Miesięczny obrót",
-    "currency": "zł",
+    "title": "Таблиця комісії",
+    "subtitle": "Місячний оборот",
+    "currency": "PLN",
     "tiers": [
       {
         "range": "0–999",
@@ -67,41 +67,54 @@
         }
       }
     ],
-    "note": "Prowizja liczona od miesięcznego obrotu netto."
+    "note": "Комісія розраховується від тижневого обороту"
   },
 
   "details": {
     "items": [
       {
-        "title": "Jak wygląda rozliczenie?",
-        "intro": "Współpraca opiera się na modelu partnerskim.",
+        "title": "Витрати та платежі",
+        "intro": [],
         "content": [
-          "Podpisujemy umowę partnerską",
-          "Rozliczenie miesięczne",
-          "Przejrzysty system prowizyjny"
+          "Розрахункова комісія – навіть 0 PLN (залежно від обороту)",
+          "+ 8% ПДВ",
+          "Податок за договором доручення – 50 PLN на тиждень (для студентів до 26 років – 0 PLN)",
+          "Застава за автомобіль не вимагається",
+          "Відсутність додаткових оплат за розрахунки в додатку"
         ]
       },
       {
-        "title": "Jakie dokumenty są wymagane?",
+        "title": "Повернення 50% ПДВ за пальне",
+        "intro": [],
         "content": [
-          "Prawo jazdy",
-          "Dowód rejestracyjny pojazdu",
-          "Badania lekarskie i psychotechniczne"
+          "Повертаємо 50% суми ПДВ, що входить у витрати на пальне",
+          "Розрахунок здійснюється автоматично — без додаткових формальностей"
         ]
       },
       {
-        "title": "Czy mogę pracować elastycznie?",
+        "title": "Робота в Bolt / Uber",
+        "intro": "Ми забезпечуємо формальну підтримку на старті співпраці.",
         "content": [
-          "Sam decydujesz o godzinach pracy",
-          "Możesz łączyć z inną działalnością",
-          "Brak minimalnego progu godzin"
+          "Допомога в активації акаунта",
+          "Навчання користуванню мобільними додатками"
+        ]
+      },
+      {
+        "title": "Необхідні документи",
+        "intro": "",
+        "content": [
+          "Автомобіль 2006 року випуску або новіший (щонайменше 4-дверний)",
+          "Відмітка TAXI у техпаспорті — наша команда супроводить вас у процесі її отримання",
+          "Страхування OC TAXI — співпрацюємо з досвідченими агентами для отримання найкращих умов",
+          "Довідка про несудимість (не старша ніж 30 днів)",
+          "Дійсні медичні та психологічні обстеження"
         ]
       }
     ]
   },
 
   "contact": {
-    "title": "Zgłoś się do współpracy",
-    "description": "Wypełnij formularz, a skontaktujemy się z Tobą w sprawie rozpoczęcia współpracy na własnym samochodzie."
+    "title": "Подайте заявку на співпрацю",
+    "description": "Заповніть форму, і ми зв’яжемося з вами щодо початку співпраці з власним автомобілем."
   }
 }

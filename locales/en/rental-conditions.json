@@ -1,28 +1,28 @@
 {
   "seo": {
-    "title": "Warunki wynajmu samochodów",
-    "description": "Sprawdź warunki wynajmu samochodów do pracy w Bolt i Uber w Rzeszowie. Jasne zasady i brak ukrytych opłat.",
-    "breadcrumb": "Wynajem samochodów",
-    "serviceName": "Wynajem samochodów do pracy w Bolt i Uber"
+    "title": "Car Rental Terms",
+    "description": "Check the rental terms for working with Bolt and Uber in Rzeszów. Clear rules and no hidden fees.",
+    "breadcrumb": "Car Rental",
+    "serviceName": "Car Rental for Bolt and Uber Drivers"
   },
 
   "intro": {
     "title": {
-      "part1": "Warunki",
-      "part2": "wynajmu",
-      "part3": "samochodów"
+      "part1": "Car Rental",
+      "part2": "Terms",
+      "part3": ""
     },
-    "description": "Zasady wynajmu dla kierowców Bolt i Uber — jasno, bezpiecznie i bez zbędnych formalności."
+    "description": "Rental terms for Bolt and Uber drivers — transparent, secure, and without unnecessary formalities."
   },
 
   "quickConditions": {
-    "title": "Najważniejsze warunki",
+    "title": "Key Conditions",
     "items": [
       {
         "icon": "noCommission",
         "title": {
-          "main": "Możesz pracować",
-          "highlight": "bez prowizji"
+          "main": "Option to work",
+          "highlight": "without commission"
         },
         "points": []
       },
@@ -32,80 +32,80 @@
           "main": "0% VAT"
         },
         "points": [
-          "od bonusów",
-          "od napiwków"
+          "on bonuses",
+          "on tips"
         ]
       },
       {
         "icon": "car",
-        "title": "Samochód",
+        "title": "Vehicle",
         "points": [
-          "Serwis i ubezpieczenie po naszej stronie",
-          "Samochód zastępczy"
+          "Maintenance and insurance covered by us",
+          "Replacement car available"
         ]
       },
       {
         "icon": "support",
-        "title": "Praca",
+        "title": "Work",
         "points": [
           "Bolt / Uber",
-          "Wsparcie floty"
+          "Fleet support"
         ]
       }
     ]
   },
 
   "commissionTable": {
-    "title": "Obrót tygodniowy",
-    "subtitle": "Prowizja",
-    "currency": "zł",
-    "note": "Prowizja naliczana jest automatycznie co tydzień."
+    "title": "Weekly Revenue",
+    "subtitle": "Commission",
+    "currency": "PLN",
+    "note": "Commission is calculated automatically each week"
   },
 
   "details": {
     "items": [
       {
-        "title": "Koszty i płatności",
+        "title": "Costs and Payments",
         "intro": [],
         "content": [
-          "Prowizja rozliczeniowa – nawet 0 zł, w zależności od obrotu.",
-          "+ 8% VAT.",
-          "Podatek od umowy zlecenia – 50 zł tygodniowo (dla studentów do 26. roku życia – 0 zł).",
-          "Kaucja nie jest wymagana."
+          "Settlement commission – even 0 PLN depending on revenue",
+          "+ 8% VAT",
+          "Mandate contract tax – 50 PLN per week (for students under 26 – 0 PLN)",
+          "No vehicle deposit required"
         ]
       },
       {
-        "title": "Zwrot 50% VAT za paliwo",
+        "title": "50% VAT Refund on Fuel",
         "intro": [],
         "content": [
-          "Zwracamy 50% kwoty VAT zawartej w kosztach paliwa.",
-          "Rozliczenie odbywa się automatycznie — bez dodatkowych formalności."
+          "We refund 50% of the VAT included in fuel expenses",
+          "Settlement is processed automatically — no additional formalities"
         ]
       },
       {
-        "title": "Samochód, serwis i ubezpieczenie",
-        "intro": "Zapewniamy samochód w pełni przygotowany do pracy jako taxi.",
+        "title": "Vehicle, Maintenance and Insurance",
+        "intro": "We provide a vehicle fully prepared for taxi work.",
         "content": [
-          "Ubezpieczenie taxi po naszej stronie.",
-          "Pełen serwis techniczny po naszej stronie.",
-          "Samochód zastępczy na czas naprawy lub przeglądu.",
-          "Wszystkie samochody wyposażone w wideorejestratory z funkcją nagrywania wnętrza."
+          "Taxi insurance covered by us",
+          "Full technical maintenance covered by us",
+          "Replacement vehicle during repairs or inspections",
+          "All vehicles equipped with dashcams including interior recording"
         ]
       },
       {
-        "title": "Praca w Bolt / Uber",
-        "intro": "Zapewniamy wsparcie formalne przy rozpoczęciu współpracy.",
+        "title": "Work with Bolt / Uber",
+        "intro": "We provide full formal support when starting cooperation.",
         "content": [
-          "Pomoc w aktywacji konta.",
-          "Szkolenie z obsługi aplikacji mobilnych."
+          "Account activation assistance",
+          "Training on mobile app usage"
         ]
       }
     ]
   },
 
   "cta": {
-    "title": "Gotowy, aby wybrać samochód?",
-    "primary": "Sprawdź samochody na wynajem",
-    "secondary": "Złóż zgłoszenie"
+    "title": "Ready to choose a car?",
+    "primary": "View available cars",
+    "secondary": "Submit application"
   }
 }

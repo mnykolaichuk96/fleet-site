@@ -1,28 +1,27 @@
 {
   "intro": {
-    "backToOffers": "Powrót do floty",
-    "rentalConditions": "Warunki współpracy"
+    "backToOffers": "Back to fleet",
+    "rentalConditions": "Rental conditions"
   },
 
   "equipment": {
-    "rear_camera": "Kamera cofania",
+    "rear_camera": "Rear view camera",
     "carPlay": "Apple CarPlay / Android Auto",
-    "dashcam": "Wideorejestrator",
-    "keyLess": "System bezkluczykowy",
-    "pdc": "Czujniki parkowania",
-    "bluetooth": "System audio z Bluetooth"
+    "dashcam": "Dashcam",
+    "keyLess": "Keyless entry",
+    "pdc": "Parking sensors",
+    "bluetooth": "Bluetooth audio system"
   },
 
-  "status": {
-    "available": "Dostępny",
-    "rented": "Aktualnie wynajęty"
-  },
-
-  "cta": {
-    "select": "Wybierz samochód"
+  "carInstance": {
+    "status": {
+      "available": "Available",
+      "rented": "Rented"
+    },
+    "cta": "Select car"
   },
 
   "form": {
-    "selectedCar": "Wybrany samochód"
+    "selectedCar": "Selected car"
   }
 }

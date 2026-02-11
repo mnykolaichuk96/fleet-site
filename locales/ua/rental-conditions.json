@@ -1,111 +1,111 @@
 {
   "seo": {
-    "title": "Warunki wynajmu samochodów",
-    "description": "Sprawdź warunki wynajmu samochodów do pracy w Bolt i Uber w Rzeszowie. Jasne zasady i brak ukrytych opłat.",
-    "breadcrumb": "Wynajem samochodów",
-    "serviceName": "Wynajem samochodów do pracy w Bolt i Uber"
+    "title": "Умови оренди автомобілів",
+    "description": "Ознайомтеся з умовами оренди автомобілів для роботи в Bolt і Uber у Жешуві. Прозорі правила та відсутність прихованих платежів.",
+    "breadcrumb": "Оренда автомобілів",
+    "serviceName": "Оренда автомобілів для роботи в Bolt і Uber"
   },
 
   "intro": {
     "title": {
-      "part1": "Warunki",
-      "part2": "wynajmu",
-      "part3": "samochodów"
+      "part1": "Умови",
+      "part2": "оренди",
+      "part3": "автомобілів"
     },
-    "description": "Zasady wynajmu dla kierowców Bolt i Uber — jasno, bezpiecznie i bez zbędnych formalności."
+    "description": "Правила оренди для водіїв Bolt і Uber — прозоро, безпечно та без зайвих формальностей."
   },
 
   "quickConditions": {
-    "title": "Najważniejsze warunki",
+    "title": "Найважливіші умови",
     "items": [
       {
         "icon": "noCommission",
         "title": {
-          "main": "Możesz pracować",
-          "highlight": "bez prowizji"
+          "main": "Можлива робота",
+          "highlight": "без комісії"
         },
         "points": []
       },
       {
         "icon": "noVat",
         "title": {
-          "main": "0% VAT"
+          "main": "0% ПДВ"
         },
         "points": [
-          "od bonusów",
-          "od napiwków"
+          "на бонуси",
+          "на чайові"
         ]
       },
       {
         "icon": "car",
-        "title": "Samochód",
+        "title": "Автомобіль",
         "points": [
-          "Serwis i ubezpieczenie po naszej stronie",
-          "Samochód zastępczy"
+          "Сервіс та страхування за наш рахунок",
+          "Підмінний автомобіль"
         ]
       },
       {
         "icon": "support",
-        "title": "Praca",
+        "title": "Робота",
         "points": [
           "Bolt / Uber",
-          "Wsparcie floty"
+          "Підтримка автопарку"
         ]
       }
     ]
   },
 
   "commissionTable": {
-    "title": "Obrót tygodniowy",
-    "subtitle": "Prowizja",
-    "currency": "zł",
-    "note": "Prowizja naliczana jest automatycznie co tydzień."
+    "title": "Тижневий оборот",
+    "subtitle": "Комісія",
+    "currency": "PLN",
+    "note": "Комісія нараховується автоматично щотижня"
   },
 
   "details": {
     "items": [
       {
-        "title": "Koszty i płatności",
+        "title": "Витрати та платежі",
         "intro": [],
         "content": [
-          "Prowizja rozliczeniowa – nawet 0 zł, w zależności od obrotu.",
-          "+ 8% VAT.",
-          "Podatek od umowy zlecenia – 50 zł tygodniowo (dla studentów do 26. roku życia – 0 zł).",
-          "Kaucja nie jest wymagana."
+          "Розрахункова комісія – навіть 0 PLN залежно від обороту",
+          "+ 8% ПДВ",
+          "Податок за договором доручення – 50 PLN на тиждень (для студентів до 26 років – 0 PLN)",
+          "Застава за автомобіль не вимагається"
         ]
       },
       {
-        "title": "Zwrot 50% VAT za paliwo",
+        "title": "Повернення 50% ПДВ за пальне",
         "intro": [],
         "content": [
-          "Zwracamy 50% kwoty VAT zawartej w kosztach paliwa.",
-          "Rozliczenie odbywa się automatycznie — bez dodatkowych formalności."
+          "Повертаємо 50% суми ПДВ, включеної у витрати на пальне",
+          "Розрахунок здійснюється автоматично — без додаткових формальностей"
         ]
       },
       {
-        "title": "Samochód, serwis i ubezpieczenie",
-        "intro": "Zapewniamy samochód w pełni przygotowany do pracy jako taxi.",
+        "title": "Автомобіль, сервіс і страхування",
+        "intro": "Ми надаємо автомобіль, повністю підготовлений до роботи як TAXI.",
         "content": [
-          "Ubezpieczenie taxi po naszej stronie.",
-          "Pełen serwis techniczny po naszej stronie.",
-          "Samochód zastępczy na czas naprawy lub przeglądu.",
-          "Wszystkie samochody wyposażone w wideorejestratory z funkcją nagrywania wnętrza."
+          "Страхування таксі за наш рахунок",
+          "Повне технічне обслуговування за наш рахунок",
+          "Підмінний автомобіль на час ремонту або техогляду",
+          "Усі автомобілі оснащені відеореєстраторами з функцією запису салону"
         ]
       },
       {
-        "title": "Praca w Bolt / Uber",
-        "intro": "Zapewniamy wsparcie formalne przy rozpoczęciu współpracy.",
+        "title": "Робота в Bolt / Uber",
+        "intro": "Ми забезпечуємо формальну підтримку на старті співпраці.",
         "content": [
-          "Pomoc w aktywacji konta.",
-          "Szkolenie z obsługi aplikacji mobilnych."
+          "Допомога в активації акаунта",
+          "Навчання користуванню мобільними додатками"
         ]
       }
     ]
   },
 
   "cta": {
-    "title": "Gotowy, aby wybrać samochód?",
-    "primary": "Sprawdź samochody na wynajem",
-    "secondary": "Złóż zgłoszenie"
+    "title": "Готові вибрати автомобіль?",
+    "primary": "Переглянути доступні автомобілі",
+    "secondary": "Подати заявку"
   }
 }

@@ -1,167 +1,167 @@
 {
   "seo": {
-    "title": "Wynajem samochodów taxi i praca dla kierowców Bolt i Uber w Rzeszowie",
-    "description": "Oferujemy nowoczesne samochody taxi oraz przejrzyste warunki współpracy dla kierowców Bolt i Uber w Rzeszowie."
+    "title": "Taxi car rental and driver opportunities for Bolt and Uber in Rzeszów",
+    "description": "We offer modern taxi cars and transparent partnership terms for Bolt and Uber drivers in Rzeszów."
   },
 
   "hero": {
     "title": {
-      "brand": "Penis",
+      "brand": "GINGER",
       "partner": "PARTNER"
     },
     "subtitle": {
-      "line1": "Stworzone przez",
-      "highlight1": "kierowców",
-      "line2": "dla",
-      "highlight2": "kierowców"
+      "line1": "Created by",
+      "highlight1": "drivers",
+      "line2": "for",
+      "highlight2": "drivers"
     },
     "qualityMark": {
       "label": "Quality Mark",
       "partner": "PARTNER",
-      "note": "z polecenia"
+      "note": "by recommendation"
     }
   },
 
   "whyUsInline": {
     "items": [
       {
-        "title": "Kompleksowe wsparcie",
-        "text": "Jasne warunki współpracy i minimum formalności."
+        "title": "Complete onboarding",
+        "text": "We provide full training on how to use the Bolt and Uber apps."
       },
       {
-        "title": "0% VAT od napiwków i bonusów",
-        "text": "Całość napiwków i bonusów trafia bezpośrednio do Ciebie."
+        "title": "0% VAT on tips and bonuses",
+        "text": "All tips and bonuses go directly to you."
       },
       {
-        "title": "Zwrot kosztów badań",
-        "text": "Zwracamy koszt badań lekarskich po spełnieniu warunków."
+        "title": "Medical exam reimbursement",
+        "text": "We reimburse medical exam costs once the conditions are met."
       }
     ]
   },
 
   "rentCar": {
-    "title": "Wynajmij samochód i pracuj w Bolt / Uber bez własnego auta",
-    "text": "Zapewniamy samochód w pełni przygotowany do pracy. Ty jeździsz i zarabiasz — my zajmujemy się resztą.",
+    "title": "Rent a car and work with Bolt / Uber without owning a vehicle",
+    "text": "We provide a car fully prepared for work. You drive and earn — we handle the rest.",
     "benefits": [
       {
-        "title": "Bez wkładu własnego",
-        "text": "Rozpoczynasz pracę bez dodatkowych opłat na start."
+        "title": "No upfront investment",
+        "text": "Start working with no initial fees and no mandatory deposit."
       },
       {
-        "title": "Auto gotowe do pracy",
-        "text": "Hybrydy i automaty w pełni przygotowane do pracy jako taxi."
+        "title": "Work-ready vehicle",
+        "text": "Hybrid cars with LPG and automatic transmission, fully prepared for taxi work."
       },
       {
-        "title": "Szybki start",
-        "text": "Możesz rozpocząć pracę nawet w ciągu kilku dni."
+        "title": "Option to work without commission",
+        "text": "Competitive conditions designed with drivers in mind."
       },
       {
-        "title": "Szybki start",
-        "text": "Możesz rozpocząć pracę nawet w ciągu kilku dni."
+        "title": "Fast start",
+        "text": "You can start working within just a few days."
       }
     ],
     "cta": {
-      "label": "Zobacz warunki wynajmu",
-      "hint": "Poznaj dostępne samochody, koszty i zasady krok po kroku."
+      "label": "View rental terms",
+      "hint": "See available cars, costs, and step-by-step rules."
     }
   },
 
   "fleetCar": {
-    "title": "Pracuj na naszym samochodzie — zostań kierowcą Ginger Partner",
-    "text": "Otrzymujesz do dyspozycji samochód firmowy i zarabiasz, realizując przejazdy w Bolt lub Uber.",
+    "title": "Work with our car — become a Ginger Partner driver",
+    "text": "Get a company car and earn by completing rides with Bolt or Uber.",
     "benefits": [
       {
-        "title": "Samochód firmowy",
-        "text": "Nie inwestujesz własnych środków — otrzymujesz w pełni przygotowane auto."
+        "title": "Company car",
+        "text": "No personal investment — receive a fully prepared vehicle."
       },
       {
-        "title": "Wszystko po naszej stronie",
-        "text": "Serwis, ubezpieczenie, dokumenty i licencje zapewniamy my."
+        "title": "All expenses covered by us",
+        "text": "Maintenance, fuel, car washes, and ongoing operating costs."
       },
       {
-        "title": "Elastyczny grafik",
-        "text": "Pracujesz w wybrane przez siebie dni i godziny."
+        "title": "Flexible schedule",
+        "text": "A schedule tailored to you — no mandatory shifts or minimum quotas."
       },
       {
-        "title": "Stałe wsparcie",
-        "text": "Jesteśmy dostępni i pomagamy w bieżących sprawach."
+        "title": "24/7 support",
+        "text": "Constant contact and operational support around the clock."
       }
     ],
     "cta": {
-      "label": "Sprawdź szczegóły",
-      "hint": "Poznaj warunki współpracy i złóż zgłoszenie online."
+      "label": "Check driver terms",
+      "hint": "Check the details and apply in just a few minutes."
     }
   },
 
   "driverCar": {
-    "title": "Pracuj w Bolt / Uber ze swoim samochodem",
-    "text": "Dołącz do naszej floty jako kierowca z własnym autem i korzystaj z przejrzystych zasad rozliczeń.",
+    "title": "Work with Bolt / Uber using your own car",
+    "text": "Join our fleet as a driver with your own vehicle and benefit from transparent settlement terms.",
     "benefits": [
       {
-        "title": "Wyższy dochód",
-        "text": "Zarabiasz więcej na własnym samochodzie — oferujemy korzystne warunki rozliczeń."
+        "title": "Higher income",
+        "text": "Earn more with your own car — with the option to work without commission."
       },
       {
-        "title": "Bonusy i wyższe stawki",
-        "text": "Korzystasz z dodatkowych bonusów i atrakcyjnych stawek za przejazdy."
+        "title": "Save more",
+        "text": "We refund 50% of VAT included in fuel expenses."
       },
       {
-        "title": "Regularne wypłaty",
-        "text": "Otrzymujesz wypłaty raz w tygodniu na swoje konto."
+        "title": "Regular payouts",
+        "text": "Receive your payment no later than Tuesday each week."
       },
       {
-        "title": "Wsparcie operacyjne",
-        "text": "Zapewniamy pomoc na każdym etapie współpracy."
+        "title": "Operational support",
+        "text": "Support at every stage of cooperation."
       }
     ],
     "cta": {
-      "label": "Sprawdź warunki",
-      "hint": "Poznaj szczegóły współpracy i złóż zgłoszenie online."
+      "label": "Check partnership terms",
+      "hint": "Learn the details and apply online in just a few minutes."
     }
   },
 
   "cta": {
-    "badge": "Zanim rozpoczniesz",
+    "badge": "Before you start",
 
-    "title": "Co jest potrzebne, aby rozpocząć pracę jako kierowca?",
+    "title": "What do you need to start working as a driver?",
 
     "requirements": {
       "criminal": {
-        "title": "Zaświadczenie o niekaralności",
-        "text": "Dokument uzyskasz w sądzie lub przez Krajowy Rejestr Karny. Ważny 30 dni."
+        "title": "Criminal record certificate",
+        "text": "You can obtain this document from the court or the National Criminal Register. Valid for 30 days."
       },
       "medical": {
-        "title": "Badania lekarskie i psychologiczne",
-        "text": "Skierowanie otrzymasz od nas. Zwracamy część kosztów po 350 przejazdach."
+        "title": "Medical and psychological examinations",
+        "text": "We will recommend trusted clinics where you can complete the required exams."
       },
       "photo": {
-        "title": "Zdjęcie do identyfikatora",
-        "text": "Wykonamy je bezpłatnie w naszym biurze."
+        "title": "Polish driving licence",
+        "text": "A valid Polish category B driving licence is required."
       }
     }
   },
 
   "contactForm": {
-    "title": "Zostaw kontakt — resztą zajmiemy się my",
-    "subtitle": "Podaj imię, numer telefonu i miasto. Oddzwonimy i pomożemy Ci szybko rozpocząć współpracę.",
+    "title": "Leave your contact details — we’ll handle the rest",
+    "subtitle": "Provide your name, phone number, and city. We will call you back and help you get started quickly.",
 
     "fields": {
-      "name": "Imię",
-      "phone": "Numer telefonu",
-      "email": "Adres e-mail",
+      "name": "Name",
+      "phone": "Phone number",
+      "email": "Email address",
       "city": "Rzeszów"
     },
 
-    "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych.",
+    "consent": "I agree to the processing of my personal data",
 
-    "submit": "Wyślij zgłoszenie",
-    "submitting": "Wysyłanie…",
-    "success": "Zgłoszenie zostało wysłane. Skontaktujemy się z Tobą.",
-    "error": "Wystąpił błąd. Spróbuj ponownie."
+    "submit": "Submit application",
+    "submitting": "Submitting…",
+    "success": "Your application has been sent. We will contact you soon.",
+    "error": "An error occurred. Please try again."
   },
 
   "phone": {
-    "label": "Masz pytania? Zadzwoń:",
+    "label": "Have questions? Call us:",
     "numberPl": "+48 791 863 388",
     "numberEu": "+48 791 863 388",
     "numberUa": "+48 731 090 880"

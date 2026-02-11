@@ -1,42 +1,42 @@
 {
-  "seoTitle": "Wynajem samochodów taxi w Rzeszowie",
-  "seoDescription": "Nowoczesne samochody do pracy w Bolt i Uber w Rzeszowie. Jasne warunki wynajmu i przejrzyste rozliczenia.",
+  "seoTitle": "Taxi car rental in Rzeszów",
+  "seoDescription": "Modern cars for working with Bolt and Uber in Rzeszów. Transparent rental terms and clear settlements.",
 
-  "rentalConditions": "Warunki wynajmu",
+  "rentalConditions": "Rental conditions",
 
   "fleetTitle": {
-    "part1": "Dostępna",
-    "part2": "flota",
-    "part3": "samochodów"
+    "part1": "Available",
+    "part2": "cars",
+    "part3": ""
   },
 
   "offer": {
-    "imageAlt": "Samochód marki {brand} {model}",
+    "imageAlt": "{brand} {model} car",
 
     "labels": {
       "gearbox": {
-        "automatic": "Automatyczna skrzynia biegów",
-        "manual": "Manualna skrzynia biegów"
+        "automatic": "Automatic transmission",
+        "manual": "Manual transmission"
       },
 
       "fuel": {
-        "hybrid": "Hybrydowy / Gaz",
-        "petrol": "Benzynowy",
+        "hybrid": "Hybrid / LPG",
+        "petrol": "Petrol",
         "diesel": "Diesel",
-        "electric": "Elektryczny"
+        "electric": "Electric"
       }
     },
 
-    "consumption": "Średnie spalanie: {consumption}",
-    "currency": "zł",
-    "perWeek": " / tydzień",
-    "cta": "Sprawdź dostępność"
+    "consumption": "Average fuel consumption: {consumption}",
+    "currency": "PLN",
+    "perWeek": " / week",
+    "cta": "Check availability"
   },
 
   "cars": {
     "toyota-prius-30": {
       "title": "Toyota Prius",
-      "subtitle": "Ekonomiczna hybryda do pracy w mieście"
+      "subtitle": "Economical hybrid for city driving"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
   "brand": {
     "name": "Ginger Partner",
-    "description": "Partner Bolt i Uber w Rzeszowie. Stworzone przez kierowców — dla kierowców."
+    "description": "Партнер Bolt та Uber у Жешуві. Створено водіями — для водіїв."
   },
 
   "contact": {
-    "title": "Kontakt",
+    "title": "Контакти",
     "city": "Rzeszów, ul. Jana i Jędrzeja Śniadeckich 20D/7",
 
     "phones": [
@@ -25,14 +25,14 @@
   },
 
   "legal": {
-    "privacy": "Polityka prywatności",
-    "cookies": "Polityka cookies"
+    "privacy": "Політика конфіденційності",
+    "cookies": "Політика використання файлів cookie"
   },
 
   "cooperation": {
-    "title": "Formy współpracy",
-    "company": "Samochód firmowy",
-    "own": "Własny samochód",
-    "rental": "Wynajem samochodu"
+    "title": "Форми співпраці",
+    "company": "Автомобіль компанії",
+    "own": "Власний автомобіль",
+    "rental": "Оренда автомобіля"
   }
 }

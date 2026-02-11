@@ -1,52 +1,52 @@
 {
-  "title": "Polityka prywatności",
+  "title": "Політика конфіденційності",
 
   "sections": [
     {
-      "title": "1. Administrator danych",
+      "title": "1. Адміністратор даних",
       "content": [
-        "Administratorem danych osobowych jest Ginger Partner z siedzibą w Rzeszowie.",
-        "Kontakt: kontakt@gingerpartner.pl"
+        "Адміністратором персональних даних є Ginger Partner з місцезнаходженням у місті Жешув.",
+        "Контакт: kontakt@gingerpartner.pl"
       ]
     },
     {
-      "title": "2. Zakres przetwarzanych danych",
+      "title": "2. Обсяг оброблюваних даних",
       "content": [
-        "Możemy przetwarzać następujące dane: imię i nazwisko, numer telefonu, adres e-mail, miasto oraz dane przekazane w formularzu.",
-        "Podanie danych jest dobrowolne, ale niezbędne do kontaktu."
+        "Ми можемо обробляти такі дані: ім’я та прізвище, номер телефону, адресу електронної пошти, місто, а також інформацію, надану у формі.",
+        "Надання даних є добровільним, однак необхідним для встановлення контакту."
       ]
     },
     {
-      "title": "3. Cel przetwarzania danych",
+      "title": "3. Мета обробки даних",
       "content": [
-        "Dane przetwarzane są w celu kontaktu w sprawie współpracy oraz rekrutacji kierowców.",
-        "Podstawą prawną przetwarzania danych jest art. 6 ust. 1 lit. b i f RODO."
+        "Дані обробляються з метою зв’язку щодо співпраці та рекрутингу водіїв.",
+        "Правовою підставою обробки даних є стаття 6 пункт 1 літери b та f GDPR (RODO)."
       ]
     },
     {
-      "title": "4. Odbiorcy danych",
+      "title": "4. Одержувачі даних",
       "content": [
-        "Dane mogą być przekazywane podmiotom obsługującym formularze kontaktowe oraz dostawcom usług IT.",
-        "Dane nie są sprzedawane osobom trzecim."
+        "Дані можуть передаватися суб’єктам, які обслуговують контактні форми, а також постачальникам ІТ-послуг.",
+        "Дані не продаються третім особам."
       ]
     },
     {
-      "title": "5. Okres przechowywania danych",
+      "title": "5. Термін зберігання даних",
       "content": [
-        "Dane przechowywane są przez czas trwania współpracy lub do momentu cofnięcia zgody."
+        "Дані зберігаються протягом періоду співпраці або до моменту відкликання згоди."
       ]
     },
     {
-      "title": "6. Twoje prawa",
+      "title": "6. Ваші права",
       "content": [
-        "Masz prawo dostępu do swoich danych, ich poprawiania, usunięcia, ograniczenia przetwarzania oraz wniesienia skargi do Prezesa UODO."
+        "Ви маєте право на доступ до своїх даних, їх виправлення, видалення, обмеження обробки, а також подання скарги до Голови Управління із захисту персональних даних (UODO)."
       ]
     },
     {
-      "title": "7. Pliki cookies",
+      "title": "7. Файли cookies",
       "content": [
-        "Strona może wykorzystywać pliki cookies w celu prawidłowego działania oraz analizy ruchu.",
-        "Możesz zarządzać plikami cookies w ustawieniach przeglądarki."
+        "Сайт може використовувати файли cookies для забезпечення належної роботи та аналізу трафіку.",
+        "Ви можете керувати файлами cookies у налаштуваннях свого браузера."
       ]
     }
   ]

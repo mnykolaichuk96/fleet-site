@@ -16,13 +16,15 @@ export const carInstances: CarInstance[] = [
             "keyLess",
             "dashcam",
         ],
-        images: [
-            "/car-instance/toyota-prius-30/1/1.png",
-            "/car-instance/toyota-prius-30/1/2.png",
-            "/car-instance/toyota-prius-30/1/3.png",
-            "/car-instance/toyota-prius-30/1/4.png",
-            "/car-instance/toyota-prius-30/1/5.jpg",
-            "/car-instance/toyota-prius-30/1/6.jpg"
+        imagesV: [
+            "/car-instance/toyota-prius-30/1/1V.jpg",
+            "/car-instance/toyota-prius-30/1/2V.jpg",
+            "/car-instance/toyota-prius-30/1/3V.jpg"
+        ],
+        imagesH: [
+            "/car-instance/toyota-prius-30/1/1H.jpg",
+            "/car-instance/toyota-prius-30/1/2H.jpg",
+            "/car-instance/toyota-prius-30/1/3H.jpg",
         ],
     },
 
@@ -39,9 +41,13 @@ export const carInstances: CarInstance[] = [
             "bluetooth",
             "dashcam",
         ],
-        images: [
-            "/car-instance/toyota-auris-1/2/1.jpg",
-            "/car-instance/toyota-auris-1/2/2.jpg",
+        imagesV: [
+            "/car-instance/toyota-auris-1/2/1V.jpg",
+            "/car-instance/toyota-auris-1/2/2V.jpg",
         ],
+        imagesH: [
+            "/car-instance/toyota-auris-1/2/1H.jpg",
+            "/car-instance/toyota-auris-1/2/2H.jpg",
+        ]
     },
 ];

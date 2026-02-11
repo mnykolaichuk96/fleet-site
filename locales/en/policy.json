@@ -1,52 +1,52 @@
 {
-  "title": "Polityka prywatności",
+  "title": "Privacy Policy",
 
   "sections": [
     {
-      "title": "1. Administrator danych",
+      "title": "1. Data Controller",
       "content": [
-        "Administratorem danych osobowych jest Ginger Partner z siedzibą w Rzeszowie.",
-        "Kontakt: kontakt@gingerpartner.pl"
+        "The controller of personal data is Ginger Partner, based in Rzeszów.",
+        "Contact: kontakt@gingerpartner.pl"
       ]
     },
     {
-      "title": "2. Zakres przetwarzanych danych",
+      "title": "2. Scope of Processed Data",
       "content": [
-        "Możemy przetwarzać następujące dane: imię i nazwisko, numer telefonu, adres e-mail, miasto oraz dane przekazane w formularzu.",
-        "Podanie danych jest dobrowolne, ale niezbędne do kontaktu."
+        "We may process the following data: full name, phone number, email address, city, and information provided through the contact form.",
+        "Providing data is voluntary but necessary for contact purposes."
       ]
     },
     {
-      "title": "3. Cel przetwarzania danych",
+      "title": "3. Purpose of Data Processing",
       "content": [
-        "Dane przetwarzane są w celu kontaktu w sprawie współpracy oraz rekrutacji kierowców.",
-        "Podstawą prawną przetwarzania danych jest art. 6 ust. 1 lit. b i f RODO."
+        "Data is processed for the purpose of contact regarding cooperation and driver recruitment.",
+        "The legal basis for data processing is Article 6(1)(b) and (f) of the GDPR."
       ]
     },
     {
-      "title": "4. Odbiorcy danych",
+      "title": "4. Data Recipients",
       "content": [
-        "Dane mogą być przekazywane podmiotom obsługującym formularze kontaktowe oraz dostawcom usług IT.",
-        "Dane nie są sprzedawane osobom trzecim."
+        "Data may be shared with entities operating contact forms and IT service providers.",
+        "Personal data is not sold to third parties."
       ]
     },
     {
-      "title": "5. Okres przechowywania danych",
+      "title": "5. Data Retention Period",
       "content": [
-        "Dane przechowywane są przez czas trwania współpracy lub do momentu cofnięcia zgody."
+        "Data is stored for the duration of the cooperation or until consent is withdrawn."
       ]
     },
     {
-      "title": "6. Twoje prawa",
+      "title": "6. Your Rights",
       "content": [
-        "Masz prawo dostępu do swoich danych, ich poprawiania, usunięcia, ograniczenia przetwarzania oraz wniesienia skargi do Prezesa UODO."
+        "You have the right to access your data, rectify it, delete it, restrict its processing, and lodge a complaint with the competent data protection authority."
       ]
     },
     {
-      "title": "7. Pliki cookies",
+      "title": "7. Cookies",
       "content": [
-        "Strona może wykorzystywać pliki cookies w celu prawidłowego działania oraz analizy ruchu.",
-        "Możesz zarządzać plikami cookies w ustawieniach przeglądarki."
+        "The website may use cookies to ensure proper functionality and traffic analysis.",
+        "You can manage cookie settings in your browser."
       ]
     }
   ]

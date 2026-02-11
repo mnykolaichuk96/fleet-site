@@ -1,12 +1,12 @@
 {
-  "cars": "Samochody na wynajem",
-  "drivers": "Współpraca",
-  "contact": "Kontakt",
-  "apply": "Zgłoś się",
+  "cars": "Доступні автомобілі",
+  "drivers": "Співпраця",
+  "contact": "Контакти",
+  "apply": "Подати заявку",
 
   "dropdown": {
-    "rentCar": "Wynajem samochodu",
-    "companyCar": "Samochód firmowy",
-    "ownCar": "Własny samochód"
+    "rentCar": "Оренда автомобіля",
+    "companyCar": "Автомобіль компанії",
+    "ownCar": "Власний автомобіль"
   }
 }

@@ -66,34 +66,47 @@
         }
       }
     ],
-    "note": "Prowizja liczona od miesięcznego obrotu netto"
+    "note": "Prowizja liczona od tygodniowego obrotu"
   },
 
   "details": {
     "items": [
       {
-        "title": "Jak wygląda rozliczenie?",
-        "intro": "Współpraca opiera się na modelu partnerskim",
+        "title": "Koszty i płatności",
+        "intro": [],
         "content": [
-          "Podpisujemy umowę partnerską",
-          "Rozliczenie miesięczne",
-          "Przejrzysty system prowizyjny"
+          "Prowizja rozliczeniowa – nawet 0 zł (w zależności od obrotu)",
+          "+ 8% VAT",
+          "Podatek od umowy zlecenia – 50 zł tygodniowo (dla studentów do 26. roku życia – 0 zł)",
+          "Kaucja za samochód nie jest wymagana",
+          "Brak dodatkowych opłat za rozliczenia w aplikacji"
         ]
       },
       {
-        "title": "Jakie dokumenty są wymagane?",
+        "title": "Zwrot 50% VAT za paliwo",
+        "intro": [],
         "content": [
-          "Prawo jazdy",
-          "Dowód rejestracyjny pojazdu",
-          "Badania lekarskie i psychotechniczne"
+          "Zwracamy 50% kwoty VAT zawartej w kosztach paliwa",
+          "Rozliczenie odbywa się automatycznie – bez dodatkowych formalności"
         ]
       },
       {
-        "title": "Czy mogę pracować elastycznie?",
+        "title": "Praca w Bolt / Uber",
+        "intro": "Zapewniamy wsparcie formalne przy rozpoczęciu współpracy.",
         "content": [
-          "Sam decydujesz o godzinach pracy",
-          "Możesz łączyć z inną działalnością",
-          "Brak minimalnego progu godzin"
+          "Pomoc w aktywacji konta",
+          "Szkolenie z obsługi aplikacji mobilnych"
+        ]
+      },
+      {
+        "title": "Wymagane dokumenty",
+        "intro": "",
+        "content": [
+          "Samochód z rocznika 2006 lub nowszy (minimum 4-drzwiowy)",
+          "Adnotacja TAXI w dowodzie rejestracyjnym – nasz zespół przeprowadzi Cię przez procedurę jej uzyskania",
+          "Ubezpieczenie OC TAXI – współpracujemy z doświadczonymi agentami, którzy pomogą uzyskać najkorzystniejszą ofertę",
+          "Zaświadczenie o niekaralności (nie starsze niż 30 dni)",
+          "Aktualne badania lekarskie i psychologiczne"
         ]
       }
     ]

@@ -10,7 +10,6 @@ import type { Metadata } from "next";
 import { notFound } from 'next/navigation';
 // ⬆️ Функція Next.js для рендеру 404 сторінки
 
-import { locales } from '@/lib/i18n';
 // ⬆️ Масив дозволених локалей, наприклад: ['pl', 'ua', 'en']
 
 import { ReactNode } from 'react';

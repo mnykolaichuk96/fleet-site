@@ -44,14 +44,16 @@ export const viewport: Viewport = {
     initialScale: 1,
 };
 
+const locales = ["pl", "ua", "en"] as const;
+
 // Тип props, які Next.js передає layout
 type Props = {
     children: ReactNode;
-    params: { locale: string };
+    params: Promise<{ locale: string }>;
 };
 
 export default async function LocaleLayout({ children, params }: Props) {
-    const { locale } = params;
+    const { locale } = await params;
 
     if (!locales.includes(locale as any)) {
         notFound();

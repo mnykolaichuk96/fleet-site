@@ -47,18 +47,13 @@ export const viewport: Viewport = {
 // Тип props, які Next.js передає layout
 type Props = {
     children: ReactNode;
-
-    // У Next 15 params передаються як Promise
-    params: Promise<{
-        locale: Locale;
-    }>;
+    params: { locale: string };
 };
 
 export default async function LocaleLayout({ children, params }: Props) {
+    const { locale } = params;
 
-    const { locale } = await params;
-
-    if (!locales.includes(locale)) {
+    if (!locales.includes(locale as any)) {
         notFound();
     }
 

@@ -79,8 +79,6 @@ export default function RentCarSection() {
                 md:translate-y-[9rem]
 
                 lg:block
-
-                lg:w-[80vw]
                 lg:max-w-sm
                 lg:aspect-[4/3]
 
@@ -112,7 +110,7 @@ export default function RentCarSection() {
               "
               >
                 <Image
-                    src="/illustrations/fleet-car.png"
+                    src="/illustrations/fleet-car.webp"
                     width={900}
                     height={675}
                     alt=""

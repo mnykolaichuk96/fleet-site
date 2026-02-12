@@ -78,7 +78,6 @@ export default function DriverCarSection() {
 
                 lg:block
 
-                lg:w-[80vw]
                 lg:max-w-sm
                 lg:aspect-[4/3]
 
@@ -109,7 +108,7 @@ export default function DriverCarSection() {
               "
                         >
                             <Image
-                                src="/illustrations/driver-car.png"
+                                src="/illustrations/driver-car.webp"
                                 width={900}
                                 height={675}
                                 alt=""

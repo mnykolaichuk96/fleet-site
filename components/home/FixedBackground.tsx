@@ -4,7 +4,7 @@ export default function FixedBackground() {
             {/* BACKGROUND IMAGE */}
             <div
                 className="fixed inset-0 -z-20 bg-cover bg-center"
-                style={{ backgroundImage: "url('/bitone-rzeszow.png')" }}
+                style={{ backgroundImage: "url('/bitone-rzeszow.jpg')" }}
             />
         </>
     );

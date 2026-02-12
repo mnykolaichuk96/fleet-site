@@ -81,14 +81,19 @@ export default function CarOfferCard({ vm }: Props) {
                     <div className="relative w-full h-[420px] overflow-hidden rounded-[32px]">
 
                         {/* BACKGROUND */}
-                        <div className="
-                              absolute inset-0
-                              bg-white
-                              lg:bg-gradient-to-br
-                              lg:from-slate-100
-                              lg:via-slate-200
-                              lg:to-slate-100
-                            " />
+                        {/* 1️⃣ BLURRED BACKGROUND IMAGE */}
+                        <div className="absolute inset-0 scale-105">
+                            <div
+                                className="absolute inset-0 bg-center bg-cover"
+                                style={{
+                                    backgroundImage: `url("/rzeszow-car-card.jpg")`,
+                                    filter: "blur(4px) brightness(1.05)",
+                                }}
+                            />
+                        </div>
+
+                        {/* 2️⃣ LIGHT OVERLAY */}
+                        <div className="absolute inset-0 bg-white/50" />
 
                         {/* FLOOR SHADOW */}
                         <div className="absolute bottom-[13%] left-[31%] -translate-x-1/2 w-[640px] h-[64px] bg-black/35 blur-[56px] rounded-full" />

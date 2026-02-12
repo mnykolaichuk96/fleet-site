@@ -80,9 +80,7 @@ export default function RentCarSection() {
 
                         lg:block
 
-                        lg:w-[80vw]
                         lg:max-w-sm
-                        lg:aspect-[4/3]
 
                         lg:w-auto
                         lg:absolute
@@ -112,7 +110,7 @@ export default function RentCarSection() {
   "
                     >
                         <Image
-                            src="/illustrations/rent-car-2.png"
+                            src="/illustrations/rent-car.webp"
                             width={900}
                             height={675}
                             alt=""

@@ -3,9 +3,10 @@ export default function FixedBackground() {
         <>
             {/* BACKGROUND IMAGE */}
             <div
-                className="fixed inset-0 -z-20 bg-cover bg-center"
+                className="fixed top-0 left-0 w-full h-[100svh] -z-20 bg-cover bg-center"
                 style={{ backgroundImage: "url('/bitone-rzeszow.jpg')" }}
             />
         </>
     );
+
 }

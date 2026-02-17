@@ -25,7 +25,6 @@ import { getMessages } from 'next-intl/server';
 
 import type { Viewport } from "next";
 
-
 // Тип Locale виводиться з масиву locales
 // Аналог enum у Java
 export type Locale = typeof locales[number];
@@ -61,8 +60,10 @@ export default async function LocaleLayout({ children, params }: Props) {
     const messages = await getMessages();
 
     return (
+
         <html lang={locale}>
-        <body className="min-h-screen flex flex-col">
+        <body className="min-h-[100dvh] flex flex-col overflow-x-hidden">
+        {/*<FixedBackground />*/}
         <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{

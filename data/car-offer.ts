@@ -8,7 +8,7 @@ export const carOffers: CarOffer[] = [
         generation: "30",
         fuel: "hybrid",
         gearbox: "automatic",
-        consumption: "6 l / 100km",
+        consumption: "5 - 6 l / 100km",
         pricePerWeek: 600,
         icon: "/cars/prius-30.webp",
     },

@@ -79,7 +79,7 @@ export default function CarInstanceCard({ vm, onSelect }: Props) {
                                     className={`rounded-full px-3 py-1 text-sm ${
                                         vm.status.tone === "success"
                                             ? "bg-green-100 text-green-800"
-                                            : "bg-gray-200 text-gray-700"
+                                            : "bg-red-100 text-red-800"
                                     }`}
                                 >
                   {vm.status.label}

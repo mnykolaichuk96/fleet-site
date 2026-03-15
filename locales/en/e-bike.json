@@ -1,0 +1,22 @@
+{
+  "seoTitle": "E-bike rental for delivery couriers in Rzeszów",
+  "seoDescription": "Electric bike rental for Uber Eats, Bolt Food and Glovo couriers in Rzeszów.",
+
+  "title": {
+    "part1": "E-bike",
+    "part2": "rental",
+    "part3": "for couriers"
+  },
+
+  "currency": "PLN",
+  "pricePerWeek": "/week",
+  "extraBattery": "/week • Extra battery (optional)",
+
+  "subtitle": "Perfect for working with Uber Eats, Bolt Food and Glovo",
+
+  "cta": "Rent an E-bike",
+
+  "form": {
+    "selectedBike": "Selected electric bike:"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "seoTitle": "E-bike rental for delivery couriers in Rzeszów",
+  "seoDescription": "Electric bike rental for Uber Eats, Bolt Food and Glovo couriers in Rzeszów.",
+
+  "title": {
+    "part1": "Wynajem",
+    "part2": "rowerów elektrycznych",
+    "part3": "dla kurierów"
+  },
+  "currency": "zł",
+  "pricePerWeek": "/tyg",
+  "extraBattery": "/tyg • Dodatkowa bateria (opcjonalnie)",
+
+  "subtitle": "Idealne do pracy w Uber Eats, Bolt Food i Glovo",
+
+  "cta": "Wynajmij E-bike",
+  "form":{
+    "selectedBike": "Wybrany rower elektryczny:"
+  }
+
+}

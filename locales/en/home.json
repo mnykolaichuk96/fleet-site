@@ -1,7 +1,7 @@
 {
   "seo": {
-    "title": "Taxi car rental and driver opportunities for Bolt and Uber in Rzeszów",
-    "description": "We offer modern taxi cars and transparent partnership terms for Bolt and Uber drivers in Rzeszów."
+    "title": "Taxi Car Rental for Bolt & Uber Drivers and E-Bike Rental for Couriers | Rzeszów",
+    "description": "Taxi car rental and transparent partnership terms for Bolt and Uber drivers in Rzeszów. We also offer electric bike (e-bike) rentals for delivery couriers such as Uber Eats, Bolt Food and Glovo."
   },
 
   "hero": {
@@ -19,6 +19,17 @@
       "label": "Quality Mark",
       "partner": "PARTNER",
       "note": "by recommendation"
+    },
+    "car": {
+      "title": "Become a driver",
+      "subtitle": "Bolt / Uber",
+      "cta": "View requirements"
+    },
+    "ebike": {
+      "label": "New:",
+      "title": "E-bikes",
+      "subtitle": "Rental",
+      "cta": "View e-bikes"
     }
   },
 

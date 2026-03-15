@@ -1,0 +1,22 @@
+{
+  "seoTitle": "Оренда електровелосипедів для кур’єрів у Жешуві",
+  "seoDescription": "Оренда електровелосипедів для кур’єрів Uber Eats, Bolt Food та Glovo у Жешуві.",
+
+  "title": {
+    "part1": "Оренда",
+    "part2": "електровелосипедів",
+    "part3": "для кур’єрів"
+  },
+
+  "currency": "зл",
+  "pricePerWeek": "/тиж",
+  "extraBattery": "/тиж • Додаткова батарея (опційно)",
+
+  "subtitle": "Ідеально для роботи в Uber Eats, Bolt Food та Glovo",
+
+  "cta": "Орендувати E-bike",
+
+  "form": {
+    "selectedBike": "Обраний електровелосипед:"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "faq": "Frequently Asked Questions",
+  "items": [
+    {
+      "title": "Can I rent the bike for a week?",
+      "content": [
+        "Yes, the minimum rental period is 7 days."
+      ]
+    },
+    {
+      "title": "Is the battery included?",
+      "content": [
+        "Yes, the bike comes with one battery included.",
+        "It is also possible to rent a second battery for an additional fee."
+      ]
+    },
+    {
+      "title": "Am I limited in choosing a settlement partner?",
+      "content": [
+        "No, you have full freedom to choose your settlement partner.",
+        "You can cooperate with any partner."
+      ]
+    },
+    {
+      "title": "Is the bike legal?",
+      "content": [
+        "Yes, all our bikes are fully legal.",
+        "They have pedal-assist limited to 25 km/h and assistance works only while pedaling."
+      ]
+    },
+    {
+      "title": "Can I use the off-road mode?",
+      "content": [
+        "Yes, you can use the off-road mode.",
+        "If you enable it according to the manufacturer’s instructions or other available sources, it is not a problem for us."
+      ]
+    }
+  ]
+}

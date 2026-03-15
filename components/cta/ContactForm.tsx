@@ -5,13 +5,15 @@ import { useForm } from "@formspree/react";
 
 type Props = {
     carInstanceId?: string;
-    className?: string; // опційно, але дуже корисно
+    bikeSlug?: string;
+    className?: string;
 };
 
 export function ContactForm({
-                                       carInstanceId,
-                                       className,
-                                   }: Props) {
+                                carInstanceId,
+                                bikeSlug,
+                                className,
+                            }: Props) {
     const t = useTranslations("home.contactForm");
     const phoneT = useTranslations("home.phone");
     const [state, handleSubmit] = useForm("xdaeqbyg");
@@ -46,10 +48,18 @@ export function ContactForm({
                         />
                     )}
 
+                    {bikeSlug && (
+                        <input
+                            type="hidden"
+                            name="bikeSlug"
+                            value={bikeSlug}
+                        />
+                    )}
+
                     {className && (
                         <input
                             type="hidden"
-                            name="From: "
+                            name="From"
                             value={className}
                         />
                     )}
@@ -60,12 +70,14 @@ export function ContactForm({
                         required
                         className="input"
                     />
+
                     <input
                         name="phone"
                         placeholder={t("fields.phone")}
                         required
                         className="input"
                     />
+
                     <input
                         name="email"
                         type="email"

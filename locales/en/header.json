@@ -8,5 +8,9 @@
     "rentCar": "Car rental",
     "companyCar": "Company car",
     "ownCar": "Own car"
+  },
+  "e-bike": {
+    "label": "New",
+    "rentEBike": "E-Bike rental"
   }
 }

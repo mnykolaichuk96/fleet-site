@@ -1,0 +1,37 @@
+{
+  "faq": "Najczęściej zadawane pytania",
+  "items": [
+  {
+    "title": "Czy mogę wynająć rower na tydzień?",
+    "content": ["Tak, minimalny okres wynajmu to 7 dni."]
+  },
+  {
+    "title": "Czy bateria jest w zestawie?",
+    "content": [
+      "Tak, rower posiada jedną baterię w zestawie.",
+      "Istnieje również możliwość wynajmu drugiej baterii za dodatkową opłatą."
+    ]
+  },
+  {
+    "title": "Czy jestem ograniczony w wyborze partnera rozliczeniowego?",
+    "content": [
+      "Nie, masz pełną swobodę wyboru partnera rozliczeniowego.",
+      "Możesz współpracować z dowolnym partnerem."
+    ]
+  },
+  {
+    "title": "Czy rower jest legalny?",
+    "content": [
+      "Tak, wszystkie nasze rowery są w pełni legalne.",
+      "Posiadają ograniczenie wspomagania do 25 km/h oraz wspomaganie działa wyłącznie podczas pedałowania."
+    ]
+  },
+  {
+    "title": "Czy mogę korzystać z trybu off-road?",
+    "content": [
+      "Tak, możesz skorzystać z trybu off-road.",
+      "Jeżeli włączysz go zgodnie z instrukcją producenta lub innymi dostępnymi materiałami, nie stanowi to dla nas problemu."
+    ]
+  }
+  ]
+}

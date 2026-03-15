@@ -8,5 +8,9 @@
     "rentCar": "Wynajem samochodu",
     "companyCar": "Samochód firmowy",
     "ownCar": "Własny samochód"
+  },
+  "e-bike": {
+    "label": "Nowość",
+    "rentEBike": "Wynajem E-bike"
   }
 }

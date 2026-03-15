@@ -24,6 +24,25 @@ export default function Header() {
                 {/* LOGO */}
                 <HeaderLogo />
 
+                <Link
+                    href="/e-bike"
+                    className="
+        absolute left-1/2 -translate-x-1/2
+        md:static md:translate-x-0
+        flex flex-col items-center md:items-start
+        leading-tight
+        hover:opacity-80 transition-opacity
+    "
+                >
+    <span className="self-center text-[#D97706] text-[11px] md:text-sm font-semibold uppercase">
+        {t("e-bike.label")}
+    </span>
+
+                    <span className="text-[#0A1A2F] text-xs md:text-sm font-medium whitespace-nowrap">
+        {t("e-bike.rentEBike")}
+    </span>
+                </Link>
+
                 {/* ===== DESKTOP NAV ===== */}
                 <nav className="hidden md:flex gap-8 text-sm">
                     <Link href="/cars" className={navLinkClass}>

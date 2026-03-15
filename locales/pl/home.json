@@ -1,7 +1,7 @@
 {
   "seo": {
-    "title": "Wynajem samochodów taxi i praca dla kierowców Bolt i Uber w Rzeszowie",
-    "description": "Oferujemy nowoczesne samochody taxi oraz przejrzyste warunki współpracy dla kierowców Bolt i Uber w Rzeszowie."
+    "title": "Wynajem samochodów taxi i praca dla kierowców Bolt i Uber w Rzeszowie. Wynajem rowerów elektrycznych dla kurierów w Rzeszowie",
+    "description": "Oferujemy nowoczesne samochody taxi oraz przejrzyste warunki współpracy dla kierowców Bolt i Uber w Rzeszowie. Oferujemy nowoczesne rowery elektryczne idealne dla pracy kurierem"
   },
 
   "hero": {
@@ -14,6 +14,17 @@
       "highlight1": "kierowców",
       "line2": "dla",
       "highlight2": "kierowców"
+    },
+    "car": {
+      "title": "Praca kierowca",
+      "subtitle": "Bolt / Uber",
+      "cta": "Sprawdź warunki"
+    },
+    "ebike": {
+      "label": "Nowość:",
+      "title": "Rowery elektryczne",
+      "subtitle": "Wynajem",
+      "cta": "Sprawdź E-BIKE"
     },
     "qualityMark": {
       "label": "Quality Mark",

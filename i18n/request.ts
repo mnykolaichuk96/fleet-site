@@ -17,7 +17,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
             'fleet-conditions': (await import(`@/locales/${locale}/fleet-conditions.json`)).default,
             'own-conditions': (await import(`@/locales/${locale}/own-conditions.json`)).default,
             policy: (await import(`@/locales/${locale}/policy.json`)).default,
-            cookies: (await import(`@/locales/${locale}/cookies.json`)).default
+            cookies: (await import(`@/locales/${locale}/cookies.json`)).default,
+            'e-bike': (await import(`@/locales/${locale}/e-bike.json`)).default,
+            faq: (await import(`@/locales/${locale}/faq.json`)).default,
         }
     };
 });

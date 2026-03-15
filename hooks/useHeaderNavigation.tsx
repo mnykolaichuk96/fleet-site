@@ -8,7 +8,8 @@ export type HeaderTarget =
     | "rent-car"
     | "company-car"
     | "own-car"
-    | "contact";
+    | "contact"
+    | "faq";
 
 const TARGET_ID_MAP: Record<HeaderTarget, string> = {
     hero: "hero",
@@ -16,6 +17,7 @@ const TARGET_ID_MAP: Record<HeaderTarget, string> = {
     "company-car": "company-car",
     "own-car": "own-car",
     "contact": "contact-form",
+    "faq": "faq",
 };
 
 export function useHeaderNavigation() {
@@ -34,6 +36,16 @@ export function useHeaderNavigation() {
     ) => {
         const { offset = 80, retries = 10 } = options ?? {};
         const targetId = TARGET_ID_MAP[target];
+
+        // FAQ може існувати на інших сторінках
+        if (target === "faq") {
+            const el = document.getElementById(targetId);
+
+            if (el) {
+                scrollToElement(targetId, retries, offset);
+                return;
+            }
+        }
 
         if (isHome) {
             scrollToElement(targetId, retries, offset);

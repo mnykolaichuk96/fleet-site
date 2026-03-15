@@ -10,7 +10,10 @@
     "dashcam": "Dash cam with interior recording function",
     "keyLess": "Keyless entry",
     "pdc": "Parking sensors",
-    "bluetooth": "Bluetooth audio system"
+    "bluetooth": "Bluetooth audio system",
+    "xenon": "Xenon headlights",
+    "leather": "Leather seats",
+    "heated seats": "Heated seats"
   },
 
   "carInstance": {

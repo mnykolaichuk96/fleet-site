@@ -11,7 +11,10 @@
     "dashcam": "Wideorejestrator z funkcją nagrywania wnętrza pojazdu",
     "keyLess": "System bezkluczykowy",
     "pdc": "Czujniki parkowania",
-    "bluetooth": "System audio z Bluetooth"
+    "bluetooth": "System audio z Bluetooth",
+    "xenon": "Ksenonowe reflektory przednie",
+    "leather": "Skórzane fotele",
+    "heated seats": "Podgrzewane fotele"
   },
 
 "carInstance": {

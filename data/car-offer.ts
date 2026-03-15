@@ -2,6 +2,17 @@ import { CarOffer } from "@/types/car";
 
 export const carOffers: CarOffer[] = [
     {
+        slug: "honda-insight",
+        brand: "Honda",
+        model: "Insight",
+        generation: "I",
+        fuel: "hybrid",
+        gearbox: "automatic",
+        consumption: "6,5 - 7 l / 100km",
+        pricePerWeek: 500,
+        icon: "/cars/honda-insight.webp",
+    },
+    {
         slug: "toyota-prius-30",
         brand: "Toyota",
         model: "Prius",
@@ -23,4 +34,5 @@ export const carOffers: CarOffer[] = [
         pricePerWeek: 500,
         icon: "/cars/toyota-auris-1.webp",
     },
+
 ];

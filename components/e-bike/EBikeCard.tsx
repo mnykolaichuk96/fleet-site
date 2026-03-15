@@ -111,8 +111,11 @@ export default function EBikeCard({ vm, onSelect }: Props) {
                                     {" "}{vm.price.period}
                                 </span>
                             </div>
-                            <div className="text-sm text-gray-500 mt-1">
-                                + {vm.price.extraBatteryPrice ?? 0} {vm.price.currency} {vm.price.extraBattery}
+                            <div className="mt-2 text-sm text-gray-500 flex items-center gap-2">
+    <span className="bg-[#D97706]/10 text-[#D97706] px-2 py-0.5 rounded-md font-medium">
+        +{vm.price.extraBatteryPrice} {vm.price.currency}
+    </span>
+                                <span>{vm.price.extraBattery}</span>
                             </div>
                         </div>
 

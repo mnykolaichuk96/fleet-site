@@ -78,7 +78,7 @@ export default async function EBikePage({ params }: Props) {
                 offers: {
                     "@type": "Offer",
                     priceCurrency: "PLN",
-                    price: bike.pricePerWeek,
+                    price: bike.pricePerWeek1,
                     availability: "https://schema.org/InStock"
                 }
             }

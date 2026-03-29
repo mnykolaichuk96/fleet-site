@@ -3,6 +3,8 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { EBikeVM } from "@/lib/view-models/buildEBikeVM";
+import { motion } from "framer-motion";
+import { Route, Battery, BatteryCharging } from "lucide-react";
 
 type Props = {
     vm: EBikeVM;
@@ -49,6 +51,8 @@ export default function EBikeCard({ vm, onSelect }: Props) {
         }
     };
 
+    const [period, setPeriod] = useState<"short" | "long">("long");
+
     return (
         <section className="py-2 lg:py-6">
             <div className="mx-auto max-w-6xl">
@@ -93,30 +97,102 @@ export default function EBikeCard({ vm, onSelect }: Props) {
 
                     <div className="flex-1 bg-white rounded-t-3xl p-6">
 
-                        <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                        <h3 className="text-xl font-semibold text-gray-900 mb-4 mx-auto text-center">
                             {vm.brand} {vm.model}
                         </h3>
 
                         <ul className="space-y-3 text-sm text-gray-700">
-                            <li>⚡ {vm.specs.motorPower} motor</li>
-                            <li>🔋 {vm.specs.battery}</li>
-                            <li>📍 {vm.specs.range}</li>
-                            <li>🌀 {vm.specs.torque}</li>
+                            <li className="flex items-center gap-2">
+                                <Route size={16} className="text-gray-400" />
+                                <span>{vm.specs.range}</span>
+                            </li>
+                            <li>
+                                    <span className="flex items-center gap-1">
+                                        <Battery size={16} className="text-gray-400" />
+                                        {vm.specs.battery}
+                                    </span>
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <BatteryCharging size={16} className="text-gray-400" />
+                                {vm.specs.chargingTime}
+                            </li>
                         </ul>
 
                         <div className="mt-6">
-                            <div className="text-3xl font-bold text-[#D97706]">
-                                {vm.price.value} {vm.price.currency}
-                                <span className="text-sm font-normal text-gray-500">
-                                    {" "}{vm.price.period}
-                                </span>
+
+                            {/* SWITCH (mobile compact) */}
+                            <div className="relative w-[200px] h-[34px] bg-gray-200 rounded-full p-1 overflow-hidden mx-auto">
+
+                                {/* SLIDER */}
+                                <motion.div
+                                    layout
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 400,
+                                        damping: 30,
+                                    }}
+                                    className={`
+                absolute top-1 bottom-1 w-[calc(50%-4px)]
+                rounded-full bg-white shadow
+                ${period === "short" ? "left-1" : "left-1/2"}
+            `}
+                                />
+
+                                {/* OPTIONS */}
+                                <div className="relative z-10 flex text-xs h-full">
+                                    <button
+                                        onClick={() => setPeriod("short")}
+                                        className={`w-1/2 flex items-center justify-center transition
+                    ${period === "short" ? "text-gray-900" : "text-gray-500"}
+                `}
+                                    >
+                                        1 tydz.
+                                    </button>
+
+                                    <button
+                                        onClick={() => setPeriod("long")}
+                                        className={`w-1/2 flex items-center justify-center transition
+                    ${period === "long" ? "text-gray-900" : "text-gray-500"}
+                `}
+                                    >
+                                        2+ tyg.
+                                    </button>
+                                </div>
                             </div>
-                            <div className="mt-2 text-sm text-gray-500 flex items-center gap-2">
-    <span className="bg-[#D97706]/10 text-[#D97706] px-2 py-0.5 rounded-md font-medium">
-        +{vm.price.extraBatteryPrice} {vm.price.currency}
-    </span>
-                                <span>{vm.price.extraBattery}</span>
+
+                            {/* PRICE */}
+                            <div className="mt-3">
+                                <div className="flex items-center gap-2">
+
+                                    <div className="text-3xl font-bold text-[#D97706]">
+                                        {period === "long" ? vm.price.value1 : vm.price.value2} zł
+                                    </div>
+
+                                    <span className="text-sm text-gray-500">
+                / tydz.
+            </span>
+                                </div>
+
+                                {/* EXTRA */}
+                                {vm.price.extraBatteryPrice1 > 0 && (
+                                    <div className="mt-2 text-sm text-gray-500 flex items-center gap-2">
+                                            <span className="bg-[#D97706]/10 text-[#D97706] px-2 py-0.5 rounded-md font-medium">
+                                                +{period === "long"
+                                                ? vm.price.extraBatteryPrice1
+                                                : vm.price.extraBatteryPrice2
+                                            } {vm.price.currency}
+                                            </span>
+                                        <span>{vm.price.extraBattery}</span>
+                                    </div>
+                                )}
+                                {/*/!* NOTE *!/*/}
+                                {/*<div className="text-xs text-gray-500 mt-1">*/}
+                                {/*    {period === "long"*/}
+                                {/*        ? vm.price.pricePerWeekNote1*/}
+                                {/*        : vm.price.pricePerWeekNote2}*/}
+                                {/*</div>*/}
                             </div>
+
                         </div>
 
 
@@ -213,33 +289,113 @@ export default function EBikeCard({ vm, onSelect }: Props) {
                             p-8
                             z-20
                         ">
-                            <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                            <h3 className="text-xl font-semibold text-gray-900 mb-4 mx-auto text-center">
                                 {vm.brand} {vm.model}
                             </h3>
 
                             <ul className="space-y-3 text-sm text-gray-700">
-                                <li>⚡ {vm.specs.motorPower} motor</li>
-                                <li>🔋 {vm.specs.battery}</li>
-                                <li>📍 {vm.specs.range}</li>
-                                <li>🌀 {vm.specs.torque}</li>
+                                <li className="flex items-center gap-2">
+                                    <Route size={16} className="text-gray-400" />
+                                    <span>{vm.specs.range}</span>
+                                </li>
+                                <li>
+                                    <span className="flex items-center gap-1">
+                                        <Battery size={16} className="text-gray-400" />
+                                        {vm.specs.battery}
+                                    </span>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <BatteryCharging size={16} className="text-gray-400" />
+                                    {vm.specs.chargingTime}
+                                </li>
                             </ul>
 
-                            <div className="mt-6">
-                                <div className="text-3xl font-bold text-[#D97706]">
-                                    {vm.price.value} {vm.price.currency}
-                                    <span className="text-sm font-normal text-gray-500">
-                                        {" "}{vm.price.period}
-                                    </span>
+                            <div className="mt-5">
+
+                                {/* SWITCH */}
+                                <div className="relative w-[220px] h-[36px] bg-gray-200 rounded-full p-1 overflow-hidden mx-auto">
+
+                                    {/* SLIDER */}
+                                    <motion.div
+                                        layout
+                                        transition={{
+                                            type: "spring",
+                                            stiffness: 400,
+                                            damping: 30,
+                                        }}
+                                        drag="x"
+                                        dragConstraints={{ left: 0, right: 0 }}
+                                        dragElastic={0.2}
+                                        onDragEnd={(e, info) => {
+                                            if (info.offset.x > 20) setPeriod("long");
+                                            if (info.offset.x < -20) setPeriod("short");
+                                        }}
+                                        className={`
+                                            absolute top-1 bottom-1 w-[calc(50%-4px)]
+                                            rounded-full bg-white shadow
+                                            cursor-grab active:cursor-grabbing
+                                            ${period === "short" ? "left-1" : "left-1/2"}
+                                        `}
+                                    />
+
+                                    {/* OPTIONS */}
+                                    <div className="relative z-10 flex text-sm h-full">
+                                        <button
+                                            onClick={() => setPeriod("short")}
+                                            className={`w-1/2 flex items-center justify-center transition
+                                                ${period === "short" ? "text-gray-900" : "text-gray-500"}
+                                            `}
+                                        >
+                                            1 tydz.
+                                        </button>
+
+                                        <button
+                                            onClick={() => setPeriod("long")}
+                                            className={`w-1/2 flex items-center justify-center transition
+                                                ${period === "long" ? "text-gray-900" : "text-gray-500"}
+                                            `}
+                                        >
+                                            2+ tyg.
+                                        </button>
+                                    </div>
                                 </div>
 
-                                <div className="mt-2 text-sm text-gray-500 flex items-center gap-2">
-    <span className="bg-[#D97706]/10 text-[#D97706] px-2 py-0.5 rounded-md font-medium">
-        +{vm.price.extraBatteryPrice} {vm.price.currency}
-    </span>
-                                    <span>{vm.price.extraBattery}</span>
+                                {/* PRICE */}
+                                <div className="mt-3">
+                                    <div className="flex items-center gap-2">
+
+                                        <div className="text-2xl font-bold text-[#D97706]">
+                                            {period === "long" ? vm.price.value1 : vm.price.value2} zł
+                                        </div>
+
+                                        <span className="text-sm text-gray-500">
+                                            / tydz.
+                                        </span>
+                                    </div>
+
+                                    {vm.price.extraBatteryPrice1 > 0 && (
+                                        <div className="mt-2 text-sm text-gray-500 flex items-center gap-2">
+                                            <span className="bg-[#D97706]/10 text-[#D97706] px-2 py-0.5 rounded-md font-medium">
+                                                +{period === "long"
+                                                ? vm.price.extraBatteryPrice1
+                                                : vm.price.extraBatteryPrice2
+                                            } {vm.price.currency}
+                                            </span>
+                                            <span>{vm.price.extraBattery}</span>
+                                        </div>
+                                    )}
                                 </div>
+
+                                {/*/!* NOTE *!/*/}
+                                {/*<div className="text-xs text-gray-500 mt-1">*/}
+                                {/*    {period === "long"*/}
+                                {/*        ? vm.price.pricePerWeekNote1*/}
+                                {/*        : vm.price.pricePerWeekNote2}*/}
+                                {/*</div>*/}
+
                             </div>
 
+                            {/* CTA */}
                             <div className="mt-6 flex justify-center">
                                 <button
                                     onClick={onSelect}

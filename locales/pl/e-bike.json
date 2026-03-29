@@ -9,6 +9,8 @@
   },
   "currency": "zł",
   "pricePerWeek": "/tyg",
+  "pricePerWeekNote1": " * Wynajem na minimum 2 tygodnie",
+  "pricePerWeekNote2": " * Wynajem na 1 tydzień",
   "extraBattery": "/tyg • Dodatkowa bateria (opcjonalnie)",
 
   "subtitle": "Idealne do pracy w Uber Eats, Bolt Food i Glovo",

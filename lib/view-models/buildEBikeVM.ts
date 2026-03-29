@@ -8,16 +8,21 @@ export type EBikeVM = {
 
     specs: {
         battery: string
+        chargingTime: string
         range: string
         motorPower: string
         torque: string
     }
 
     price: {
-        value: number
+        value1: number
+        value2: number
         currency: string
         period: string
-        extraBatteryPrice: number
+        pricePerWeekNote1: string
+        pricePerWeekNote2: string
+        extraBatteryPrice1: number
+        extraBatteryPrice2: number
         extraBattery: string
     }
 
@@ -41,16 +46,21 @@ export function buildEBikeVM(
 
         specs: {
             battery: bike.battery,
+            chargingTime: bike.chargingTime,
             range: bike.range,
             motorPower: bike.motorPower,
             torque: bike.torque
         },
 
         price: {
-            value: bike.pricePerWeek,
+            value1: bike.pricePerWeek1,
+            value2: bike.pricePerWeek2,
             currency: t("currency"),
             period: t("pricePerWeek"),
-            extraBatteryPrice: bike.extraBatteryPrice,
+            pricePerWeekNote1: t("pricePerWeekNote1"),
+            pricePerWeekNote2: t("pricePerWeekNote2"),
+            extraBatteryPrice1: bike.extraBatteryPrice1,
+            extraBatteryPrice2: bike.extraBatteryPrice2,
             extraBattery: t("extraBattery")
         },
 

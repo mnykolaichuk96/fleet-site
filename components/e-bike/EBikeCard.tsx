@@ -12,7 +12,7 @@ type Props = {
 };
 
 export default function EBikeCard({ vm, onSelect }: Props) {
-    const router = useRouter();
+
     const [imageIndex, setImageIndex] = useState(0);
 
     const images = vm.images;
@@ -224,13 +224,13 @@ export default function EBikeCard({ vm, onSelect }: Props) {
                         {/* BACKGROUND */}
 
                         <div className="absolute inset-0 scale-105">
-                            <div
-                                className="absolute inset-0 bg-center bg-cover"
-                                style={{
-                                    backgroundImage: `url("/rzeszow-bike-card.jpg")`,
-                                    filter: "blur(4px) brightness(1.05)",
-                                }}
-                            />
+                            {/*<div*/}
+                            {/*    className="absolute inset-0 bg-center bg-cover"*/}
+                            {/*    style={{*/}
+                            {/*        backgroundImage: `url("/rzeszow-bike-card.jpg")`,*/}
+                            {/*        filter: "blur(4px) brightness(1.05)",*/}
+                            {/*    }}*/}
+                            {/*/>*/}
                         </div>
 
                         <div className="absolute inset-0 bg-white/50" />

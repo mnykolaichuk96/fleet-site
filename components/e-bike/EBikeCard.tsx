@@ -1,6 +1,5 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { EBikeVM } from "@/lib/view-models/buildEBikeVM";
 import { motion } from "framer-motion";
@@ -8,6 +7,7 @@ import { Route, Battery, BatteryCharging } from "lucide-react";
 
 type Props = {
     vm: EBikeVM;
+    // @ts-ignore
     onSelect: () => void;
 };
 

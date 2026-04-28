@@ -59,7 +59,7 @@
     "title": "Obrót tygodniowy",
     "subtitle": "Prowizja",
     "currency": "zł",
-    "note": "Prowizja naliczana jest automatycznie co tydzień"
+    "note": "Prowizja naliczana jest automatycznie co tydzień od obrotu netto"
   },
 
   "details": {

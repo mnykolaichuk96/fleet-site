@@ -43,40 +43,40 @@ export const eBikeOffers: EBike[] = [
             // "/e-bikes/engwe-l20-3.0-boost-5.webp",
             ]
     },
-    {
-        slug: "koolux-x8",
-        brand: "Koolux",
-        model: "X8",
-        battery: "48V 30+35Ah",
-        chargingTime: "7-8h",
-        range: "180–220 km",
-        motorPower: "250W",
-        torque: "75 Nm",
-        pricePerWeek1: 169,
-        pricePerWeek2: 219,
-        extraBatteryPrice1: 0,
-        extraBatteryPrice2: 0,
-        images: [
-            "/e-bikes/koolux-x8.webp",
-        ]
-    },
-    {
-        slug: "koolux-x11s",
-        brand: "Koolux",
-        model: "X11S",
-        battery: "48V 13+10.4Ah",
-        chargingTime: "6.5-7h",
-        range: "80–150 km",
-        motorPower: "250W",
-        torque: "75 Nm",
-        pricePerWeek1: 159,
-        pricePerWeek2: 209,
-        extraBatteryPrice1: 0,
-        extraBatteryPrice2: 0,
-        images: [
-            "/e-bikes/koolux-x11.webp",
-        ]
-    },
+    // {
+    //     slug: "koolux-x8",
+    //     brand: "Koolux",
+    //     model: "X8",
+    //     battery: "48V 30+35Ah",
+    //     chargingTime: "7-8h",
+    //     range: "180–220 km",
+    //     motorPower: "250W",
+    //     torque: "75 Nm",
+    //     pricePerWeek1: 169,
+    //     pricePerWeek2: 219,
+    //     extraBatteryPrice1: 0,
+    //     extraBatteryPrice2: 0,
+    //     images: [
+    //         "/e-bikes/koolux-x8.webp",
+    //     ]
+    // },
+    // {
+    //     slug: "koolux-x11s",
+    //     brand: "Koolux",
+    //     model: "X11S",
+    //     battery: "48V 13+10.4Ah",
+    //     chargingTime: "6.5-7h",
+    //     range: "80–150 km",
+    //     motorPower: "250W",
+    //     torque: "75 Nm",
+    //     pricePerWeek1: 159,
+    //     pricePerWeek2: 209,
+    //     extraBatteryPrice1: 0,
+    //     extraBatteryPrice2: 0,
+    //     images: [
+    //         "/e-bikes/koolux-x11.webp",
+    //     ]
+    // },
     {
         slug: "koolux-bks6-pro",
         brand: "Koolux",

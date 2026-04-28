@@ -5,6 +5,7 @@ import { useState } from "react";
 
 type Props = {
     vm: CarInstanceVM;
+    // @ts-ignore
     onSelect: () => void;
 };
 

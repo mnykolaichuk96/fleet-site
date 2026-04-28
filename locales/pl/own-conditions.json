@@ -66,7 +66,7 @@
         }
       }
     ],
-    "note": "Prowizja liczona od tygodniowego obrotu"
+    "note": "Prowizja naliczana jest automatycznie co tydzień od obrotu netto"
   },
 
   "details": {

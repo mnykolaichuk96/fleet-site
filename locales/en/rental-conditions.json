@@ -59,7 +59,7 @@
     "title": "Weekly Revenue",
     "subtitle": "Commission",
     "currency": "PLN",
-    "note": "Commission is calculated automatically each week"
+    "note": "Commission is calculated automatically each week based on net turnover"
   },
 
   "details": {

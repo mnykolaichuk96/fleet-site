@@ -3,8 +3,10 @@ export type EBike = {
     brand: string
     model: string
     battery: string
+    batteryOptions: ("single" | "dual")[]
     chargingTime: string
-    range: string
+    range?: string
+    dualBatteryRange?: string
     motorPower: string
     torque: string
     pricePerWeek1: number
@@ -12,4 +14,5 @@ export type EBike = {
     extraBatteryPrice1: number
     extraBatteryPrice2: number
     images: string[]
+    dualBatteryImages?: string[]
 }

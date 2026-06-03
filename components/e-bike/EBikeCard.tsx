@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { EBikeVM } from "@/lib/view-models/buildEBikeVM";
 import { motion } from "framer-motion";
-import { Route, Battery, BatteryCharging } from "lucide-react";
+import { Route, Battery, BatteryCharging, BatteryFull  } from "lucide-react";
 
 type Props = {
     vm: EBikeVM;
@@ -15,9 +15,25 @@ export default function EBikeCard({ vm, onSelect }: Props) {
 
     const [imageIndex, setImageIndex] = useState(0);
 
-    const images = vm.images;
+    const hasSingleBattery =
+        vm.batteryOptions.includes("single");
 
+    const hasDualBattery =
+        vm.batteryOptions.includes("dual");
 
+    const canSwitchBattery =
+        hasSingleBattery && hasDualBattery;
+
+    const [batteryMode, setBatteryMode] =
+        useState<"single" | "dual">(
+            vm.batteryOptions[0]
+        );
+
+    const images =
+        batteryMode === "dual" &&
+        vm.dualBatteryImages?.length
+            ? vm.dualBatteryImages
+            : vm.images;
     /* ---------------- SWIPE ---------------- */
 
     const [touchStart, setTouchStart] = useState<number | null>(null);
@@ -42,6 +58,7 @@ export default function EBikeCard({ vm, onSelect }: Props) {
         const isLeftSwipe = distance > minSwipeDistance;
         const isRightSwipe = distance < -minSwipeDistance;
 
+        // @ts-ignore
         if (isLeftSwipe && imageIndex < images.length - 1) {
             setImageIndex(imageIndex + 1);
         }
@@ -52,6 +69,26 @@ export default function EBikeCard({ vm, onSelect }: Props) {
     };
 
     const [period, setPeriod] = useState<"short" | "long">("long");
+
+    useEffect(() => {
+        setImageIndex(0);
+    }, [batteryMode]);
+
+    const basePrice =
+        period === "long"
+            ? vm.price.value1
+            : vm.price.value2;
+
+    const batteryPrice =
+        batteryMode === "dual"
+            ? (
+                period === "long"
+                    ? vm.price.extraBatteryPrice1
+                    : vm.price.extraBatteryPrice2
+            )
+            : 0;
+
+    const totalPrice = basePrice + batteryPrice;
 
     return (
         <section className="py-2 lg:py-6">
@@ -104,7 +141,9 @@ export default function EBikeCard({ vm, onSelect }: Props) {
                         <ul className="space-y-3 text-sm text-gray-700">
                             <li className="flex items-center gap-2">
                                 <Route size={16} className="text-gray-400" />
-                                <span>{vm.specs.range}</span>
+                                <span>{batteryMode === "dual" && vm.specs.dualBatteryRange
+                                    ? vm.specs.dualBatteryRange
+                                    : vm.specs.range}</span>
                             </li>
                             <li>
                                     <span className="flex items-center gap-1">
@@ -160,12 +199,55 @@ export default function EBikeCard({ vm, onSelect }: Props) {
                                 </div>
                             </div>
 
+                            {canSwitchBattery && (
+                            <div className="mt-3 relative w-[200px] h-[34px] bg-gray-200 rounded-full p-1 overflow-hidden mx-auto">
+
+                                <motion.div
+                                    layout
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 400,
+                                        damping: 30,
+                                    }}
+                                    className={`
+            absolute top-1 bottom-1 w-[calc(50%-4px)]
+            rounded-full bg-white shadow
+            ${batteryMode === "single" ? "left-1" : "left-1/2"}
+        `}
+                                />
+
+                                <div className="relative z-10 flex text-xs h-full">
+                                    <button
+                                        onClick={() => setBatteryMode("single")}
+                                        className={`w-1/2 flex items-center justify-center transition
+                ${batteryMode === "single"
+                                            ? "text-gray-900"
+                                            : "text-gray-500"}
+            `}
+                                    >
+                                        <span className="text-base">🔋</span>
+                                    </button>
+
+                                    <button
+                                        onClick={() => setBatteryMode("dual")}
+                                        className={`w-1/2 flex items-center justify-center transition
+                ${batteryMode === "dual"
+                                            ? "text-gray-900"
+                                            : "text-gray-500"}
+            `}
+                                    >
+                                        <span className="text-base">🔋🔋</span>
+                                    </button>
+                                </div>
+
+                            </div>)}
+
                             {/* PRICE */}
                             <div className="mt-3">
                                 <div className="flex items-center gap-2">
 
                                     <div className="text-3xl font-bold text-[#D97706]">
-                                        {period === "long" ? vm.price.value1 : vm.price.value2} zł
+                                        {totalPrice} zł
                                     </div>
 
                                     <span className="text-sm text-gray-500">
@@ -174,17 +256,17 @@ export default function EBikeCard({ vm, onSelect }: Props) {
                                 </div>
 
                                 {/* EXTRA */}
-                                {vm.price.extraBatteryPrice1 > 0 && (
-                                    <div className="mt-2 text-sm text-gray-500 flex items-center gap-2">
-                                            <span className="bg-[#D97706]/10 text-[#D97706] px-2 py-0.5 rounded-md font-medium">
-                                                +{period === "long"
-                                                ? vm.price.extraBatteryPrice1
-                                                : vm.price.extraBatteryPrice2
-                                            } {vm.price.currency}
-                                            </span>
-                                        <span>{vm.price.extraBattery}</span>
-                                    </div>
-                                )}
+                                {/*{vm.price.extraBatteryPrice1 > 0 && (*/}
+                                {/*    <div className="mt-2 text-sm text-gray-500 flex items-center gap-2">*/}
+                                {/*            <span className="bg-[#D97706]/10 text-[#D97706] px-2 py-0.5 rounded-md font-medium">*/}
+                                {/*                +{period === "long"*/}
+                                {/*                ? vm.price.extraBatteryPrice1*/}
+                                {/*                : vm.price.extraBatteryPrice2*/}
+                                {/*            } {vm.price.currency}*/}
+                                {/*            </span>*/}
+                                {/*        <span>{vm.price.extraBattery}</span>*/}
+                                {/*    </div>*/}
+                                {/*)}*/}
                                 {/*/!* NOTE *!/*/}
                                 {/*<div className="text-xs text-gray-500 mt-1">*/}
                                 {/*    {period === "long"*/}
@@ -245,7 +327,8 @@ export default function EBikeCard({ vm, onSelect }: Props) {
                             src={images[imageIndex]}
                             alt={`${vm.brand} ${vm.model}`}
                             className="
-                                absolute bottom-0 left-[31%] -translate-x-1/2
+                                absolute bottom-0 left-[31%] -translate-x-1/2 translate-y-[48px]
+
                                 w-[620px]
                                 xl:w-[700px]
                                 z-10 select-none
@@ -296,7 +379,9 @@ export default function EBikeCard({ vm, onSelect }: Props) {
                             <ul className="space-y-3 text-sm text-gray-700">
                                 <li className="flex items-center gap-2">
                                     <Route size={16} className="text-gray-400" />
-                                    <span>{vm.specs.range}</span>
+                                    <span>{batteryMode === "dual" && vm.specs.dualBatteryRange
+                                        ? vm.specs.dualBatteryRange
+                                        : vm.specs.range}</span>
                                 </li>
                                 <li>
                                     <span className="flex items-center gap-1">
@@ -360,12 +445,56 @@ export default function EBikeCard({ vm, onSelect }: Props) {
                                     </div>
                                 </div>
 
+                                {canSwitchBattery && (
+                                <div className="mt-3 relative w-[220px] h-[36px] bg-gray-200 rounded-full p-1 overflow-hidden mx-auto">
+
+                                    <motion.div
+                                        layout
+                                        transition={{
+                                            type: "spring",
+                                            stiffness: 400,
+                                            damping: 30,
+                                        }}
+                                        className={`
+            absolute top-1 bottom-1 w-[calc(50%-4px)]
+            rounded-full bg-white shadow
+            ${batteryMode === "single" ? "left-1" : "left-1/2"}
+        `}
+                                    />
+
+                                    <div className="relative z-10 flex text-sm h-full">
+
+                                        <button
+                                            onClick={() => setBatteryMode("single")}
+                                            className={`w-1/2 flex items-center justify-center transition
+                ${batteryMode === "single"
+                                                ? "text-gray-900"
+                                                : "text-gray-500"}
+            `}
+                                        ><span className="text-base">🔋</span>
+                                        </button>
+
+                                        <button
+                                            onClick={() => setBatteryMode("dual")}
+                                            className={`w-1/2 flex items-center justify-center transition
+                ${batteryMode === "dual"
+                                                ? "text-gray-900"
+                                                : "text-gray-500"}
+            `}
+                                        >
+                                            <span className="text-base">🔋🔋</span>
+                                        </button>
+
+                                    </div>
+
+                                </div>)}
+
                                 {/* PRICE */}
                                 <div className="mt-3">
                                     <div className="flex items-center gap-2">
 
                                         <div className="text-2xl font-bold text-[#D97706]">
-                                            {period === "long" ? vm.price.value1 : vm.price.value2} zł
+                                            {totalPrice} zł
                                         </div>
 
                                         <span className="text-sm text-gray-500">
@@ -373,17 +502,14 @@ export default function EBikeCard({ vm, onSelect }: Props) {
                                         </span>
                                     </div>
 
-                                    {vm.price.extraBatteryPrice1 > 0 && (
-                                        <div className="mt-2 text-sm text-gray-500 flex items-center gap-2">
-                                            <span className="bg-[#D97706]/10 text-[#D97706] px-2 py-0.5 rounded-md font-medium">
-                                                +{period === "long"
-                                                ? vm.price.extraBatteryPrice1
-                                                : vm.price.extraBatteryPrice2
-                                            } {vm.price.currency}
-                                            </span>
-                                            <span>{vm.price.extraBattery}</span>
-                                        </div>
-                                    )}
+                                    {/*{vm.price.extraBatteryPrice1 > 0 && (*/}
+                                    {/*    <div className="mt-2 text-sm text-gray-500 flex items-center gap-2">*/}
+                                    {/*        <span className="bg-[#D97706]/10 text-[#D97706] px-2 py-0.5 rounded-md font-medium">*/}
+                                    {/*            +{totalPrice} {vm.price.currency}*/}
+                                    {/*        </span>*/}
+                                    {/*        <span>{vm.price.extraBattery}</span>*/}
+                                    {/*    </div>*/}
+                                    {/*)}*/}
                                 </div>
 
                                 {/*/!* NOTE *!/*/}

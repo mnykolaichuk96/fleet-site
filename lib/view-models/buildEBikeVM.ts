@@ -4,12 +4,16 @@ export type EBikeVM = {
     slug: string
     brand: string
     model: string
+
+    batteryOptions: ("single" | "dual")[]
     images: string[]
+    dualBatteryImages?: string[]
 
     specs: {
         battery: string
         chargingTime: string
-        range: string
+        range?: string
+        dualBatteryRange?: string;
         motorPower: string
         torque: string
     }
@@ -43,11 +47,14 @@ export function buildEBikeVM(
         model: bike.model,
 
         images: bike.images,
+        batteryOptions: bike.batteryOptions,
+        dualBatteryImages: bike.dualBatteryImages,
 
         specs: {
             battery: bike.battery,
             chargingTime: bike.chargingTime,
             range: bike.range,
+            dualBatteryRange: bike.dualBatteryRange,
             motorPower: bike.motorPower,
             torque: bike.torque
         },

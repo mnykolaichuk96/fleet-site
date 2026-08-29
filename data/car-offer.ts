@@ -9,7 +9,7 @@ export const carOffers: CarOffer[] = [
         fuel: "hybrid",
         gearbox: "automatic",
         consumption: "6 - 6,5 l / 100km",
-        pricePerWeek: 500,
+        pricePerWeek: 550,
         icon: "/cars/toyota-auris-1.webp",
     },
     {
@@ -20,7 +20,7 @@ export const carOffers: CarOffer[] = [
         fuel: "hybrid",
         gearbox: "automatic",
         consumption: "6,5 - 7 l / 100km",
-        pricePerWeek: 500,
+        pricePerWeek: 550,
         icon: "/cars/honda-insight.webp",
     },
     {
@@ -31,7 +31,7 @@ export const carOffers: CarOffer[] = [
         fuel: "hybrid",
         gearbox: "automatic",
         consumption: "5 - 6 l / 100km",
-        pricePerWeek: 600,
+        pricePerWeek: 650,
         icon: "/cars/prius-30.webp",
     },
 

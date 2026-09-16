@@ -9,7 +9,7 @@ export const carInstances: CarInstance[] = [
         brand: "Toyota",
         model: "Prius",
         generation: "30",
-        status: "rented",
+        status: "available",
         equipment: [
             "rear_camera",
             "carPlay",
@@ -56,7 +56,7 @@ export const carInstances: CarInstance[] = [
         brand: "Honda",
         model: "Insight",
         generation: "I",
-        status: "rented",
+        status: "available",
         equipment: [
             "rear_camera",
             "pdc",

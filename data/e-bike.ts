@@ -38,7 +38,7 @@ export const eBikeOffers: EBike[] = [
         motorPower: "250W",
         torque: "75 Nm",
         pricePerWeek1: 159,
-        pricePerWeek2: 219,
+        pricePerWeek2: 199,
         extraBatteryPrice1: 35,
         extraBatteryPrice2: 50,
         images: [
@@ -100,8 +100,8 @@ export const eBikeOffers: EBike[] = [
         motorPower: "250W",
         torque: "70 Nm",
         pricePerWeek1: 165,
-        pricePerWeek2: 209,
-        extraBatteryPrice1: 35,
+        pricePerWeek2: 205,
+        extraBatteryPrice1: 34,
         extraBatteryPrice2: 50,
         images: [
             "/e-bikes/ovivo-c2-pro.webp",
@@ -122,7 +122,7 @@ export const eBikeOffers: EBike[] = [
         motorPower: "250W",
         torque: "75 Nm",
         pricePerWeek1: 199,
-        pricePerWeek2: 229,
+        pricePerWeek2: 239,
         extraBatteryPrice1: 0,
         extraBatteryPrice2: 0,
         images: [
